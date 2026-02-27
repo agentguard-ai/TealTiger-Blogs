@@ -5,7 +5,7 @@ date: 2026-02-27 14:30:00 +0530
 tags: [runtime, evaluation, governance, agents, security]
 ---
 
-## Executive summary (TL;DR)
+## Executive summary 
 
 - **Static evaluations** are great at catching *known* failure modes and preventing regressions.
 - **Agentic AI risk is contextual and multi-step**—new risk can appear mid-execution (tools, data, destinations, retries).
