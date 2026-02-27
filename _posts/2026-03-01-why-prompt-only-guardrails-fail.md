@@ -1,7 +1,7 @@
 ---
 title: "Why Prompt-Only Guardrails Fail in Production"
 description: Prompting an LLM to behave safely is not enforcement. In real systems, guardrails must exist at runtime, not only in prompts.
-date: 2026-03-01 00:00:00 +0530
+
 tags: [guardrails, prompts, runtime, governance, agents]
 ---
 
