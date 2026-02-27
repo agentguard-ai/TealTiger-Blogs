@@ -1,0 +1,6 @@
+title: TealTiger Blog
+description: Engineering, governance, and security for agentic AI
+theme: minima
+
+markdown: kramdown
+permalink: /:title/
