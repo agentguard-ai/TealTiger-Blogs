@@ -5,8 +5,9 @@ date: 2026-02-27 00:00:00 +0530
 tags: [zero-trust, governance, runtime, agents, policy]
 ---
 
-Traditional Zero Trust has a clean mental model: **verify identity**, **enforce least privilege**, and **assume breach**.
-That model works well for *people* and *services* accessing *systems*.
+Traditional Zero Trust works well for people and services accessing systems.
+Agentic AI breaks that model—because the risk is no longer just *who* is acting,
+but *what an agent is about to do*.
 
 Agentic AI breaks the neat boundaries.
 An LLM-driven agent can be “authenticated” and still do something unsafe—because the risk is no longer only *who* is asking, but **what the agent is about to do**.
