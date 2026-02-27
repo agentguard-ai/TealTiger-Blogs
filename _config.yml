@@ -1,16 +1,18 @@
 title: TealTiger Blog
 description: Engineering, governance, and security for agentic AI
 
-# Public URL (helps SEO + RSS)
+# Public URL (important for SEO + RSS)
 url: https://blogs.tealtiger.ai
 baseurl: ""
 
 timezone: Asia/Kolkata
 
-# Docs base for cross-links inside posts
+# Docs base for cross-links inside posts (blog ↔ docs)
 docs_base: https://docs.tealtiger.ai
 
-theme: minima
+# Remove minima to ensure your custom layouts/styles are used
+# theme: minima
+
 markdown: kramdown
 permalink: /:title/
 
@@ -23,6 +25,8 @@ nav:
     url: https://docs.tealtiger.ai
   - title: GitHub
     url: https://github.com/nagasatish007
+  - title: Tags
+    url: /tags/
   - title: RSS
     url: /feed.xml
 
