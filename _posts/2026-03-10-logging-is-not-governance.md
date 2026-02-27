@@ -1,7 +1,7 @@
 ---
 title: "Logging Is Not Governance"
 description: Observability tells you what happened. Governance decides what is allowed to happen. In agentic AI, confusing the two is a production incident waiting to happen.
-date: 2026-03-10 00:00:00 +0530
+
 tags: [logging, governance, audit, runtime, agents, security]
 ---
 
