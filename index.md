@@ -4,7 +4,7 @@ title: TealTiger Blog
 ---
 
 <section class="hero">
-  <h1>Engineering notes for agentic AI security</h1>
+  <h1>Where Zero Trust meets agentic AI runtime</h1>
   <p>
     TealTiger is a developer-first runtime governance SDK for agentic AI. This blog shares practical patterns,
     reference architectures, and hard lessons—from zero trust to blast-radius control.
