@@ -5,7 +5,7 @@ description: Observability tells you what happened. Governance decides what is a
 tags: [logging, governance, audit, runtime, agents, security]
 ---
 
-## Executive summary (TL;DR)
+## Executive summary
 
 - **Logging is retrospective**: it records what happened after decisions are made.
 - **Governance is preventative/intervening**: it decides what is allowed to happen at runtime (allow/deny/redact/approve).
