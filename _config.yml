@@ -1,6 +1,43 @@
 title: TealTiger Blog
 description: Engineering, governance, and security for agentic AI
-theme: minima
 
+# Public site URL (important for RSS + SEO)
+url: https://blogs.tealtiger.ai
+baseurl: ""
+
+# Timezone (good for correct post dates)
+timezone: Asia/Kolkata
+
+# Where TealTiger docs live (used for cross-links)
+docs_base: https://docs.tealtiger.ai
+
+# GitHub Pages defaults
+theme: minima
 markdown: kramdown
 permalink: /:title/
+
+# Excerpts for homepage
+excerpt_separator: "\n\n---\n\n"
+
+# GitHub Pages–supported plugins only
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+
+# Simple top navigation
+nav:
+  - title: Docs
+    url: https://docs.tealtiger.ai
+  - title: GitHub
+    url: https://github.com/nagasatish007
+  - title: RSS
+    url: /feed.xml
+
+# Default metadata for posts
+defaults:
+  - scope:
+      path: ""
+      type: posts
+    values:
+      layout: post
+      author: TealTiger
