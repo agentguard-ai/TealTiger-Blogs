@@ -1,7 +1,7 @@
 ---
 title: "Blast-Radius Control for AI Agents"
 description: You cannot prevent every failure in agentic AI systems. What you can do is contain them. Blast-radius control is the missing discipline.
-date: 2026-03-05 00:00:00 +0530
+
 tags: [agents, governance, blast-radius, runtime, security]
 ---
 
