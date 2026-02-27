@@ -1,0 +1,45 @@
+---
+layout: default
+---
+
+<article class="post">
+  <header class="post-header">
+    <h1 class="post-title">{{ page.title }}</h1>
+
+    <div class="post-meta">
+      <time datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date: "%b %d, %Y" }}</time>
+      <span class="dot">·</span>
+      {% assign words = content | number_of_words %}
+      {% assign minutes = words | divided_by: 200 | plus: 1 %}
+      <span>{{ minutes }} min read</span>
+
+      {% if page.tags %}
+        <span class="dot">·</span>
+        <span class="tags-inline">
+          {% for tag in page.tags %}
+            <a class="tag" href="{{ '/tags/#' | append: tag | relative_url }}">#{{ tag }}</a>{% unless forloop.last %} {% endunless %}
+          {% endfor %}
+        </span>
+      {% endif %}
+    </div>
+
+    {% if page.description %}
+      <p class="post-description">{{ page.description }}</p>
+    {% endif %}
+  </header>
+
+  <div class="post-content">
+    {{ content }}
+  </div>
+
+  <hr class="divider" />
+
+  <section class="post-cta">
+    <h2>Continue in the docs</h2>
+    <p>Want the contract truth and implementation details? Go to the TealTiger documentation.</p>
+    <p>
+      <a class="button" href="{{ site.docs_base }}">Open TealTiger Docs</a>
+    </p>
+  </section>
+</article>
+``
