@@ -4,11 +4,16 @@ title: "AI Governance — Start Here"
 permalink: /governance/
 ---
 
-_Last updated: 2026-03-03
+Last updated: 2026-03-03
 
 AI governance is a **complete lifecycle discipline**: policies, accountability, risk/impact assessment, measurement, runtime controls, evidence, cost governance, data governance, and sustainability.
 
 This hub organizes the blog into governance domains. Start with the hubs below.
+
+## If you're new, start here
+1. Read **Runtime Governance** to understand enforcement at execution boundaries.
+2. Read **Cost Governance** to understand budget / denial-of-wallet as governance.
+3. Read **Evidence & Audit** to understand why logs alone are insufficient.
 
 ## Hubs
 - [Runtime Governance (Agents & Execution Boundaries)](/governance/runtime.html)
