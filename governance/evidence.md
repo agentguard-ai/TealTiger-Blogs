@@ -2,6 +2,13 @@
 layout: page
 title: "Evidence & Audit (Logging vs Governance)"
 permalink: /governance/evidence.html
+breadcrumbs:
+  - title: Home
+    url: /
+  - title: Governance
+    url: /governance/
+  - title: Evidence
+    url: /governance/evidence.html
 ---
 
 _Last updated: 2026-03-03
