@@ -23,6 +23,8 @@ plugins:
 nav:
   - title: Docs
     url: https://docs.tealtiger.ai
+  - title: Governance
+    url: /governance/
   - title: GitHub
     url: https://github.com/nagasatish007
   - title: Tags
