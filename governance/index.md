@@ -16,19 +16,25 @@ _Last updated: 2026-03-03_
 
 **Why runtime enforcement beats static evaluation**  
 A practical argument for enforcing governance at execution time, not just scoring models before deployment.  
-→ 2026-02-27-why-runtime-enforcement-beats-static-evaluation.html
+→ {% post_url 2026-02-27-why-runtime-enforcement-beats-static-evaluation %}
 
-AI governance is a **complete lifecycle discipline** covering:
-policies, accountability, risk and impact assessment, measurement, runtime controls, evidence, cost governance, data governance, and sustainability.
+---
+
+AI governance is a **full lifecycle discipline**, spanning:
+policy definition, accountability, risk and impact assessment, runtime enforcement, evidence generation, cost governance, data governance, and sustainability.
 
 This hub organizes the blog into **clear governance domains**.  
-If you’re new, start with the sections below.
+If you’re new to AI governance, start with the sections below.
 
-## If you're new, start here
+---
 
-1. **Runtime Governance** — understand enforcement at execution boundaries  
-2. **Cost Governance** — understand budgets, denial‑of‑wallet, and economic guardrails  
-3. **Evidence & Audit** — understand why logs alone are insufficient  
+## Start here
+
+1. **Runtime Governance** — enforcement at execution boundaries  
+2. **Cost Governance** — budgets, denial‑of‑wallet, and economic guardrails  
+3. **Audit & Evidence** — why logs alone are insufficient  
+
+---
 
 ## Governance hubs
 
@@ -38,10 +44,10 @@ If you’re new, start with the sections below.
 - **Cost & Economic Governance**  
   /governance/cost.html
 
-- **Evidence & Audit (Logging vs Governance)**  
-  /governance/evidence.html
+- **Audit & Evidence (Beyond Logging)**  
+  /governance/audit.html
 
-- **Security as a Domain (Inside Governance)**  
+- **Security as a Governance Domain**  
   /governance/security.html
 
 - **Frameworks & Standards (Reference)**  
@@ -50,13 +56,15 @@ If you’re new, start with the sections below.
 - **Sustainability & Environmental Impact**  
   /governance/sustainability.html
 
+---
+
 ## Foundational posts
 
-These are the initial essays that define **TealTiger’s governance philosophy**:
+These essays define the **governance philosophy** behind TealTiger and this blog:
 
-- /2026/02/27/blast-radius-control-for-ai-agents.html
-- /2026/02/27/why-runtime-enforcement-beats-static-evaluation.html
-- /2026/02/27/zero-trust-agentic-ai.html
-- /2026/02/27/cost-is-a-security-boundary.html
-- /2026/02/27/logging-is-not-governance.html
-- /2026/02/27/why-prompt-only-guardrails-fail.html
+- {% post_url 2026-02-27-blast-radius-control-for-ai-agents %}
+- {% post_url 2026-02-27-why-runtime-enforcement-beats-static-evaluation %}
+- {% post_url 2026-02-27-zero-trust-agentic-ai %}
+- {% post_url 2026-02-27-cost-is-a-security-boundary %}
+- {% post_url 2026-02-27-logging-is-not-governance %}
+- {% post_url 2026-02-27-why-prompt-only-guardrails-fail %}
