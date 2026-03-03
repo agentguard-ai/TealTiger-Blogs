@@ -228,3 +228,16 @@ a:hover { color: var(--link-hover); text-decoration: underline; }
   margin-top: 28px;
   letter-spacing: -0.02em;
 }
+
+/* Breadcrumbs */
+.breadcrumbs {
+  max-width: 820px;
+  margin: 0 auto 14px;
+  font-size: 13px;
+  font-weight: 800;
+  color: var(--muted);
+}
+.breadcrumbs .crumb { color: var(--muted); }
+.breadcrumbs .crumb:hover { color: var(--text); text-decoration: none; }
+.breadcrumbs .crumb-sep { margin: 0 6px; opacity: .7; }
+.breadcrumbs .current { color: var(--text); }
