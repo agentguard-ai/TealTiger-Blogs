@@ -40,23 +40,12 @@ If you’re new to AI governance, start with the sections below.
 
 ## Governance hubs
 
-- **Runtime Governance (Agents & Execution Boundaries)**  
-  /governance/runtime/
-
-- **Cost & Economic Governance**  
-  /governance/cost/
-
-- **Audit & Evidence (Beyond Logging)**  
-  /governance/audit/
-
-- **Security as a Governance Domain**  
-  /governance/security/
-
-- **Frameworks & Standards (Reference)**  
-  /governance/frameworks/
-
-- **Sustainability & Environmental Impact**  
-  /governance/sustainability/
+- [**Runtime Governance (Agents & Execution Boundaries)**](/governance/runtime/)
+- [**Cost & Economic Governance**](/governance/cost/)
+- [**Audit & Evidence (Beyond Logging)**](/governance/audit/)
+- [**Security as a Governance Domain**](/governance/security/)
+- [**Frameworks & Standards (Reference)**](/governance/frameworks/)
+- [**Sustainability & Environmental Impact**](/governance/sustainability/)
 
 ---
 
