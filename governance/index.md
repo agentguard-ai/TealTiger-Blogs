@@ -26,6 +26,7 @@ This hub organizes the blog into governance domains. Start with the hubs below.
 ---
 
 ## Foundational posts (current)
+These are the initial essays that define TealTiger’s governance philosophy
 - [Blast-radius control for AI agents](/2026/02/27/blast-radius-control-for-ai-agents.html)
 - [Why runtime enforcement beats static evaluation](/2026/02/27/why-runtime-enforcement-beats-static-evaluation.html)
 - [Zero Trust agentic AI](/2026/02/27/zero-trust-agentic-ai.html)
