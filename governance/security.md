@@ -11,7 +11,7 @@ breadcrumbs:
     url: /governance/security.html
 ---
 
-_Last updated: 2026-03-03
+Last updated: 2026-03-03
 
 Security is a core domain of AI governance, but not the whole of governance. This hub focuses on security controls for LLM and agentic systems.
 
