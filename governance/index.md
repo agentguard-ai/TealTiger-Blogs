@@ -6,6 +6,11 @@ permalink: /governance/
 
 Last updated: 2026-03-03
 
+## Featured
+**Why runtime enforcement beats static evaluation**  
+A practical argument for enforcing governance at execution time, not just scoring models before deployment.  
+→ /2026/02/27/why-runtime-enforcement-beats-static-evaluation.html
+
 AI governance is a **complete lifecycle discipline**: policies, accountability, risk/impact assessment, measurement, runtime controls, evidence, cost governance, data governance, and sustainability.
 
 This hub organizes the blog into governance domains. Start with the hubs below.
