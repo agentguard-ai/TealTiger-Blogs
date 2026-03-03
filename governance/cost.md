@@ -2,6 +2,13 @@
 layout: page
 title: "Cost & Economic Governance"
 permalink: /governance/cost.html
+breadcrumbs:
+  - title: Home
+    url: /
+  - title: Governance
+    url: /governance/
+  - title: Cost
+    url: /governance/cost.html
 ---
 
 _Last updated: 2026-03-03
