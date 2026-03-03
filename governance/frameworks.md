@@ -2,6 +2,13 @@
 layout: page
 title: "Frameworks & Standards (Reference)"
 permalink: /governance/frameworks.html
+breadcrumbs:
+  - title: Home
+    url: /
+  - title: Governance
+    url: /governance/
+  - title: Frameworks
+    url: /governance/frameworks.html
 ---
 
 _Last updated: 2026-03-03
