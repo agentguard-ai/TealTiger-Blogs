@@ -11,7 +11,7 @@ breadcrumbs:
     url: /governance/cost.html
 ---
 
-_Last updated: 2026-03-03
+Last updated: 2026-03-03
 
 Cost is a governance domain: budget caps, approvals, and controls that prevent runaway agent behavior ("denial of wallet").
 
