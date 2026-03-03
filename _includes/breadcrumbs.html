@@ -1,0 +1,25 @@
+{% comment %}
+Lightweight breadcrumbs.
+Usage: set `breadcrumbs:` in page frontmatter as a list of {title, url}.
+Example:
+breadcrumbs:
+  - title: Home
+    url: /
+  - title: Governance
+    url: /governance/
+  - title: Runtime
+    url: /governance/runtime.html
+{% endcomment %}
+
+{% if page.breadcrumbs %}
+  <nav class="breadcrumbs" aria-label="Breadcrumb">
+    {% for crumb in page.breadcrumbs %}
+      {% if forloop.last %}
+        <span class="crumb current">{{ crumb.title }}</span>
+      {% else %}
+        <a class="crumb" href="{{ crumb.url | relative_url }}">{{ crumb.title }}</a>
+        <span class="crumb-sep">→</span>
+      {% endif %}
+    {% endfor %}
+  </nav>
+{% endif %}
