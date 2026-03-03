@@ -2,6 +2,13 @@
 layout: page
 title: "Sustainability & Environmental Impact"
 permalink: /governance/sustainability.html
+breadcrumbs:
+  - title: Home
+    url: /
+  - title: Governance
+    url: /governance/
+  - title: Sustainability
+    url: /governance/sustainability.html
 ---
 
 _Last updated: 2026-03-03
