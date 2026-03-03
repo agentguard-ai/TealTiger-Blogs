@@ -11,7 +11,7 @@ breadcrumbs:
     url: /governance/evidence.html
 ---
 
-_Last updated: 2026-03-03
+Last updated: 2026-03-03
 
 Governance requires **evidence**: decisions, reasons, and traceability. Logs are necessary but not sufficient; evidence must be structured to support audits and incident response.
 
