@@ -1,0 +1,28 @@
+---
+layout: default
+---
+
+<article class="page">
+  <header class="page-header">
+    <h1 class="page-title">{{ page.title }}</h1>
+
+    {% if page.description %}
+      <p class="page-description">{{ page.description }}</p>
+    {% endif %}
+  </header>
+
+  <div class="page-content">
+    {{ content }}
+  </div>
+
+  {% if page.show_docs_cta != false %}
+    <hr class="divider" />
+    <section class="post-cta">
+      <h2>Continue in the docs</h2>
+      <p>Want the contract truth and implementation details? Go to the TealTiger documentation.</p>
+      <p>
+        <a class="button" href="{{ site.docs_base }}">Open TealTiger Docs</a>
+      </p>
+    </section>
+  {% endif %}
+</article>
