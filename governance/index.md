@@ -16,7 +16,8 @@ _Last updated: 2026-03-03_
 
 **Why runtime enforcement beats static evaluation**  
 A practical argument for enforcing governance at execution time, not just scoring models before deployment.  
-→ {% post_url 2026-02-27-why-runtime-enforcement-beats-static-evaluation %}
+→ [Read the article]({% post_url 2026-02-27-why-runtime-enforcement-beats-static-evaluation %})
+
 
 ---
 
