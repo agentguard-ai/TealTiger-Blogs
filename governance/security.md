@@ -2,6 +2,13 @@
 layout: page
 title: "Security (Domain Inside Governance)"
 permalink: /governance/security.html
+breadcrumbs:
+  - title: Home
+    url: /
+  - title: Governance
+    url: /governance/
+  - title: Security
+    url: /governance/security.html
 ---
 
 _Last updated: 2026-03-03
