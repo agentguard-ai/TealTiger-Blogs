@@ -63,9 +63,11 @@ If you’re new to AI governance, start with the sections below.
 
 These essays define the **governance philosophy** behind TealTiger and this blog:
 
-- {% post_url 2026-02-27-blast-radius-control-for-ai-agents %}
-- {% post_url 2026-02-27-why-runtime-enforcement-beats-static-evaluation %}
-- {% post_url 2026-02-27-zero-trust-agentic-ai %}
-- {% post_url 2026-02-27-cost-is-a-security-boundary %}
-- {% post_url 2026-02-27-logging-is-not-governance %}
-- {% post_url 2026-02-27-why-prompt-only-guardrails-fail %}
+
+- [Blast radius control for AI agents]({% post_url 2026-02-27-blast-radius-control-for-ai-agents %})
+- [Why runtime enforcement beats static evaluation]({% post_url 2026-02-27-why-runtime-enforcement-beats-static-evaluation %})
+- [Zero Trust for agentic AI]({% post_url 2026-02-27-zero-trust-agentic-ai %})
+- [Cost is a security boundary]({% post_url 2026-02-27-cost-is-a-security-boundary %})
+- [Logging is not governance]({% post_url 2026-02-27-logging-is-not-governance %})
+- [Why prompt-only guardrails fail]({% post_url 2026-02-27-why-prompt-only-guardrails-fail %})
+
