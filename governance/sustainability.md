@@ -11,7 +11,7 @@ breadcrumbs:
     url: /governance/sustainability.html
 ---
 
-_Last updated: 2026-03-03
+Last updated: 2026-03-03
 
 AI governance also includes **environmental sustainability**: energy use, compute efficiency, and lifecycle impact of AI systems.
 
