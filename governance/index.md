@@ -37,25 +37,26 @@ If you’re new to AI governance, start with the sections below.
 
 ---
 
+
 ## Governance hubs
 
 - **Runtime Governance (Agents & Execution Boundaries)**  
-  /governance/runtime.html
+  /governance/runtime/
 
 - **Cost & Economic Governance**  
-  /governance/cost.html
+  /governance/cost/
 
 - **Audit & Evidence (Beyond Logging)**  
-  /governance/audit.html
+  /governance/audit/
 
 - **Security as a Governance Domain**  
-  /governance/security.html
+  /governance/security/
 
 - **Frameworks & Standards (Reference)**  
-  /governance/frameworks.html
+  /governance/frameworks/
 
 - **Sustainability & Environmental Impact**  
-  /governance/sustainability.html
+  /governance/sustainability/
 
 ---
 
