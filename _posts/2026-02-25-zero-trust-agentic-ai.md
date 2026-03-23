@@ -1,7 +1,7 @@
 ---
 title: "Zero Trust for Agentic AI: Runtime Verification, Not Network Slogans"
 description: Why traditional Zero Trust doesn’t fully cover AI agents—and how policy enforcement at runtime reduces blast radius for tools, data egress, and spend.
-date: 2026-02-27 00:00:00 +0530
+date: 2026-02-25 00:00:00 +0530
 tags: [zero-trust, governance, runtime, agents, policy]
 ---
 

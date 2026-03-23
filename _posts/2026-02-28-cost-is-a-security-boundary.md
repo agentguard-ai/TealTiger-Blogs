@@ -1,7 +1,7 @@
 ---
 title: "Cost Is a Security Boundary in AI Systems"
 description: Runaway spend isn’t just an optimization problem—it’s a production incident class. In agentic AI, cost must be governed like privilege.
-date: 2026-02-27 13:00:00 +0530
+date: 2026-02-28 00:00:00 +0530
 tags: [cost, governance, runtime, agents, security, budgets]
 ---
 

@@ -1,7 +1,7 @@
 ---
 title: "Why Runtime Enforcement Beats Static Evaluation"
 description: Offline evaluations are necessary—but insufficient. In agentic AI systems, real risk emerges at runtime, not in test suites.
-date: 2026-02-27 14:30:00 +0530
+date: 2026-03-01 00:00:00 +0530
 tags: [runtime, evaluation, governance, agents, security]
 ---
 
