@@ -1,0 +1,33 @@
+title: "Governance Hubs"
+items:
+  - title: "Governance Home"
+    url: "/governance/"
+    icon: "🏠"
+
+  - title: "Runtime Governance"
+    url: "/governance/runtime/"
+    icon: "⚙️"
+
+  - title: "Cost & Economic Governance"
+    url: "/governance/cost/"
+    icon: "💸"
+
+  - title: "Audit & Evidence"
+    url: "/governance/evidence/"
+    icon: "🧾"
+
+  - title: "Security (Domain Inside Governance)"
+    url: "/governance/security/"
+    icon: "🛡️"
+
+  - title: "Frameworks & Standards"
+    url: "/governance/frameworks/"
+    icon: "📚"
+
+  - title: "Sustainability & Environmental Impact"
+    url: "/governance/sustainability/"
+    icon: "🌱"
+
+  - title: "Risk & Assurance"
+    url: "/governance/risk-assurance/"
+    icon: "📈"
