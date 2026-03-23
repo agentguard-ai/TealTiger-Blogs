@@ -1,12 +1,27 @@
+# ------------------------------------------------------------
+# Collections
+# ------------------------------------------------------------
+collections:
+  governance:
+    output: true
+    permalink: /governance/:path/
+
+# ------------------------------------------------------------
+# Defaults
+# ------------------------------------------------------------
 defaults:
+  # Apply governance layout to anything under governance/
   - scope:
       path: "governance"
+      type: "governance"
     values:
       layout: governance
 
+  # Apply post layout + author to regular blog posts
   - scope:
       path: ""
       type: posts
     values:
       layout: post
       author: TealTiger
+``
