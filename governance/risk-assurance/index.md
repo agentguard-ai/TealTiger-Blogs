@@ -22,3 +22,8 @@ This hub describes how TealTiger enables **continuous risk assurance** for agent
 Rather than relying on point-in-time assessments, TealTiger evaluates every agent action against approved risk contracts.
 
 This makes risk assurance **continuous, deterministic, and provable**.
+
+## Core Articles
+
+- {{ "/governance/risk-assurance/risk-assurance/" | relative_url }}
+  - How TealTiger moves risk assurance from point‑in‑time reviews to continuous enforcement.
