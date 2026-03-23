@@ -9,6 +9,6 @@ This hub focuses on security as a **governance discipline** for LLM and agentic 
 
 ## Foundational articles
 
-- **Zero Trust Across TealTiger Governance Hubs**  
-  A cross‑hub series explaining Zero Trust as a governance pattern spanning runtime, cost, audit, security, standards, and sustainability.  
-  /governance/security/zero-trust-governance-hubs-series/
+- **[Zero Trust Across TealTiger Governance Hubs](/governance/security/zero-trust-governance-hubs-series/)**  
+  A cross‑hub series explaining Zero Trust as a governance pattern spanning runtime,
+  cost, audit, security, standards, and sustainability
