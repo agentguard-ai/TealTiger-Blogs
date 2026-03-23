@@ -8,7 +8,8 @@ Cost & Economic Governance treats spend as an **execution outcome**: bounded too
 
 ## Foundational articles
 
-- _Coming soon._
+-- **Economic Governance of Agentic Execution**
+  /governance/cost/economic-governance-agentic-execution/
 
 ## Deep dives
 
