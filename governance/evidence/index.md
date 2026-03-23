@@ -8,7 +8,8 @@ Audit & Evidence focuses on **decision-grade proof**, not just logs: policy vers
 
 ## Foundational articles
 
-- _Coming soon._
+- **Deterministic Audit & Evidence for Agentic AI**
+  /governance/evidence/deterministic-audit-and-evidence-agentic-ai/
 
 ## Deep dives
 
