@@ -19,7 +19,6 @@ breadcrumbs:
     url: /governance/sustainability/sustainability/
 ---
 
-# Sustainability and Responsible AI Operations
 
 Sustainability in AI governance is not only environmental — it is **operational, financial, and organizational**. TealTiger treats sustainability as a governance outcome.
 

@@ -19,7 +19,6 @@ breadcrumbs:
     url: /governance/risk-assurance/risk-assurance/
 ---
 
-# Risk Assurance for Agentic AI
 
 Risk assurance answers a critical question:
 

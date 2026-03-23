@@ -15,7 +15,6 @@ tags:
   - sustainability
 ---
 
-# Zero Trust Across TealTiger Governance Hubs
 
 This series treats **Zero Trust as a governance pattern**, not a security feature.
 Each article anchors Zero Trust to a specific **TealTiger Governance Hub**, using an institutional, cloud‑native lens with **deterministic enforcement** at the core.

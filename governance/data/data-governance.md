@@ -20,7 +20,6 @@ breadcrumbs:
     url: /governance/data/data-governance/
 ---
 
-# Data Governance for Agentic AI
 
 Data is the highest-risk input to AI systems. In agentic environments, agents can read, transform, and emit data across boundaries that were never intended to be crossed.
 

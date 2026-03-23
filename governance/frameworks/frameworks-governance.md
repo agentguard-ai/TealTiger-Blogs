@@ -21,7 +21,6 @@ breadcrumbs:
     url: /governance/frameworks/frameworks-governance/
 ---
 
-# Governance Frameworks and TealTiger
 
 Governance frameworks provide **structure and shared language**, but they do not enforce behavior by themselves. TealTiger is designed to **operationalize governance frameworks through deterministic enforcement**.
 

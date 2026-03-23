@@ -20,7 +20,6 @@ breadcrumbs:
     url: /governance/compliance/compliance-enablement/
 ---
 
-# Compliance Enablement with TealTiger
 
 TealTiger is **compliance-enabling, not compliance-completing**.
 

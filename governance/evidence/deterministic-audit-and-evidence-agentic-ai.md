@@ -20,7 +20,6 @@ breadcrumbs:
     url: /governance/evidence/deterministic-audit-and-evidence-agentic-ai/
 ---
 
-# Deterministic Audit & Evidence for Agentic AI
 
 Audits fail when systems rely on logs to explain decisions after the fact. In agentic systems, governance requires **evidence generated at decision time**, not forensic reconstruction later.
 

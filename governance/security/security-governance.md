@@ -20,7 +20,6 @@ breadcrumbs:
     url: /governance/security/security-governance/
 ---
 
-# Security Governance for Agentic AI Systems
 
 Agentic systems introduce a new attack surface: **autonomous decision-making**. Traditional perimeter security assumes static applications with predictable flows. Agents break both assumptions.
 

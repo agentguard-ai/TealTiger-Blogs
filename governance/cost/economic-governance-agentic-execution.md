@@ -19,7 +19,6 @@ breadcrumbs:
     url: /governance/cost/economic-governance-agentic-execution/
 ---
 
-# Economic Governance of Agentic Execution
 
 In agentic systems, cost is not a billing concern — it is an **execution risk**. Unbounded autonomy leads to runaway spend. A single agent loop can burn through a monthly budget in minutes.
 

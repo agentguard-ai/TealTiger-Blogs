@@ -19,7 +19,6 @@ breadcrumbs:
     url: /governance/model/model-governance/
 ---
 
-# Model Governance and Control
 
 Not all models are equal. Different models carry different risk profiles, cost characteristics, and compliance implications. In agentic systems, uncontrolled model switching is a governance failure.
 

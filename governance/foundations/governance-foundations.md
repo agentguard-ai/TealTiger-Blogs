@@ -20,7 +20,6 @@ breadcrumbs:
     url: /governance/foundations/governance-foundations/
 ---
 
-# Governance Foundations for Agentic AI
 
 TealTiger governance starts with a **contract-first, deterministic foundation**. Governance is not an afterthought or an advisory layer — it is a system property.
 

@@ -12,7 +12,6 @@ tags:
   - tool-governance
 ---
 
-# Deterministic Runtime Governance for Agentic Systems
 
 Agentic systems do not fail primarily because a model produces an imperfect sentence. They fail because the system **acts**: it calls tools, reads data, modifies state, triggers workflows, or reaches beyond intended scope. The core problem is **execution risk**.
 
