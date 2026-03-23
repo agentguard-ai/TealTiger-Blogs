@@ -1,0 +1,29 @@
+<nav class="gov-sidebar" aria-label="Governance hubs navigation">
+  <div class="gov-sidebar__title">
+    {{ site.data.governance_nav.title | default: "Governance Hubs" }}
+  </div>
+
+  <ul class="gov-sidebar__list">
+    {% assign current = page.url | append: "/" | replace: "//", "/" %}
+    {% for item in site.data.governance_nav.items %}
+      {% assign item_url = item.url | append: "/" | replace: "//", "/" %}
+      {% assign is_active = false %}
+
+      {%- if current == item_url -%}
+        {% assign is_active = true %}
+      {%- elsif current contains item_url and item_url != "/" -%}
+        {# highlight parent hub when inside its articles #}
+        {% assign is_active = true %}
+      {%- endif -%}
+
+      <li class="gov-sidebar__item {% if is_active %}is-active{% endif %}">
+        <a class="gov-sidebar__link" href="{{ item.url | relative_url }}">
+          {% if item.icon %}
+            <span class="gov-sidebar__icon" aria-hidden="true">{{ item.icon }}</span>
+          {% endif %}
+          <span class="gov-sidebar__text">{{ item.title }}</span>
+        </a>
+      </li>
+    {% endfor %}
+  </ul>
+</nav>
