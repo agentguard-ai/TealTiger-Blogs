@@ -1,19 +1,33 @@
 ---
 layout: page
-title: "Runtime Governance"
-permalink: /governance/runtime/
+title: Runtime Governance
 ---
 
-Runtime Governance focuses on **how governance intent is enforced at execution time** in agentic systems. This hub covers execution boundaries, deterministic decision points, tool and data access governance, and runtime evidence generation.
+Runtime Governance explains how TealTiger governs **agent behavior while systems are actively executing**.
 
-## Foundational articles
+In agentic AI systems, the highest risk is not design‑time intent — it is **runtime behavior**. Once deployed, agents can make decisions, invoke tools, access data, and interact with systems in ways that exceed their original scope if not explicitly controlled.
 
-- **[Deterministic Runtime Governance for Agentic Systems](/governance/runtime/deterministic-runtime-governance-agentic-systems/)**
+TealTiger treats runtime as the **primary enforcement layer** for governance.
 
-## Deep dives
+## What This Hub Covers
 
-- _Coming soon._
+- Enforcing governance policies during agent execution
+- Governing prompt execution and tool invocation
+- Preventing scope expansion and unauthorized actions
+- Detecting and stopping policy violations in real time
+- Producing deterministic runtime enforcement decisions
 
-## Related
+## Why Runtime Governance Matters
 
-- Governance home: [/governance/](/governance/)
+Without runtime governance:
+- Policies exist only on paper
+- Agents can exceed intended authority
+- Violations are detected after impact
+- Observability replaces enforcement
+
+TealTiger enforces governance **at the moment decisions are made**, ensuring that every agent action is evaluated against approved contracts and policies.
+
+## Core Articles
+
+- /governance/runtime/runtime-governance/
+  - How TealTiger enforces deterministic governance controls during live agent execution.
