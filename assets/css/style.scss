@@ -61,8 +61,14 @@ a:hover { color: var(--link-hover); text-decoration: underline; }
 
 .brand {
   display: flex;
-  gap: 10px;
-  align-items: baseline;
+  gap: 8px;
+  align-items: center;
+}
+
+.brand-logo {
+  width: 32px;
+  height: 32px;
+  border-radius: 6px;
 }
 
 .brand-mark {
