@@ -1,19 +1,26 @@
+
 ---
 layout: page
-title: "Frameworks & Standards"
+title: Governance Frameworks
 permalink: /governance/frameworks/
 ---
 
-Frameworks & Standards provides **reference mappings** (e.g., NIST, ISO/IEC, regulatory expectations) in a compliance-enabling posture—precise, scoped, and evidence-oriented.
+Governance frameworks provide shared language and structure for responsible AI, but they do not enforce behavior by themselves.
 
-## Foundational articles
+This hub explains how TealTiger **operationalizes governance frameworks** through deterministic, contract-first enforcement.
 
-- _Coming soon._
+## What This Hub Covers
 
-## Deep dives
+- Translating framework principles into enforceable controls
+- Mapping governance contracts to framework requirements
+- Producing auditable evidence aligned to standards
 
-- _Coming soon._
+## Frameworks Addressed
 
-## Related
+- NIST AI Risk Management Framework (AI RMF)
+- ISO/IEC 42001
+- EU AI Act (technical control evidence)
 
-- Governance home: [/governance/](/governance/)
+## How to Read This Section
+
+This hub focuses on *execution*, not interpretation. It assumes familiarity with TealTiger Governance Foundations and shows how abstract framework requirements become real system behavior.
