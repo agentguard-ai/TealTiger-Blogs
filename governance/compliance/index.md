@@ -27,5 +27,5 @@ Final compliance responsibility always remains with the organization.
 
 ## Core Articles
 
-- /governance/compliance-enablement/compliance-enablement/
+- [Compliance Enablement](/governance/compliance/compliance-enablement/)
   - How TealTiger enables compliance through deterministic governance, enforcement, and evidence generation.

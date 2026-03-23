@@ -29,6 +29,6 @@ TealTiger enforces **explicit, contract‑defined model usage**, ensuring consis
 
 ## Core Articles
 
-- /governance/model/model-governance/
+- [Model Governance and Control](/governance/model/model-governance/)
   - How TealTiger governs model selection, usage, and risk boundaries through deterministic enforcement.
 ``

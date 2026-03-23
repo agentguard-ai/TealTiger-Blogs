@@ -26,5 +26,5 @@ TealTiger treats cost as an **enforceable constraint**, not a reporting metric.
 
 ## Core Articles
 
-- /governance/cost/cost-governance/
+- [Cost Governance](/governance/cost/cost-governance/)
   - How TealTiger enforces deterministic cost controls to keep agentic AI systems financially predictable and safe.

@@ -29,5 +29,5 @@ TealTiger enforces data controls **before data reaches the model**, ensuring gov
 
 ## Core Articles
 
-- /governance/data/data-governance/
+- [Data Governance](/governance/data/data-governance/)
   - How TealTiger enforces deterministic data access, purpose binding, and redaction for agentic AI systems.

@@ -29,5 +29,5 @@ TealTiger ensures that **every agent action is evaluated against approved risk b
 
 ## Core Articles
 
-- /governance/risk-assurance/risk-assurance/
+- [Risk Assurance](/governance/risk-assurance/risk-assurance/)
   - How TealTiger enables continuous risk assurance through deterministic enforcement and governance contracts.

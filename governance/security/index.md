@@ -29,8 +29,8 @@ TealTiger enforces **deterministic deny‑by‑default security controls** at ru
 
 ## Core Articles
 
-- /governance/security/security-governance/
+- [Security Governance](/governance/security/security-governance/)
   - How TealTiger enforces identity‑bound execution, least‑privilege access, and deterministic security controls for agentic AI systems.
 
-- /governance/security/zero-trust-governance-hubs-series/
+- [Zero Trust for Governance](/governance/security/zero-trust-governance-hubs-series/)
   - How Zero Trust principles apply to governance and security enforcement in agentic AI architectures.

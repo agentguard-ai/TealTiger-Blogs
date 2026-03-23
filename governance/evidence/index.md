@@ -29,5 +29,5 @@ TealTiger generates evidence **by design**, directly from enforcement paths.
 
 ## Core Articles
 
-- /governance/evidence/evidence-governance/
+- [Evidence & Audit](/governance/evidence/evidence-governance/)
   - How TealTiger generates immutable, audit‑ready evidence from deterministic governance enforcement.
