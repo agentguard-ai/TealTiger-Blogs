@@ -29,27 +29,27 @@ TealTiger introduces **explicit model governance** — deterministic control ove
 
 ## Why Model Governance Matters
 
-```mermaid
-flowchart TD
-  A["Agent needs to complete task"] --> B{"Model Selection"}
-  B -->|"Ungoverned"| C["Runtime picks cheapest/fastest"]
-  B -->|"Governed"| D["Policy evaluates task + risk + environment"]
-
-  C --> E["Inconsistent behavior"]
-  C --> F["Compliance exposure"]
-  C --> G["Cost volatility"]
-
-  D --> H["Approved model for task type"]
-  D --> I["Consistent decisions"]
-  D --> J["Auditable model usage"]
-
-  style E fill:#3b0764,stroke:#a855f7,color:#f5d0fe
-  style F fill:#3b0764,stroke:#a855f7,color:#f5d0fe
-  style G fill:#3b0764,stroke:#a855f7,color:#f5d0fe
-  style H fill:#052e2b,stroke:#10b981,color:#d1fae5
-  style I fill:#052e2b,stroke:#10b981,color:#d1fae5
-  style J fill:#052e2b,stroke:#10b981,color:#d1fae5
-```
+<div class="tt-vs">
+  <div class="tt-vs__side tt-vs__side--bad">
+    <div class="tt-vs__label tt-vs__label--bad">Ungoverned</div>
+    <ul class="tt-vs__items">
+      <li>Runtime picks cheapest/fastest</li>
+      <li>Inconsistent behavior</li>
+      <li>Compliance exposure</li>
+      <li>Cost volatility</li>
+    </ul>
+  </div>
+  <div class="tt-vs__divider">vs</div>
+  <div class="tt-vs__side tt-vs__side--good">
+    <div class="tt-vs__label tt-vs__label--good">Governed</div>
+    <ul class="tt-vs__items">
+      <li>Policy evaluates task + risk + environment</li>
+      <li>Approved model for task type</li>
+      <li>Consistent decisions</li>
+      <li>Auditable model usage</li>
+    </ul>
+  </div>
+</div>
 
 Without model governance:
 - Different models may be used silently for the same task
@@ -75,18 +75,22 @@ Without model governance:
 
 Model usage is driven by governance contracts, not runtime heuristics or framework defaults.
 
-```mermaid
-flowchart LR
-  A["Task Request"] --> B["Policy: Task Type?"]
-  B --> C["Policy: Environment?"]
-  C --> D["Policy: Risk Level?"]
-  D --> E{"Model Approved?"}
-  E -->|Yes| F["Execute with approved model"]
-  E -->|No| G["DENY: MODEL_NOT_APPROVED"]
-
-  style F fill:#052e2b,stroke:#10b981,color:#d1fae5
-  style G fill:#3b0764,stroke:#a855f7,color:#f5d0fe
-```
+<div class="tt-flow">
+  <div class="tt-flow__step">Task Request</div>
+  <span class="tt-flow__arrow">→</span>
+  <div class="tt-flow__step">Policy: Task Type?</div>
+  <span class="tt-flow__arrow">→</span>
+  <div class="tt-flow__step">Policy: Environment?</div>
+  <span class="tt-flow__arrow">→</span>
+  <div class="tt-flow__step">Policy: Risk Level?</div>
+  <span class="tt-flow__arrow">→</span>
+  <div class="tt-flow__step">Model Approved?</div>
+</div>
+<div class="tt-flow" style="margin-top: 8px;">
+  <div class="tt-flow__step tt-flow__step--accent">Yes → Execute with approved model</div>
+  <span class="tt-flow__arrow" style="opacity: 0.5;">·</span>
+  <div class="tt-flow__step tt-flow__step--warn">No → DENY: MODEL_NOT_APPROVED</div>
+</div>
 
 Every model decision is:
 - **Explicit** — no implicit fallbacks

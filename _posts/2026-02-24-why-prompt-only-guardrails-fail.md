@@ -220,40 +220,35 @@ Security, governance, and cost control must live outside the prompt.
 
 ## A simple mental model
 
-```mermaid
-flowchart LR
-  subgraph Prompt["Prompt Layer (advisory)"]
-    A["System Prompt"] --> B["User Input"]
-    B --> C["Model Reasoning"]
-  end
-
-  subgraph Runtime["Runtime Layer (enforcement)"]
-    D["Policy Evaluation"]
-    E["Tool Gating"]
-    F["Output Inspection"]
-    G["Budget Enforcement"]
-  end
-
-  C -->|"tool call"| E
-  C -->|"output"| F
-  C -->|"next step"| G
-  E --> D
-  F --> D
-  G --> D
-
-  D -->|allow| H["Execute"]
-  D -->|deny| I["Block + Reason Code"]
-  D -->|redact| J["Sanitize + Continue"]
-  D -->|approve| K["Human Review"]
-
-  style A fill:#3b0764,stroke:#a855f7,color:#f5d0fe
-  style B fill:#3b0764,stroke:#a855f7,color:#f5d0fe
-  style C fill:#3b0764,stroke:#a855f7,color:#f5d0fe
-  style D fill:#052e2b,stroke:#10b981,color:#d1fae5
-  style E fill:#052e2b,stroke:#10b981,color:#d1fae5
-  style F fill:#052e2b,stroke:#10b981,color:#d1fae5
-  style G fill:#052e2b,stroke:#10b981,color:#d1fae5
-```
+<div class="tt-vs">
+  <div class="tt-vs__side tt-vs__side--bad">
+    <div class="tt-vs__label tt-vs__label--bad">Prompt Layer (advisory)</div>
+    <ul class="tt-vs__items">
+      <li>System Prompt</li>
+      <li>User Input</li>
+      <li>Model Reasoning</li>
+    </ul>
+  </div>
+  <div class="tt-vs__divider">→</div>
+  <div class="tt-vs__side tt-vs__side--good">
+    <div class="tt-vs__label tt-vs__label--good">Runtime Layer (enforcement)</div>
+    <ul class="tt-vs__items">
+      <li>Policy Evaluation</li>
+      <li>Tool Gating</li>
+      <li>Output Inspection</li>
+      <li>Budget Enforcement</li>
+    </ul>
+  </div>
+</div>
+<div class="tt-flow" style="margin-top: 12px;">
+  <div class="tt-flow__step tt-flow__step--accent">Allow → Execute</div>
+  <span class="tt-flow__arrow" style="opacity: 0.5;">·</span>
+  <div class="tt-flow__step tt-flow__step--warn">Deny → Block + Reason Code</div>
+  <span class="tt-flow__arrow" style="opacity: 0.5;">·</span>
+  <div class="tt-flow__step tt-flow__step--accent">Redact → Sanitize + Continue</div>
+  <span class="tt-flow__arrow" style="opacity: 0.5;">·</span>
+  <div class="tt-flow__step">Approve → Human Review</div>
+</div>
 
 Prompts live in the **model's context** — they can be overridden, ignored, or reframed.
 

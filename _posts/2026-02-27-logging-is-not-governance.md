@@ -83,21 +83,25 @@ This post explains the difference, why teams confuse them, and what governance l
 
 ## Two different jobs: observe vs decide
 
-```mermaid
-flowchart LR
-  subgraph Logging["Logging / Observability"]
-    A["What happened?"] --> B["Retrospective"]
-    B --> C["Dashboards & Alerts"]
-  end
-
-  subgraph Governance["Governance / Enforcement"]
-    D["What is allowed?"] --> E["Preventative"]
-    E --> F["Gates & Decisions"]
-  end
-
-  style C fill:#3b0764,stroke:#a855f7,color:#f5d0fe
-  style F fill:#052e2b,stroke:#10b981,color:#d1fae5
-```
+<div class="tt-vs">
+  <div class="tt-vs__side tt-vs__side--bad">
+    <div class="tt-vs__label tt-vs__label--bad">Logging / Observability</div>
+    <ul class="tt-vs__items">
+      <li>What happened?</li>
+      <li>Retrospective</li>
+      <li>Dashboards &amp; Alerts</li>
+    </ul>
+  </div>
+  <div class="tt-vs__divider">vs</div>
+  <div class="tt-vs__side tt-vs__side--good">
+    <div class="tt-vs__label tt-vs__label--good">Governance / Enforcement</div>
+    <ul class="tt-vs__items">
+      <li>What is allowed?</li>
+      <li>Preventative</li>
+      <li>Gates &amp; Decisions</li>
+    </ul>
+  </div>
+</div>
 
 - **Logging/observability** answers: *What happened?*
 - **Governance/enforcement** answers: *What is allowed to happen?*

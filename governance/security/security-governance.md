@@ -30,30 +30,29 @@ TealTiger applies security governance **at execution time**, where risk actually
 
 ## The Threat Model Shift
 
-```mermaid
-flowchart LR
-  subgraph Traditional["Traditional Security"]
-    A1["Perimeter"] --> B1["Authentication"]
-    B1 --> C1["Authorization"]
-    C1 --> D1["Static Application"]
-  end
-
-  subgraph Agentic["Agentic Security"]
-    A2["Identity"] --> B2["Per-Step Authorization"]
-    B2 --> C2["Tool Gating"]
-    C2 --> D2["Data Boundary"]
-    D2 --> E2["Output Inspection"]
-    E2 --> F2["Cost Containment"]
-  end
-
-  style D1 fill:#3b0764,stroke:#a855f7,color:#f5d0fe
-  style A2 fill:#052e2b,stroke:#10b981,color:#d1fae5
-  style B2 fill:#052e2b,stroke:#10b981,color:#d1fae5
-  style C2 fill:#052e2b,stroke:#10b981,color:#d1fae5
-  style D2 fill:#052e2b,stroke:#10b981,color:#d1fae5
-  style E2 fill:#052e2b,stroke:#10b981,color:#d1fae5
-  style F2 fill:#052e2b,stroke:#10b981,color:#d1fae5
-```
+<div class="tt-vs">
+  <div class="tt-vs__side tt-vs__side--bad">
+    <div class="tt-vs__label tt-vs__label--bad">Traditional Security</div>
+    <ul class="tt-vs__items">
+      <li>Perimeter</li>
+      <li>Authentication</li>
+      <li>Authorization</li>
+      <li>Static Application</li>
+    </ul>
+  </div>
+  <div class="tt-vs__divider">vs</div>
+  <div class="tt-vs__side tt-vs__side--good">
+    <div class="tt-vs__label tt-vs__label--good">Agentic Security</div>
+    <ul class="tt-vs__items">
+      <li>Identity</li>
+      <li>Per-Step Authorization</li>
+      <li>Tool Gating</li>
+      <li>Data Boundary</li>
+      <li>Output Inspection</li>
+      <li>Cost Containment</li>
+    </ul>
+  </div>
+</div>
 
 Traditional security asks: **"Who is making this request?"**
 
@@ -73,19 +72,22 @@ A trusted internal agent can still:
 
 Every agent action is bound to a verifiable identity. No anonymous execution.
 
-```mermaid
-flowchart TD
-  A["Agent Request"] --> B{"Identity Verified?"}
-  B -->|Yes| C["Evaluate Policy"]
-  B -->|No| D["DENY: NO_IDENTITY"]
-  C --> E{"Within Scope?"}
-  E -->|Yes| F["ALLOW: Execute"]
-  E -->|No| G["DENY: SCOPE_VIOLATION"]
-
-  style D fill:#3b0764,stroke:#a855f7,color:#f5d0fe
-  style G fill:#3b0764,stroke:#a855f7,color:#f5d0fe
-  style F fill:#052e2b,stroke:#10b981,color:#d1fae5
-```
+<div class="tt-flow">
+  <div class="tt-flow__step">Agent Request</div>
+  <span class="tt-flow__arrow">→</span>
+  <div class="tt-flow__step">Identity Verified?</div>
+  <span class="tt-flow__arrow">→</span>
+  <div class="tt-flow__step">Evaluate Policy</div>
+  <span class="tt-flow__arrow">→</span>
+  <div class="tt-flow__step">Within Scope?</div>
+  <span class="tt-flow__arrow">→</span>
+  <div class="tt-flow__step tt-flow__step--accent">ALLOW: Execute</div>
+</div>
+<div class="tt-flow" style="margin-top: 8px;">
+  <div class="tt-flow__step tt-flow__step--warn">DENY: NO_IDENTITY</div>
+  <span class="tt-flow__arrow" style="opacity: 0.5;">·</span>
+  <div class="tt-flow__step tt-flow__step--warn">DENY: SCOPE_VIOLATION</div>
+</div>
 
 Identity includes:
 - Agent type and version
@@ -117,22 +119,26 @@ Every deny produces:
 
 Security doesn't end at tool invocation. Outputs must be inspected before leaving the system:
 
-```mermaid
-flowchart LR
-  A["Agent Output"] --> B["Egress Policy"]
-  B --> C{"Contains PII?"}
-  C -->|Yes| D["Redact"]
-  C -->|No| E{"Contains Secrets?"}
-  E -->|Yes| F["BLOCK"]
-  E -->|No| G{"Approved Destination?"}
-  G -->|Yes| H["ALLOW"]
-  G -->|No| I["DENY"]
-
-  style D fill:#052e2b,stroke:#10b981,color:#d1fae5
-  style F fill:#3b0764,stroke:#a855f7,color:#f5d0fe
-  style H fill:#052e2b,stroke:#10b981,color:#d1fae5
-  style I fill:#3b0764,stroke:#a855f7,color:#f5d0fe
-```
+<div class="tt-flow">
+  <div class="tt-flow__step">Agent Output</div>
+  <span class="tt-flow__arrow">→</span>
+  <div class="tt-flow__step">Egress Policy</div>
+  <span class="tt-flow__arrow">→</span>
+  <div class="tt-flow__step">Contains PII? → <strong>Redact</strong></div>
+  <span class="tt-flow__arrow">→</span>
+  <div class="tt-flow__step">Contains Secrets? → <strong>BLOCK</strong></div>
+  <span class="tt-flow__arrow">→</span>
+  <div class="tt-flow__step">Approved Destination?</div>
+</div>
+<div class="tt-flow" style="margin-top: 8px;">
+  <div class="tt-flow__step tt-flow__step--accent">ALLOW</div>
+  <span class="tt-flow__arrow" style="opacity: 0.5;">·</span>
+  <div class="tt-flow__step tt-flow__step--warn">DENY</div>
+  <span class="tt-flow__arrow" style="opacity: 0.5;">·</span>
+  <div class="tt-flow__step tt-flow__step--accent">Redact</div>
+  <span class="tt-flow__arrow" style="opacity: 0.5;">·</span>
+  <div class="tt-flow__step tt-flow__step--warn">BLOCK</div>
+</div>
 
 ---
 

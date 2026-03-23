@@ -30,23 +30,27 @@ TealTiger treats audit and evidence as **first-class runtime outputs**, tightly 
 
 ## Why Logs Are Not Evidence
 
-```mermaid
-flowchart LR
-  subgraph Logs["Traditional Logging"]
-    A["Action occurs"] --> B["Log entry written"]
-    B --> C["Analyst reviews later"]
-    C --> D["Reconstruct 'why'"]
-  end
-
-  subgraph Evidence["Decision-Grade Evidence"]
-    E["Policy evaluated"] --> F["Decision made"]
-    F --> G["Evidence emitted"]
-    G --> H["Replay and verify"]
-  end
-
-  style D fill:#3b0764,stroke:#a855f7,color:#f5d0fe
-  style H fill:#052e2b,stroke:#10b981,color:#d1fae5
-```
+<div class="tt-vs">
+  <div class="tt-vs__side tt-vs__side--bad">
+    <div class="tt-vs__label tt-vs__label--bad">Traditional Logging</div>
+    <ul class="tt-vs__items">
+      <li>Action occurs</li>
+      <li>Log entry written</li>
+      <li>Analyst reviews later</li>
+      <li>Reconstruct "why"</li>
+    </ul>
+  </div>
+  <div class="tt-vs__divider">vs</div>
+  <div class="tt-vs__side tt-vs__side--good">
+    <div class="tt-vs__label tt-vs__label--good">Decision-Grade Evidence</div>
+    <ul class="tt-vs__items">
+      <li>Policy evaluated</li>
+      <li>Decision made</li>
+      <li>Evidence emitted</li>
+      <li>Replay and verify</li>
+    </ul>
+  </div>
+</div>
 
 Traditional observability answers *what happened*. Governance must answer *why it was allowed*.
 
@@ -64,22 +68,49 @@ In agentic systems, these gaps compound quickly across multi-step executions.
 
 TealTiger produces structured evidence **per decision**:
 
-```mermaid
-flowchart TD
-  A["Agent Action"] --> B["Decision Point"]
-  B --> C["Policy Evaluation"]
-  C --> D["Decision: ALLOW / DENY / MODIFY / APPROVE / HALT"]
-  D --> E["Evidence Record"]
-
-  E --> F["Decision outcome"]
-  E --> G["Policy ID + version"]
-  E --> H["Matched rule"]
-  E --> I["Context snapshot"]
-  E --> J["Correlation ID"]
-  E --> K["Timestamp"]
-
-  style E fill:#052e2b,stroke:#10b981,color:#d1fae5
-```
+<div class="tt-flow">
+  <div class="tt-flow__step">Agent Action</div>
+  <span class="tt-flow__arrow">→</span>
+  <div class="tt-flow__step">Decision Point</div>
+  <span class="tt-flow__arrow">→</span>
+  <div class="tt-flow__step">Policy Evaluation</div>
+  <span class="tt-flow__arrow">→</span>
+  <div class="tt-flow__step">Decision: ALLOW / DENY / MODIFY / APPROVE / HALT</div>
+  <span class="tt-flow__arrow">→</span>
+  <div class="tt-flow__step tt-flow__step--accent">Evidence Record</div>
+</div>
+<div class="tt-grid" style="margin-top: 12px;">
+  <div class="tt-card tt-card--accent">
+    <div class="tt-card__icon">📋</div>
+    <div class="tt-card__title">Decision outcome</div>
+    <div class="tt-card__desc">What was decided</div>
+  </div>
+  <div class="tt-card tt-card--accent">
+    <div class="tt-card__icon">📜</div>
+    <div class="tt-card__title">Policy ID + version</div>
+    <div class="tt-card__desc">Which policy applied</div>
+  </div>
+  <div class="tt-card tt-card--accent">
+    <div class="tt-card__icon">🎯</div>
+    <div class="tt-card__title">Matched rule</div>
+    <div class="tt-card__desc">Which rule triggered</div>
+  </div>
+  <div class="tt-card tt-card--accent">
+    <div class="tt-card__icon">📸</div>
+    <div class="tt-card__title">Context snapshot</div>
+    <div class="tt-card__desc">Minimally sufficient context</div>
+  </div>
+  <div class="tt-card tt-card--accent">
+    <div class="tt-card__icon">🔗</div>
+    <div class="tt-card__title">Correlation ID</div>
+    <div class="tt-card__desc">Cross-system traceability</div>
+  </div>
+  <div class="tt-card tt-card--accent">
+    <div class="tt-card__icon">🕐</div>
+    <div class="tt-card__title">Timestamp</div>
+    <div class="tt-card__desc">When the decision occurred</div>
+  </div>
+</div>
 
 Every evidence record answers:
 - **What** decision was made

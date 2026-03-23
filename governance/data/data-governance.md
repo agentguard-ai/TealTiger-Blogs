@@ -32,23 +32,39 @@ TealTiger enforces **data governance before model invocation** — not after gen
 
 Traditional data governance focuses on access control and retention policies. Agentic systems introduce new risks:
 
-```mermaid
-flowchart TD
-  A["Agent receives task"] --> B["Retrieves data from sources"]
-  B --> C["Passes data to model"]
-  C --> D["Model generates output"]
-  D --> E["Output sent to user/system"]
-
-  B -.->|"Risk: unauthorized source"| R1["Source Violation"]
-  C -.->|"Risk: PII in prompt"| R2["Data Leakage"]
-  D -.->|"Risk: secrets in output"| R3["Exfiltration"]
-  E -.->|"Risk: wrong destination"| R4["Boundary Violation"]
-
-  style R1 fill:#3b0764,stroke:#a855f7,color:#f5d0fe
-  style R2 fill:#3b0764,stroke:#a855f7,color:#f5d0fe
-  style R3 fill:#3b0764,stroke:#a855f7,color:#f5d0fe
-  style R4 fill:#3b0764,stroke:#a855f7,color:#f5d0fe
-```
+<div class="tt-flow">
+  <div class="tt-flow__step">Agent receives task</div>
+  <span class="tt-flow__arrow">→</span>
+  <div class="tt-flow__step">Retrieves data from sources</div>
+  <span class="tt-flow__arrow">→</span>
+  <div class="tt-flow__step">Passes data to model</div>
+  <span class="tt-flow__arrow">→</span>
+  <div class="tt-flow__step">Model generates output</div>
+  <span class="tt-flow__arrow">→</span>
+  <div class="tt-flow__step">Output sent to user/system</div>
+</div>
+<div class="tt-grid" style="margin-top: 12px;">
+  <div class="tt-card tt-card--warn">
+    <div class="tt-card__icon">⚠️</div>
+    <div class="tt-card__title">Source Violation</div>
+    <div class="tt-card__desc">Unauthorized data source accessed</div>
+  </div>
+  <div class="tt-card tt-card--warn">
+    <div class="tt-card__icon">⚠️</div>
+    <div class="tt-card__title">Data Leakage</div>
+    <div class="tt-card__desc">PII passed in prompt to model</div>
+  </div>
+  <div class="tt-card tt-card--warn">
+    <div class="tt-card__icon">⚠️</div>
+    <div class="tt-card__title">Exfiltration</div>
+    <div class="tt-card__desc">Secrets exposed in output</div>
+  </div>
+  <div class="tt-card tt-card--warn">
+    <div class="tt-card__icon">⚠️</div>
+    <div class="tt-card__title">Boundary Violation</div>
+    <div class="tt-card__desc">Output sent to wrong destination</div>
+  </div>
+</div>
 
 The risk is not just *who* accesses data — it's *how data flows through the agent pipeline*.
 
@@ -70,21 +86,24 @@ Only approved data sources are accessible to agents. Unapproved sources are deni
 
 Data access is limited to declared purposes. An agent retrieving customer data for "support" cannot use it for "analytics."
 
-```mermaid
-flowchart LR
-  A["Data Request"] --> B{"Purpose Declared?"}
-  B -->|No| C["DENY: NO_PURPOSE"]
-  B -->|Yes| D{"Purpose Approved?"}
-  D -->|No| E["DENY: PURPOSE_MISMATCH"]
-  D -->|Yes| F{"Data Class Allowed?"}
-  F -->|No| G["DENY: DATA_CLASS_RESTRICTED"]
-  F -->|Yes| H["ALLOW + Log"]
-
-  style C fill:#3b0764,stroke:#a855f7,color:#f5d0fe
-  style E fill:#3b0764,stroke:#a855f7,color:#f5d0fe
-  style G fill:#3b0764,stroke:#a855f7,color:#f5d0fe
-  style H fill:#052e2b,stroke:#10b981,color:#d1fae5
-```
+<div class="tt-flow">
+  <div class="tt-flow__step">Data Request</div>
+  <span class="tt-flow__arrow">→</span>
+  <div class="tt-flow__step">Purpose Declared?</div>
+  <span class="tt-flow__arrow">→</span>
+  <div class="tt-flow__step">Purpose Approved?</div>
+  <span class="tt-flow__arrow">→</span>
+  <div class="tt-flow__step">Data Class Allowed?</div>
+  <span class="tt-flow__arrow">→</span>
+  <div class="tt-flow__step tt-flow__step--accent">ALLOW + Log</div>
+</div>
+<div class="tt-flow" style="margin-top: 8px;">
+  <div class="tt-flow__step tt-flow__step--warn">DENY: NO_PURPOSE</div>
+  <span class="tt-flow__arrow" style="opacity: 0.5;">·</span>
+  <div class="tt-flow__step tt-flow__step--warn">DENY: PURPOSE_MISMATCH</div>
+  <span class="tt-flow__arrow" style="opacity: 0.5;">·</span>
+  <div class="tt-flow__step tt-flow__step--warn">DENY: DATA_CLASS_RESTRICTED</div>
+</div>
 
 ### 3. Deterministic Redaction
 
@@ -106,27 +125,30 @@ Data leaving the system is inspected and controlled:
 
 ## Enforcement Model
 
-```mermaid
-flowchart TB
-  A["Data Source"] -->|"Source Policy"| B["Approved?"]
-  B -->|Yes| C["Purpose Check"]
-  C -->|Approved| D["Classification Gate"]
-  D -->|Allowed| E["Redaction Layer"]
-  E --> F["Model Input"]
-  F --> G["Model Output"]
-  G -->|"Egress Policy"| H["Output Inspection"]
-  H --> I["Delivery"]
-
-  B -->|No| X1["DENY"]
-  C -->|Denied| X2["DENY"]
-  D -->|Restricted| X3["DENY"]
-
-  style X1 fill:#3b0764,stroke:#a855f7,color:#f5d0fe
-  style X2 fill:#3b0764,stroke:#a855f7,color:#f5d0fe
-  style X3 fill:#3b0764,stroke:#a855f7,color:#f5d0fe
-  style E fill:#052e2b,stroke:#10b981,color:#d1fae5
-  style H fill:#052e2b,stroke:#10b981,color:#d1fae5
-```
+<div class="tt-flow">
+  <div class="tt-flow__step">Data Source</div>
+  <span class="tt-flow__arrow">→</span>
+  <div class="tt-flow__step">Source Policy: Approved?</div>
+  <span class="tt-flow__arrow">→</span>
+  <div class="tt-flow__step">Purpose Check</div>
+  <span class="tt-flow__arrow">→</span>
+  <div class="tt-flow__step">Classification Gate</div>
+  <span class="tt-flow__arrow">→</span>
+  <div class="tt-flow__step tt-flow__step--accent">Redaction Layer</div>
+  <span class="tt-flow__arrow">→</span>
+  <div class="tt-flow__step">Model Input → Output</div>
+  <span class="tt-flow__arrow">→</span>
+  <div class="tt-flow__step tt-flow__step--accent">Output Inspection</div>
+  <span class="tt-flow__arrow">→</span>
+  <div class="tt-flow__step">Delivery</div>
+</div>
+<div class="tt-flow" style="margin-top: 8px;">
+  <div class="tt-flow__step tt-flow__step--warn">DENY (source)</div>
+  <span class="tt-flow__arrow" style="opacity: 0.5;">·</span>
+  <div class="tt-flow__step tt-flow__step--warn">DENY (purpose)</div>
+  <span class="tt-flow__arrow" style="opacity: 0.5;">·</span>
+  <div class="tt-flow__step tt-flow__step--warn">DENY (classification)</div>
+</div>
 
 Policies are evaluated *before* data reaches the model — not after generation. This prevents data leakage, cross-domain contamination, and regulatory violations **by design**.
 

@@ -30,29 +30,27 @@ TealTiger governance starts with a **contract-first, deterministic foundation**.
 
 Without foundations, governance becomes probabilistic, inconsistent, and impossible to audit.
 
-```mermaid
-flowchart TD
-  subgraph Without["Without Foundations"]
-    A1["Ad-hoc rules"] --> B1["Inconsistent decisions"]
-    B1 --> C1["Audit gaps"]
-    C1 --> D1["Compliance failure"]
-  end
-
-  subgraph With["With TealTiger Foundations"]
-    A2["Explicit contracts"] --> B2["Deterministic decisions"]
-    B2 --> C2["Versioned evidence"]
-    C2 --> D2["Verifiable assurance"]
-  end
-
-  style A1 fill:#3b0764,stroke:#a855f7,color:#f5d0fe
-  style B1 fill:#3b0764,stroke:#a855f7,color:#f5d0fe
-  style C1 fill:#3b0764,stroke:#a855f7,color:#f5d0fe
-  style D1 fill:#3b0764,stroke:#a855f7,color:#f5d0fe
-  style A2 fill:#052e2b,stroke:#10b981,color:#d1fae5
-  style B2 fill:#052e2b,stroke:#10b981,color:#d1fae5
-  style C2 fill:#052e2b,stroke:#10b981,color:#d1fae5
-  style D2 fill:#052e2b,stroke:#10b981,color:#d1fae5
-```
+<div class="tt-vs">
+  <div class="tt-vs__side tt-vs__side--bad">
+    <div class="tt-vs__label tt-vs__label--bad">Without Foundations</div>
+    <ul class="tt-vs__items">
+      <li>Ad-hoc rules</li>
+      <li>Inconsistent decisions</li>
+      <li>Audit gaps</li>
+      <li>Compliance failure</li>
+    </ul>
+  </div>
+  <div class="tt-vs__divider">vs</div>
+  <div class="tt-vs__side tt-vs__side--good">
+    <div class="tt-vs__label tt-vs__label--good">With TealTiger Foundations</div>
+    <ul class="tt-vs__items">
+      <li>Explicit contracts</li>
+      <li>Deterministic decisions</li>
+      <li>Versioned evidence</li>
+      <li>Verifiable assurance</li>
+    </ul>
+  </div>
+</div>
 
 TealTiger establishes **explicit contracts** that define what agents are allowed to do *before* execution begins.
 
@@ -77,20 +75,18 @@ Governance rules are declared, versioned, and frozen before deployment. Contract
 - What cost boundaries apply
 - When human approval is required
 
-```mermaid
-flowchart LR
-  A["Define Contract"] --> B["Version & Review"]
-  B --> C["Deploy with Code"]
-  C --> D["Enforce at Runtime"]
-  D --> E["Emit Evidence"]
-  E -->|"refine"| A
-
-  style A fill:#052e2b,stroke:#10b981,color:#d1fae5
-  style B fill:#052e2b,stroke:#10b981,color:#d1fae5
-  style C fill:#052e2b,stroke:#10b981,color:#d1fae5
-  style D fill:#052e2b,stroke:#10b981,color:#d1fae5
-  style E fill:#052e2b,stroke:#10b981,color:#d1fae5
-```
+<div class="tt-flow">
+  <div class="tt-flow__step tt-flow__step--accent">Define Contract</div>
+  <span class="tt-flow__arrow">→</span>
+  <div class="tt-flow__step tt-flow__step--accent">Version &amp; Review</div>
+  <span class="tt-flow__arrow">→</span>
+  <div class="tt-flow__step tt-flow__step--accent">Deploy with Code</div>
+  <span class="tt-flow__arrow">→</span>
+  <div class="tt-flow__step tt-flow__step--accent">Enforce at Runtime</div>
+  <span class="tt-flow__arrow">→</span>
+  <div class="tt-flow__step tt-flow__step--accent">Emit Evidence</div>
+  <span class="tt-flow__arrow">↻</span>
+</div>
 
 ### 3. Policy as Infrastructure
 
@@ -119,24 +115,17 @@ Logging tells you what happened. Governance decides what is *allowed* to happen.
 
 ## The Foundation Stack
 
-```mermaid
-graph TB
-  subgraph Stack["TealTiger Governance Stack"]
-    E["Evidence & Audit"] 
-    D["Runtime Enforcement"]
-    C["Policy Evaluation"]
-    B["Execution Contracts"]
-    A["Core Principles: Determinism · Contracts · Least Privilege"]
-  end
-
-  A --> B --> C --> D --> E
-
-  style A fill:#0b1220,stroke:#64748b,color:#e2e8f0
-  style B fill:#052e2b,stroke:#10b981,color:#d1fae5
-  style C fill:#052e2b,stroke:#10b981,color:#d1fae5
-  style D fill:#052e2b,stroke:#10b981,color:#d1fae5
-  style E fill:#052e2b,stroke:#10b981,color:#d1fae5
-```
+<div class="tt-flow" style="flex-direction: column; align-items: stretch; max-width: 480px;">
+  <div class="tt-flow__step tt-flow__step--accent">Evidence &amp; Audit</div>
+  <span class="tt-flow__arrow" style="text-align: center;">↑</span>
+  <div class="tt-flow__step tt-flow__step--accent">Runtime Enforcement</div>
+  <span class="tt-flow__arrow" style="text-align: center;">↑</span>
+  <div class="tt-flow__step tt-flow__step--accent">Policy Evaluation</div>
+  <span class="tt-flow__arrow" style="text-align: center;">↑</span>
+  <div class="tt-flow__step tt-flow__step--accent">Execution Contracts</div>
+  <span class="tt-flow__arrow" style="text-align: center;">↑</span>
+  <div class="tt-flow__step">Core Principles: Determinism · Contracts · Least Privilege</div>
+</div>
 
 Every governance domain — runtime, security, data, cost, compliance — builds on these foundations. Without them, controls are fragile. With them, governance becomes **repeatable, testable, and auditable**.
 

@@ -35,26 +35,33 @@ If you’re building agentic systems, you need Zero Trust *at the decision layer
 
 To keep the spirit of Zero Trust without mislabeling network controls, define it as:
 
-```mermaid
-flowchart TD
-  A["Zero Trust for Agents"] --> B["Never trust a step by default"]
-  A --> C["Verify each step continuously"]
-  A --> D["Enforce least privilege"]
-  A --> E["Assume breach"]
-  A --> F["Audit with reason codes"]
-
-  B --> G["Every tool call requires authorization"]
-  C --> G
-  D --> H["Scoped tools, data, cost, egress"]
-  E --> I["Blast-radius containment"]
-  F --> J["Decision-grade evidence"]
-
-  style A fill:#052e2b,stroke:#10b981,color:#d1fae5
-  style G fill:#0b1220,stroke:#64748b,color:#e2e8f0
-  style H fill:#0b1220,stroke:#64748b,color:#e2e8f0
-  style I fill:#0b1220,stroke:#64748b,color:#e2e8f0
-  style J fill:#0b1220,stroke:#64748b,color:#e2e8f0
-```
+<div class="tt-grid">
+  <div class="tt-card tt-card--accent">
+    <div class="tt-card__icon">🚫</div>
+    <div class="tt-card__title">Never trust a step by default</div>
+    <div class="tt-card__desc">Every tool call requires authorization</div>
+  </div>
+  <div class="tt-card tt-card--accent">
+    <div class="tt-card__icon">🔄</div>
+    <div class="tt-card__title">Verify each step continuously</div>
+    <div class="tt-card__desc">Every tool call requires authorization</div>
+  </div>
+  <div class="tt-card tt-card--accent">
+    <div class="tt-card__icon">🔒</div>
+    <div class="tt-card__title">Enforce least privilege</div>
+    <div class="tt-card__desc">Scoped tools, data, cost, egress</div>
+  </div>
+  <div class="tt-card tt-card--accent">
+    <div class="tt-card__icon">💥</div>
+    <div class="tt-card__title">Assume breach</div>
+    <div class="tt-card__desc">Blast-radius containment</div>
+  </div>
+  <div class="tt-card tt-card--accent">
+    <div class="tt-card__icon">🧾</div>
+    <div class="tt-card__title">Audit with reason codes</div>
+    <div class="tt-card__desc">Decision-grade evidence</div>
+  </div>
+</div>
 
 This is where TealTiger fits: **runtime governance and enforcement** for LLM calls, tool invocations, and output egress.
 

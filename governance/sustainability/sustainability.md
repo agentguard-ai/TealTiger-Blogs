@@ -27,29 +27,23 @@ Sustainability in AI governance is not only environmental — it is **operationa
 
 ## Dimensions of AI Sustainability
 
-```mermaid
-flowchart TD
-  A["AI Sustainability"] --> B["Operational"]
-  A --> C["Financial"]
-  A --> D["Organizational"]
-
-  B --> B1["Predictable behavior"]
-  B --> B2["Controlled autonomy"]
-  B --> B3["Stable system boundaries"]
-
-  C --> C1["Governed model selection"]
-  C --> C2["Cost-aware execution"]
-  C --> C3["Prevention of runaway spend"]
-
-  D --> D1["Clear accountability"]
-  D --> D2["Reduced governance fatigue"]
-  D --> D3["Repeatable assurance"]
-
-  style A fill:#052e2b,stroke:#10b981,color:#d1fae5
-  style B fill:#0b1220,stroke:#64748b,color:#e2e8f0
-  style C fill:#0b1220,stroke:#64748b,color:#e2e8f0
-  style D fill:#0b1220,stroke:#64748b,color:#e2e8f0
-```
+<div class="tt-grid">
+  <div class="tt-card tt-card--accent">
+    <div class="tt-card__icon">⚙️</div>
+    <div class="tt-card__title">Operational</div>
+    <div class="tt-card__desc">Predictable behavior · Controlled autonomy · Stable system boundaries</div>
+  </div>
+  <div class="tt-card tt-card--accent">
+    <div class="tt-card__icon">💸</div>
+    <div class="tt-card__title">Financial</div>
+    <div class="tt-card__desc">Governed model selection · Cost-aware execution · Prevention of runaway spend</div>
+  </div>
+  <div class="tt-card tt-card--accent">
+    <div class="tt-card__icon">🏢</div>
+    <div class="tt-card__title">Organizational</div>
+    <div class="tt-card__desc">Clear accountability · Reduced governance fatigue · Repeatable assurance</div>
+  </div>
+</div>
 
 ---
 

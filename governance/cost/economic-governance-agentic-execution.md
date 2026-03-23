@@ -31,26 +31,28 @@ TealTiger treats cost as a **governance outcome**, enforced deterministically at
 
 Post-hoc cost analysis cannot prevent damage. By the time you see the invoice, the spend has already happened.
 
-```mermaid
-flowchart TD
-  A["Agent starts task"] --> B["Calls tool"]
-  B --> C["Tool fails"]
-  C --> D["Agent retries"]
-  D --> E["Retries with larger context"]
-  E --> F["Escalates to premium model"]
-  F --> G["Retries again"]
-  G --> H["💸 Budget exceeded"]
-
-  style H fill:#3b0764,stroke:#a855f7,color:#f5d0fe
-
-  I["With Cost Governance"] --> J["Budget gate at each step"]
-  J --> K{"Within budget?"}
-  K -->|Yes| L["Continue"]
-  K -->|No| M["HALT + reason code"]
-
-  style M fill:#052e2b,stroke:#10b981,color:#d1fae5
-  style L fill:#052e2b,stroke:#10b981,color:#d1fae5
-```
+<div class="tt-vs">
+  <div class="tt-vs__side tt-vs__side--bad">
+    <div class="tt-vs__label tt-vs__label--bad">Without Cost Governance</div>
+    <ul class="tt-vs__items">
+      <li>Agent starts task</li>
+      <li>Calls tool → Tool fails</li>
+      <li>Agent retries with larger context</li>
+      <li>Escalates to premium model</li>
+      <li>Retries again</li>
+      <li>💸 Budget exceeded</li>
+    </ul>
+  </div>
+  <div class="tt-vs__divider">vs</div>
+  <div class="tt-vs__side tt-vs__side--good">
+    <div class="tt-vs__label tt-vs__label--good">With Cost Governance</div>
+    <ul class="tt-vs__items">
+      <li>Budget gate at each step</li>
+      <li>Within budget? → Continue</li>
+      <li>Over budget? → HALT + reason code</li>
+    </ul>
+  </div>
+</div>
 
 Governance must intervene **before** spend occurs — not report on it afterward.
 
@@ -77,19 +79,20 @@ These are evaluated at each decision point — not just at the start of executio
 
 Runaway agents are the most common source of cost incidents. TealTiger detects and terminates loops through:
 
-```mermaid
-flowchart LR
-  A["Agent Step N"] --> B{"Loop Detector"}
-  B -->|"Repeated tool calls"| C["HALT: LOOP_DETECTED"]
-  B -->|"Step limit reached"| D["HALT: MAX_STEPS"]
-  B -->|"Budget exhausted"| E["HALT: BUDGET_EXCEEDED"]
-  B -->|"Normal"| F["Continue to Step N+1"]
-
-  style C fill:#3b0764,stroke:#a855f7,color:#f5d0fe
-  style D fill:#3b0764,stroke:#a855f7,color:#f5d0fe
-  style E fill:#3b0764,stroke:#a855f7,color:#f5d0fe
-  style F fill:#052e2b,stroke:#10b981,color:#d1fae5
-```
+<div class="tt-flow">
+  <div class="tt-flow__step">Agent Step N</div>
+  <span class="tt-flow__arrow">→</span>
+  <div class="tt-flow__step">Loop Detector</div>
+  <span class="tt-flow__arrow">→</span>
+  <div class="tt-flow__step tt-flow__step--accent">Normal → Continue to Step N+1</div>
+</div>
+<div class="tt-flow" style="margin-top: 8px;">
+  <div class="tt-flow__step tt-flow__step--warn">HALT: LOOP_DETECTED</div>
+  <span class="tt-flow__arrow" style="opacity: 0.5;">·</span>
+  <div class="tt-flow__step tt-flow__step--warn">HALT: MAX_STEPS</div>
+  <span class="tt-flow__arrow" style="opacity: 0.5;">·</span>
+  <div class="tt-flow__step tt-flow__step--warn">HALT: BUDGET_EXCEEDED</div>
+</div>
 
 Termination is a **valid governance outcome**. A safely stopped agent is better than a bankrupt one.
 

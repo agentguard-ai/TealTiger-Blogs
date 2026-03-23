@@ -31,25 +31,27 @@ In agentic systems, point-in-time risk assessments become stale the moment agent
 
 ## The Problem with Periodic Risk Reviews
 
-```mermaid
-flowchart LR
-  subgraph Periodic["Periodic Review"]
-    A["Risk Assessment"] -->|"3 months later"| B["Review Meeting"]
-    B -->|"findings"| C["Update Spreadsheet"]
-    C -->|"3 months later"| A
-  end
-
-  subgraph Continuous["Continuous Assurance"]
-    D["Every Agent Action"] --> E["Risk Evaluation"]
-    E --> F{"Within Boundary?"}
-    F -->|Yes| G["ALLOW + Evidence"]
-    F -->|No| H["DENY + Evidence"]
-  end
-
-  style C fill:#3b0764,stroke:#a855f7,color:#f5d0fe
-  style G fill:#052e2b,stroke:#10b981,color:#d1fae5
-  style H fill:#052e2b,stroke:#10b981,color:#d1fae5
-```
+<div class="tt-vs">
+  <div class="tt-vs__side tt-vs__side--bad">
+    <div class="tt-vs__label tt-vs__label--bad">Periodic Review</div>
+    <ul class="tt-vs__items">
+      <li>Risk Assessment</li>
+      <li>↓ 3 months later</li>
+      <li>Review Meeting</li>
+      <li>Update Spreadsheet ↻</li>
+    </ul>
+  </div>
+  <div class="tt-vs__divider">vs</div>
+  <div class="tt-vs__side tt-vs__side--good">
+    <div class="tt-vs__label tt-vs__label--good">Continuous Assurance</div>
+    <ul class="tt-vs__items">
+      <li>Every Agent Action</li>
+      <li>→ Risk Evaluation</li>
+      <li>Within Boundary? → ALLOW + Evidence</li>
+      <li>Outside Boundary? → DENY + Evidence</li>
+    </ul>
+  </div>
+</div>
 
 Traditional risk assessments are snapshots. Agentic systems evolve at runtime — tools change, data sensitivity shifts, agent behavior adapts. By the next quarterly review, the risk landscape has already moved.
 
@@ -76,24 +78,38 @@ Agentic AI introduces risks that compound across execution steps:
 
 Risks are declared, classified, and bounded in governance contracts — not left to runtime interpretation.
 
-```mermaid
-flowchart TD
-  A["Risk Contract"] --> B["Risk Domains"]
-  B --> C["Security Risk"]
-  B --> D["Cost Risk"]
-  B --> E["Data Risk"]
-  B --> F["Reliability Risk"]
-
-  C --> G["Thresholds + Actions"]
-  D --> G
-  E --> G
-  F --> G
-
-  G --> H["Enforce at Runtime"]
-
-  style A fill:#052e2b,stroke:#10b981,color:#d1fae5
-  style H fill:#052e2b,stroke:#10b981,color:#d1fae5
-```
+<div class="tt-flow">
+  <div class="tt-flow__step tt-flow__step--accent">Risk Contract</div>
+  <span class="tt-flow__arrow">→</span>
+  <div class="tt-flow__step">Risk Domains</div>
+</div>
+<div class="tt-grid" style="margin-top: 12px;">
+  <div class="tt-card">
+    <div class="tt-card__icon">🛡️</div>
+    <div class="tt-card__title">Security Risk</div>
+    <div class="tt-card__desc">Tool access, data sensitivity, privilege level</div>
+  </div>
+  <div class="tt-card">
+    <div class="tt-card__icon">💸</div>
+    <div class="tt-card__title">Cost Risk</div>
+    <div class="tt-card__desc">Spend rate, budget remaining, model tier</div>
+  </div>
+  <div class="tt-card">
+    <div class="tt-card__icon">🗄️</div>
+    <div class="tt-card__title">Data Risk</div>
+    <div class="tt-card__desc">Classification, purpose alignment, egress</div>
+  </div>
+  <div class="tt-card">
+    <div class="tt-card__icon">⚙️</div>
+    <div class="tt-card__title">Reliability Risk</div>
+    <div class="tt-card__desc">Step count, retry rate, convergence signals</div>
+  </div>
+</div>
+<div class="tt-flow" style="margin-top: 12px;">
+  <div class="tt-flow__step">Thresholds + Actions</div>
+  <span class="tt-flow__arrow">→</span>
+  <div class="tt-flow__step tt-flow__step--accent">Enforce at Runtime</div>
+</div>
 
 ### 2. Continuous Evaluation
 

@@ -29,17 +29,19 @@ Governance frameworks provide **structure and shared language**, but they do not
 
 ## The Problem with Framework-Only Governance
 
-```mermaid
-flowchart TD
-  A["Framework Requirement"] --> B["Interpret"]
-  B --> C["Write Policy Document"]
-  C --> D["Manual Implementation"]
-  D --> E["Periodic Audit"]
-  E --> F["Gap Found"]
-  F -->|"repeat"| B
-
-  style F fill:#3b0764,stroke:#a855f7,color:#f5d0fe
-```
+<div class="tt-flow">
+  <div class="tt-flow__step">Framework Requirement</div>
+  <span class="tt-flow__arrow">→</span>
+  <div class="tt-flow__step">Interpret</div>
+  <span class="tt-flow__arrow">→</span>
+  <div class="tt-flow__step">Write Policy Document</div>
+  <span class="tt-flow__arrow">→</span>
+  <div class="tt-flow__step">Manual Implementation</div>
+  <span class="tt-flow__arrow">→</span>
+  <div class="tt-flow__step">Periodic Audit</div>
+  <span class="tt-flow__arrow">→</span>
+  <div class="tt-flow__step tt-flow__step--warn">Gap Found ↻</div>
+</div>
 
 Most frameworks:
 - Describe *what* good governance looks like
@@ -54,18 +56,17 @@ This creates gaps between intent and execution — gaps that widen in agentic sy
 
 TealTiger maps governance frameworks to **explicit, enforceable controls**:
 
-```mermaid
-flowchart LR
-  A["Framework Requirement"] --> B["TealTiger Contract"]
-  B --> C["Runtime Enforcement"]
-  C --> D["Decision Evidence"]
-  D --> E["Audit-Ready Proof"]
-
-  style B fill:#052e2b,stroke:#10b981,color:#d1fae5
-  style C fill:#052e2b,stroke:#10b981,color:#d1fae5
-  style D fill:#052e2b,stroke:#10b981,color:#d1fae5
-  style E fill:#052e2b,stroke:#10b981,color:#d1fae5
-```
+<div class="tt-flow">
+  <div class="tt-flow__step">Framework Requirement</div>
+  <span class="tt-flow__arrow">→</span>
+  <div class="tt-flow__step tt-flow__step--accent">TealTiger Contract</div>
+  <span class="tt-flow__arrow">→</span>
+  <div class="tt-flow__step tt-flow__step--accent">Runtime Enforcement</div>
+  <span class="tt-flow__arrow">→</span>
+  <div class="tt-flow__step tt-flow__step--accent">Decision Evidence</div>
+  <span class="tt-flow__arrow">→</span>
+  <div class="tt-flow__step tt-flow__step--accent">Audit-Ready Proof</div>
+</div>
 
 | Framework | TealTiger Mapping |
 |-----------|------------------|

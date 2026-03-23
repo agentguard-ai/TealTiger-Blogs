@@ -30,22 +30,27 @@ Final compliance accountability always remains with the organization. TealTiger 
 
 ## The Compliance Gap in Agentic AI
 
-```mermaid
-flowchart TD
-  A["Compliance Requirement"] --> B{"How is it met?"}
-  B -->|"Traditional"| C["Policy Document"]
-  C --> D["Manual Review"]
-  D --> E["Spreadsheet Evidence"]
-  E --> F["Audit Scramble"]
-
-  B -->|"TealTiger"| G["Enforceable Policy"]
-  G --> H["Runtime Enforcement"]
-  H --> I["Automated Evidence"]
-  I --> J["Continuous Readiness"]
-
-  style F fill:#3b0764,stroke:#a855f7,color:#f5d0fe
-  style J fill:#052e2b,stroke:#10b981,color:#d1fae5
-```
+<div class="tt-vs">
+  <div class="tt-vs__side tt-vs__side--bad">
+    <div class="tt-vs__label tt-vs__label--bad">Traditional</div>
+    <ul class="tt-vs__items">
+      <li>Policy Document</li>
+      <li>Manual Review</li>
+      <li>Spreadsheet Evidence</li>
+      <li>Audit Scramble</li>
+    </ul>
+  </div>
+  <div class="tt-vs__divider">vs</div>
+  <div class="tt-vs__side tt-vs__side--good">
+    <div class="tt-vs__label tt-vs__label--good">TealTiger</div>
+    <ul class="tt-vs__items">
+      <li>Enforceable Policy</li>
+      <li>Runtime Enforcement</li>
+      <li>Automated Evidence</li>
+      <li>Continuous Readiness</li>
+    </ul>
+  </div>
+</div>
 
 Most compliance programs for AI systems rely on documentation and periodic reviews. In agentic environments where behavior changes at runtime, this approach creates gaps between what is documented and what actually happens.
 
@@ -67,20 +72,32 @@ Most compliance programs for AI systems rely on documentation and periodic revie
 
 TealTiger's governance model aligns with major frameworks — as a control and evidence layer, not as a certification tool.
 
-```mermaid
-flowchart LR
-  A["TealTiger Controls"] --> B["NIST AI RMF"]
-  A --> C["ISO/IEC 42001"]
-  A --> D["EU AI Act"]
-  A --> E["OWASP Agentic Top 10"]
-
-  B --> F["Govern · Map · Measure · Manage"]
-  C --> G["AI Management System Controls"]
-  D --> H["Technical Control Evidence"]
-  E --> I["Runtime Security Controls"]
-
-  style A fill:#052e2b,stroke:#10b981,color:#d1fae5
-```
+<div class="tt-flow">
+  <div class="tt-flow__step tt-flow__step--accent">TealTiger Controls</div>
+  <span class="tt-flow__arrow">→</span>
+</div>
+<div class="tt-grid" style="margin-top: 12px;">
+  <div class="tt-card tt-card--accent">
+    <div class="tt-card__icon">📊</div>
+    <div class="tt-card__title">NIST AI RMF</div>
+    <div class="tt-card__desc">Govern · Map · Measure · Manage</div>
+  </div>
+  <div class="tt-card tt-card--accent">
+    <div class="tt-card__icon">📋</div>
+    <div class="tt-card__title">ISO/IEC 42001</div>
+    <div class="tt-card__desc">AI Management System Controls</div>
+  </div>
+  <div class="tt-card tt-card--accent">
+    <div class="tt-card__icon">🇪🇺</div>
+    <div class="tt-card__title">EU AI Act</div>
+    <div class="tt-card__desc">Technical Control Evidence</div>
+  </div>
+  <div class="tt-card tt-card--accent">
+    <div class="tt-card__icon">🛡️</div>
+    <div class="tt-card__title">OWASP Agentic Top 10</div>
+    <div class="tt-card__desc">Runtime Security Controls</div>
+  </div>
+</div>
 
 | Framework | TealTiger's Role |
 |-----------|-----------------|
