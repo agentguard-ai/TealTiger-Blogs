@@ -1,0 +1,12 @@
+defaults:
+  - scope:
+      path: "governance"
+    values:
+      layout: governance
+
+  - scope:
+      path: ""
+      type: posts
+    values:
+      layout: post
+      author: TealTiger
