@@ -1,63 +1,41 @@
 ---
 layout: page
-title: "AI Governance — Start Here"
+title: Governance
+description: Governance hubs for engineering, security, and assurance of agentic AI systems.
 permalink: /governance/
-show_docs_cta: false
-breadcrumbs:
-  - title: Home
-    url: /
-  - title: Governance
-    url: /governance/
 ---
 
-_Last updated: 2026-03-03_
+# Governance
 
-## Featured
-
-**Why runtime enforcement beats static evaluation**  
-A practical argument for enforcing governance at execution time, not just scoring models before deployment.  
-→ [Read the article]({% post_url 2026-02-27-why-runtime-enforcement-beats-static-evaluation %})
-
-
----
-
-AI governance is a **full lifecycle discipline**, spanning:
-policy definition, accountability, risk and impact assessment, runtime enforcement, evidence generation, cost governance, data governance, and sustainability.
-
-This hub organizes the blog into **clear governance domains**.  
-If you’re new to AI governance, start with the sections below.
-
----
-
-## Start here
-
-1. **Runtime Governance** — enforcement at execution boundaries  
-2. **Cost Governance** — budgets, denial‑of‑wallet, and economic guardrails  
-3. **Audit & Evidence** — why logs alone are insufficient  
-
----
-
+TealTiger governance content is organized into **hubs**. Each hub is a stable domain that groups foundational concepts and deeper technical articles.
 
 ## Governance hubs
 
-- [**Runtime Governance (Agents & Execution Boundaries)**](/governance/runtime/)
-- [**Cost & Economic Governance**](/governance/cost/)
-- [**Audit & Evidence (Beyond Logging)**](/governance/audit/)
-- [**Security as a Governance Domain**](/governance/security/)
-- [**Frameworks & Standards (Reference)**](/governance/frameworks/)
-- [**Sustainability & Environmental Impact**](/governance/sustainability/)
+- **[Runtime Governance](/governance/runtime/)**
+  Enforce governance intent at execution time: decision points, contracts, and deterministic enforcement.
 
----
+- **[Cost & Economic Governance](/governance/cost/)**
+  Treat spend as an execution outcome: budget-aware policies, loop control, and termination conditions.
+
+- **[Audit & Evidence](/governance/evidence/)**
+  Produce decision-grade proof: policy versioning, replayable decisions, and evidence artifacts.
+
+- **[Security (Domain Inside Governance)](/governance/security/)**
+  Preventive controls for LLM and agentic systems: execution boundaries, least privilege, and deterministic enforcement.
+
+- **[Frameworks & Standards](/governance/frameworks/)**
+  Reference mappings (NIST, ISO/IEC, regulatory expectations) with a compliance-enabling posture.
+
+- **[Sustainability & Environmental Impact](/governance/sustainability/)**
+  Governance-driven efficiency: purpose-bound execution and reduced waste as a consequence of disciplined control.
+
+- **[Risk & Assurance](/governance/risk-assurance/)**
+  Measure and communicate risk over time: control effectiveness, exceptions, and assurance narratives grounded in evidence.
 
 ## Foundational posts
 
-These essays define the **governance philosophy** behind TealTiger and this blog:
+- **[Zero Trust Across TealTiger Governance Hubs](/governance/security/zero-trust-governance-hubs-series/)**
+  A cross-hub series framing Zero Trust as a governance pattern spanning runtime, cost, audit, security, standards, and sustainability.
 
-
-- [Blast radius control for AI agents]({% post_url 2026-02-27-blast-radius-control-for-ai-agents %})
-- [Why runtime enforcement beats static evaluation]({% post_url 2026-02-27-why-runtime-enforcement-beats-static-evaluation %})
-- [Zero Trust for agentic AI]({% post_url 2026-02-27-zero-trust-agentic-ai %})
-- [Cost is a security boundary]({% post_url 2026-02-27-cost-is-a-security-boundary %})
-- [Logging is not governance]({% post_url 2026-02-27-logging-is-not-governance %})
-- [Why prompt-only guardrails fail]({% post_url 2026-02-27-why-prompt-only-guardrails-fail %})
-
+- **[Deterministic Runtime Governance for Agentic Systems](/governance/runtime/deterministic-runtime-governance-agentic-systems/)**
+  How TealTiger turns governance intent into enforceable execution boundaries at decision time, with audit-ready evidence.
