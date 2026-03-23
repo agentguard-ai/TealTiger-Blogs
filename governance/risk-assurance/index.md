@@ -1,29 +1,33 @@
-
 ---
 layout: page
 title: Risk Assurance
-permalink: /governance/risk-assurance/
 ---
 
-Risk assurance answers a simple but critical question:
+Risk Assurance explains how TealTiger enables **continuous, enforceable risk control** for agentic AI systems.
 
-> Are AI risks continuously controlled, or only periodically reviewed?
+In agentic environments, risk is not static. Agent autonomy, tool usage, data access, and model behavior can evolve at runtime, making point‑in‑time risk assessments insufficient.
 
-This hub describes how TealTiger enables **continuous risk assurance** for agentic AI systems.
+TealTiger treats risk assurance as a **continuous governance capability**, not a periodic review activity.
 
 ## What This Hub Covers
 
-- Defining explicit risk boundaries
+- Defining explicit risk boundaries for agentic systems
+- Binding risk classifications to governance contracts
 - Enforcing risk constraints at runtime
-- Generating evidence for assurance and audit
+- Detecting and preventing risk drift
+- Producing verifiable evidence for assurance and audit
 
-## TealTiger Approach
+## Why Risk Assurance Matters
 
-Rather than relying on point-in-time assessments, TealTiger evaluates every agent action against approved risk contracts.
+Without continuous risk assurance:
+- Approved risk assumptions become outdated
+- Agents may exceed their intended authority
+- Violations are detected only after impact
+- Audit and compliance reviews rely on narratives instead of proof
 
-This makes risk assurance **continuous, deterministic, and provable**.
+TealTiger ensures that **every agent action is evaluated against approved risk boundaries**, with deterministic outcomes and traceable decisions.
 
 ## Core Articles
 
-- {{ "/governance/risk-assurance/risk-assurance/" | relative_url }}
-  - How TealTiger moves risk assurance from point‑in‑time reviews to continuous enforcement.
+- /governance/risk-assurance/risk-assurance/
+  - How TealTiger enables continuous risk assurance through deterministic enforcement and governance contracts.
