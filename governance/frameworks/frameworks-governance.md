@@ -1,4 +1,3 @@
-
 ---
 title: Governance Frameworks and TealTiger
 layout: post
