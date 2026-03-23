@@ -297,11 +297,11 @@ But they are not interchangeable.
 
 ## Related docs (TealTiger)
 
-- **Audit event schema**: {{ site.docs_base }}/audit/audit-event-schema
-- **Logging behavior**: {{ site.docs_base }}/audit/logging-behavior
-- **Audit and redaction**: {{ site.docs_base }}/concepts/audit-and-redaction
-- **Policy modes**: {{ site.docs_base }}/concepts/policy-modes
-- **Cost metadata**: {{ site.docs_base }}/audit/cost-metadata
+- [Audit event schema]({{ site.docs_base }}/audit/audit-event-schema)
+- [Logging behavior]({{ site.docs_base }}/audit/logging-behavior)
+- [Audit and redaction]({{ site.docs_base }}/concepts/audit-and-redaction)
+- [Policy modes]({{ site.docs_base }}/concepts/policy-modes)
+- [Cost metadata]({{ site.docs_base }}/audit/cost-metadata)
 
 ---
 

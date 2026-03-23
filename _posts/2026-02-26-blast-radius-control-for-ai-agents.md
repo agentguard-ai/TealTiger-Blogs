@@ -221,10 +221,10 @@ That is what lets organizations deploy agents with confidence.
 
 ## Related docs (TealTiger)
 
-- **Policy modes**: {{ site.docs_base }}/concepts/policy-modes  
-- **Audit and redaction**: {{ site.docs_base }}/concepts/audit-and-redaction  
-- **Cost metadata**: {{ site.docs_base }}/audit/cost-metadata  
-- **Security vs governance**: {{ site.docs_base }}/concepts/security-vs-governance  
+- [Policy modes]({{ site.docs_base }}/concepts/policy-modes)  
+- [Audit and redaction]({{ site.docs_base }}/concepts/audit-and-redaction)  
+- [Cost metadata]({{ site.docs_base }}/audit/cost-metadata)  
+- [Security vs governance]({{ site.docs_base }}/concepts/security-vs-governance)  
 
 ---
 

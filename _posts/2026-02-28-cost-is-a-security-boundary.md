@@ -308,11 +308,11 @@ This approach prevents surprise outages and keeps teams productive.
 
 ## Related docs (TealTiger)
 
-- **Cost metadata**: {{ site.docs_base }}/audit/cost-metadata
-- **Logging behavior**: {{ site.docs_base }}/audit/logging-behavior
-- **Policy modes**: {{ site.docs_base }}/concepts/policy-modes
-- **Audit and redaction**: {{ site.docs_base }}/concepts/audit-and-redaction
-- **Security vs governance**: {{ site.docs_base }}/concepts/security-vs-governance
+- [Cost metadata]({{ site.docs_base }}/audit/cost-metadata)
+- [Logging behavior]({{ site.docs_base }}/audit/logging-behavior)
+- [Policy modes]({{ site.docs_base }}/concepts/policy-modes)
+- [Audit and redaction]({{ site.docs_base }}/concepts/audit-and-redaction)
+- [Security vs governance]({{ site.docs_base }}/concepts/security-vs-governance)
 
 ---
 

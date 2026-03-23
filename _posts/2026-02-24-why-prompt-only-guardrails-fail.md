@@ -270,10 +270,10 @@ These are not edge cases. They are the predictable result of treating guidance a
 
 ## Related docs (TealTiger)
 
-- **Guardrail internals**: {{ site.docs_base }}/concepts/guardrail-internals
-- **Policy modes**: {{ site.docs_base }}/concepts/policy-modes
-- **Security vs governance**: {{ site.docs_base }}/concepts/security-vs-governance
-- **Decision lifecycle**: {{ site.docs_base }}/concepts/decision-lifecycle
+- [Guardrail internals]({{ site.docs_base }}/concepts/guardrail-internals)
+- [Policy modes]({{ site.docs_base }}/concepts/policy-modes)
+- [Security vs governance]({{ site.docs_base }}/concepts/security-vs-governance)
+- [Decision lifecycle]({{ site.docs_base }}/concepts/decision-lifecycle)
 
 ---
 

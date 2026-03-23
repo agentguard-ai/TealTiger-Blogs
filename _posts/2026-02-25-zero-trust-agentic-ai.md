@@ -88,10 +88,10 @@ The point is not “perfect prevention.” The point is **blast-radius reduction
 
 ## Related docs (TealTiger)
 
-- **Policy modes**: {{ site.docs_base }}/concepts/policy-modes
-- **Audit and redaction**: {{ site.docs_base }}/concepts/audit-and-redaction
-- **Security vs governance**: {{ site.docs_base }}/concepts/security-vs-governance
-- **Zero Trust for Agentic AI (docs page)**: {{ site.docs_base }}/concepts/zero-trust-for-agentic-ai
+- [Policy modes]({{ site.docs_base }}/concepts/policy-modes)
+- [Audit and redaction]({{ site.docs_base }}/concepts/audit-and-redaction)
+- [Security vs governance]({{ site.docs_base }}/concepts/security-vs-governance)
+- [Zero Trust for Agentic AI (docs page)]({{ site.docs_base }}/concepts/zero-trust-for-agentic-ai)
 
 ---
 

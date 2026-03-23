@@ -280,11 +280,11 @@ If a control cannot stop the action, it is not a control.
 
 ## Related docs (TealTiger)
 
-- **Validation and verification**: {{ site.docs_base }}/governance/validation-and-verification
-- **Policy modes**: {{ site.docs_base }}/concepts/policy-modes
-- **Audit and redaction**: {{ site.docs_base }}/concepts/audit-and-redaction
-- **Logging behavior**: {{ site.docs_base }}/audit/logging-behavior
-- **Security vs governance**: {{ site.docs_base }}/concepts/security-vs-governance
+- [Validation and verification]({{ site.docs_base }}/governance/validation-and-verification)
+- [Policy modes]({{ site.docs_base }}/concepts/policy-modes)
+- [Audit and redaction]({{ site.docs_base }}/concepts/audit-and-redaction)
+- [Logging behavior]({{ site.docs_base }}/audit/logging-behavior)
+- [Security vs governance]({{ site.docs_base }}/concepts/security-vs-governance)
 
 ---
 
