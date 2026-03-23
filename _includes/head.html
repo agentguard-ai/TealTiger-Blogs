@@ -2,6 +2,16 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   {% seo %}
+
+  <!-- Open Graph defaults -->
+  <meta property="og:site_name" content="{{ site.title }}" />
+  <meta property="og:type" content="{% if page.layout == 'post' %}article{% else %}website{% endif %}" />
+  {% if page.description %}<meta property="og:description" content="{{ page.description }}" />{% endif %}
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" sizes="64x64" href="{{ '/assets/favicon-64.png' | relative_url }}" />
+  <link rel="icon" type="image/svg+xml" href="{{ '/assets/favicon.svg' | relative_url }}" />
+
   <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}" />
   <link rel="alternate" type="application/rss+xml" title="{{ site.title }}" href="{{ '/feed.xml' | relative_url }}" />
 </head>

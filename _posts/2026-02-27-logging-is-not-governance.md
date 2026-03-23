@@ -83,7 +83,21 @@ This post explains the difference, why teams confuse them, and what governance l
 
 ## Two different jobs: observe vs decide
 
-Think of it this way:
+```mermaid
+flowchart LR
+  subgraph Logging["Logging / Observability"]
+    A["What happened?"] --> B["Retrospective"]
+    B --> C["Dashboards & Alerts"]
+  end
+
+  subgraph Governance["Governance / Enforcement"]
+    D["What is allowed?"] --> E["Preventative"]
+    E --> F["Gates & Decisions"]
+  end
+
+  style C fill:#3b0764,stroke:#a855f7,color:#f5d0fe
+  style F fill:#052e2b,stroke:#10b981,color:#d1fae5
+```
 
 - **Logging/observability** answers: *What happened?*
 - **Governance/enforcement** answers: *What is allowed to happen?*

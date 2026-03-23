@@ -220,3 +220,78 @@ Security, governance, and cost control must live outside the prompt.
 
 ## A simple mental model
 
+```mermaid
+flowchart LR
+  subgraph Prompt["Prompt Layer (advisory)"]
+    A["System Prompt"] --> B["User Input"]
+    B --> C["Model Reasoning"]
+  end
+
+  subgraph Runtime["Runtime Layer (enforcement)"]
+    D["Policy Evaluation"]
+    E["Tool Gating"]
+    F["Output Inspection"]
+    G["Budget Enforcement"]
+  end
+
+  C -->|"tool call"| E
+  C -->|"output"| F
+  C -->|"next step"| G
+  E --> D
+  F --> D
+  G --> D
+
+  D -->|allow| H["Execute"]
+  D -->|deny| I["Block + Reason Code"]
+  D -->|redact| J["Sanitize + Continue"]
+  D -->|approve| K["Human Review"]
+
+  style A fill:#3b0764,stroke:#a855f7,color:#f5d0fe
+  style B fill:#3b0764,stroke:#a855f7,color:#f5d0fe
+  style C fill:#3b0764,stroke:#a855f7,color:#f5d0fe
+  style D fill:#052e2b,stroke:#10b981,color:#d1fae5
+  style E fill:#052e2b,stroke:#10b981,color:#d1fae5
+  style F fill:#052e2b,stroke:#10b981,color:#d1fae5
+  style G fill:#052e2b,stroke:#10b981,color:#d1fae5
+```
+
+Prompts live in the **model's context** — they can be overridden, ignored, or reframed.
+
+Runtime controls live **outside the model** — they cannot be bypassed by prompt manipulation.
+
+---
+
+## The cost of getting this wrong
+
+Teams that rely on prompt-only guardrails typically discover the gap through:
+
+- a data leak that "shouldn't have happened"
+- a tool invocation that "wasn't supposed to be possible"
+- a cost spike from an agent that "was told to be careful"
+
+These are not edge cases. They are the predictable result of treating guidance as enforcement.
+
+---
+
+## Related docs (TealTiger)
+
+- **Guardrail internals**: {{ site.docs_base }}/concepts/guardrail-internals
+- **Policy modes**: {{ site.docs_base }}/concepts/policy-modes
+- **Security vs governance**: {{ site.docs_base }}/concepts/security-vs-governance
+- **Decision lifecycle**: {{ site.docs_base }}/concepts/decision-lifecycle
+
+---
+
+### What to do next
+
+If you currently rely on prompt-only guardrails:
+
+1. Identify every tool your agent can call
+2. Add explicit allow/deny policies for each tool
+3. Inspect outputs before they leave the system
+4. Add budget and loop limits
+5. Move enforcement outside the prompt
+
+Prompts shape behavior.
+
+**Runtime controls enforce it.**

@@ -49,20 +49,32 @@ Blast-radius control limits impact.
 
 ## What “blast radius” means for AI agents
 
-In traditional systems, blast radius refers to:
-- how many services go down
-- how much traffic is affected
-- how much data is exposed
+In traditional systems, blast radius refers to how many services go down, how much traffic is affected, how much data is exposed.
 
-For AI agents, blast radius looks different.
+For AI agents, blast radius spans multiple dimensions:
 
-It includes:
-- **how many tools** an agent can touch
-- **what side effects** it can cause
-- **how much data** it can read or emit
-- **where data can flow**
-- **how much money** it can spend
-- **how long** it can run unattended
+```mermaid
+flowchart TD
+  A["Agent Failure"] --> B["Tool Blast Radius"]
+  A --> C["Data Blast Radius"]
+  A --> D["Cost Blast Radius"]
+  A --> E["Time Blast Radius"]
+
+  B --> B1["How many tools can it touch?"]
+  B --> B2["What side effects can it cause?"]
+  C --> C1["How much data can it read or emit?"]
+  C --> C2["Where can data flow?"]
+  D --> D1["How much money can it spend?"]
+  D --> D2["Can it escalate to expensive models?"]
+  E --> E1["How long can it run unattended?"]
+  E --> E2["Are there checkpoints or kill switches?"]
+
+  style A fill:#3b0764,stroke:#a855f7,color:#f5d0fe
+  style B fill:#0b1220,stroke:#64748b,color:#e2e8f0
+  style C fill:#0b1220,stroke:#64748b,color:#e2e8f0
+  style D fill:#0b1220,stroke:#64748b,color:#e2e8f0
+  style E fill:#0b1220,stroke:#64748b,color:#e2e8f0
+```
 
 An agent that fails safely is very different from one that fails expansively.
 

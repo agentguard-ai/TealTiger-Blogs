@@ -35,11 +35,26 @@ If you’re building agentic systems, you need Zero Trust *at the decision layer
 
 To keep the spirit of Zero Trust without mislabeling network controls, define it as:
 
-- **Never trust an agent step by default**
-- **Continuously verify each step of execution**
-- **Enforce least privilege for tools, data, and side effects**
-- **Assume breach via blast-radius control**
-- **Audit everything with explainable, reason-coded decisions**
+```mermaid
+flowchart TD
+  A["Zero Trust for Agents"] --> B["Never trust a step by default"]
+  A --> C["Verify each step continuously"]
+  A --> D["Enforce least privilege"]
+  A --> E["Assume breach"]
+  A --> F["Audit with reason codes"]
+
+  B --> G["Every tool call requires authorization"]
+  C --> G
+  D --> H["Scoped tools, data, cost, egress"]
+  E --> I["Blast-radius containment"]
+  F --> J["Decision-grade evidence"]
+
+  style A fill:#052e2b,stroke:#10b981,color:#d1fae5
+  style G fill:#0b1220,stroke:#64748b,color:#e2e8f0
+  style H fill:#0b1220,stroke:#64748b,color:#e2e8f0
+  style I fill:#0b1220,stroke:#64748b,color:#e2e8f0
+  style J fill:#0b1220,stroke:#64748b,color:#e2e8f0
+```
 
 This is where TealTiger fits: **runtime governance and enforcement** for LLM calls, tool invocations, and output egress.
 

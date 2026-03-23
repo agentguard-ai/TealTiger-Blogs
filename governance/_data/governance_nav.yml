@@ -4,30 +4,46 @@ items:
     url: "/governance/"
     icon: "🏠"
 
-  - title: "Runtime Governance"
-    url: "/governance/runtime/"
-    icon: "⚙️"
-
-  - title: "Cost & Economic Governance"
-    url: "/governance/cost/"
-    icon: "💸"
-
-  - title: "Audit & Evidence"
-    url: "/governance/evidence/"
-    icon: "🧾"
-
-  - title: "Security (Domain Inside Governance)"
-    url: "/governance/security/"
-    icon: "🛡️"
+  - title: "Foundations"
+    url: "/governance/foundations/"
+    icon: "🏗️"
 
   - title: "Frameworks & Standards"
     url: "/governance/frameworks/"
     icon: "📚"
 
-  - title: "Sustainability & Environmental Impact"
-    url: "/governance/sustainability/"
-    icon: "🌱"
+  - title: "Runtime Governance"
+    url: "/governance/runtime/"
+    icon: "⚙️"
+
+  - title: "Security"
+    url: "/governance/security/"
+    icon: "🛡️"
+
+  - title: "Data Governance"
+    url: "/governance/data/"
+    icon: "🗄️"
+
+  - title: "Model Governance"
+    url: "/governance/model/"
+    icon: "🤖"
+
+  - title: "Cost & Economic"
+    url: "/governance/cost/"
+    icon: "💸"
 
   - title: "Risk & Assurance"
     url: "/governance/risk-assurance/"
     icon: "📈"
+
+  - title: "Evidence & Audit"
+    url: "/governance/evidence/"
+    icon: "🧾"
+
+  - title: "Compliance Enablement"
+    url: "/governance/compliance/"
+    icon: "✅"
+
+  - title: "Sustainability"
+    url: "/governance/sustainability/"
+    icon: "🌱"
