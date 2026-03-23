@@ -1,122 +1,118 @@
 ---
 layout: page
 title: Governance
-permalink: /governance/
 ---
 
 TealTiger Governance is built for **deterministic enforcement** in agentic AI systems.
 
-This section is organized as **Governance Hubs**. Each hub has:
-- an **index** page (overview + navigation), and
-- a **core article** (the canonical deep-dive).
+This section is organized as **Governance Hubs**. Each hub contains:
+- a **hub index** (overview + navigation)
+- a **core article** (canonical deep‑dive)
 
-> **Read order (recommended):** Start with Foundations, then Runtime and Security, and use Evidence as the proof layer across everything.
+> **Recommended read order:** Foundations → Runtime → Security → Evidence
 
 ---
 
 ## Governance Hubs
 
 ### 1) Foundations
-The contract-first principles that make governance repeatable, testable, and auditable.
+The contract‑first principles that make governance repeatable, testable, and auditable.
 
-- /governance/foundations/
-  - Hub overview
-- /governance/foundations/governance-foundations/
-  - The canonical Foundations article
+- [Foundations – Hub Overview](/governance/foundations/)
+- [Governance Foundations](/governance/foundations/governance-foundations/)
+
+---
 
 ### 2) Frameworks
 How TealTiger operationalizes governance frameworks through deterministic controls.
 
-- /governance/frameworks/
-  - Hub overview
-- /governance/frameworks/frameworks-governance/
-  - Governance Frameworks and TealTiger
+- [Frameworks – Hub Overview](/governance/frameworks/)
+- [Governance Frameworks and TealTiger](/governance/frameworks/frameworks-governance/)
+
+---
 
 ### 3) Runtime Governance
 Governance at execution time: prompt execution, tool invocation, and scope control.
 
-- /governance/runtime/
-  - Hub overview
-- /governance/runtime/runtime-governance/
-  - Runtime Governance (core)
+- [Runtime – Hub Overview](/governance/runtime/)
+- [Runtime Governance](/governance/runtime/runtime-governance/)
+
+---
 
 ### 4) Security Governance
-Identity-bound execution, least privilege tooling, and deterministic deny-by-default controls.
+Identity‑bound execution, least‑privilege access, and deny‑by‑default enforcement.
 
-- /governance/security/
-  - Hub overview
-- /governance/security/security-governance/
-  - Security Governance (core)
-- /governance/security/zero-trust-governance-hubs-series/
-  - Zero Trust perspective (cross-cutting)
+- [Security – Hub Overview](/governance/security/)
+- [Security Governance](/governance/security/security-governance/)
+- [Zero Trust Governance (Conceptual)](/governance/security/zero-trust-governance-hubs-series/)
+
+---
 
 ### 5) Data Governance
-Purpose binding, source control, and deterministic redaction before model exposure.
+Purpose binding, source control, and deterministic data boundaries.
 
-- /governance/data/
-  - Hub overview
-- /governance/data/data-governance/
-  - Data Governance (core)
+- [Data – Hub Overview](/governance/data/)
+- [Data Governance](/governance/data/data-governance/)
+
+---
 
 ### 6) Model Governance
-Governing approved models, task-to-model binding, and risk-aware model usage.
+Explicit control over approved models, tasks, and risk boundaries.
 
-- /governance/model/
-  - Hub overview
-- /governance/model/model-governance/
-  - Model Governance (core)
+- [Model – Hub Overview](/governance/model/)
+- [Model Governance](/governance/model/model-governance/)
+
+---
 
 ### 7) Cost Governance
-Preventing runaway execution and controlling spend as an enforceable constraint.
+Preventing runaway execution and enforcing cost as a governance constraint.
 
-- /governance/cost/
-  - Hub overview
-- /governance/cost/cost-governance/
-  - Cost Governance (core)
+- [Cost – Hub Overview](/governance/cost/)
+- [Cost Governance](/governance/cost/cost-governance/)
+
+---
 
 ### 8) Risk Assurance
-Continuous assurance: evaluating every action against explicit risk boundaries.
+Continuous evaluation of agent actions against explicit risk boundaries.
 
-- /governance/risk-assurance/
-  - Hub overview
-- /governance/risk-assurance/risk-assurance/
-  - Risk Assurance (core)
+- [Risk Assurance – Hub Overview](/governance/risk-assurance/)
+- [Risk Assurance](/governance/risk-assurance/risk-assurance/)
+
+---
 
 ### 9) Sustainability
 Sustainability as a governance outcome: operational, financial, and organizational.
 
-- /governance/sustainability/
-  - Hub overview
-- /governance/sustainability/sustainability/
-  - Sustainability (core)
+- [Sustainability – Hub Overview](/governance/sustainability/)
+- [Sustainability](/governance/sustainability/sustainability/)
+
+---
 
 ### 10) Compliance Enablement
-Compliance-enabling controls and evidence — without over-claiming compliance completion.
+Compliance‑enabling controls and evidence without over‑claiming compliance completion.
 
-- /governance/compliance-enablement/
-  - Hub overview
-- /governance/compliance-enablement/compliance-enablement/
-  - Compliance Enablement (core)
+- [Compliance Enablement – Hub Overview](/governance/compliance-enablement/)
+- [Compliance Enablement](/governance/compliance-enablement/compliance-enablement/)
+
+---
 
 ### 11) Evidence & Audit
 Immutable, verifiable evidence generated directly from governance enforcement.
 
-- /governance/evidence/
-  - Hub overview
-- /governance/evidence/evidence-governance/
-  - Evidence & Audit (core)
+- [Evidence & Audit – Hub Overview](/governance/evidence/)
+- [Evidence & Audit](/governance/evidence/evidence-governance/)
 
 ---
 
 ## How to Use This Section
 
-- If you are **building** agentic AI systems: start with **Foundations → Runtime → Security → Data**.
-- If you are **operating** agentic AI systems: focus on **Runtime → Evidence → Risk Assurance**.
-- If you are **assessing** governance: use **Frameworks → Compliance Enablement → Evidence**.
+- **Builders:** Foundations → Runtime → Security → Data  
+- **Operators:** Runtime → Evidence → Risk Assurance  
+- **Auditors / GRC:** Frameworks → Compliance Enablement → Evidence
 
 ---
 
 ## Notes
 
-- TealTiger is **compliance-enabling**, not a complete compliance program.
-- Governance hubs are designed to stay stable; core articles evolve with versioned capabilities.
+- TealTiger is **compliance‑enabling**, not a complete compliance program.
+- Governance hubs are stable; core articles evolve with versioned capabilities.
