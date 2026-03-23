@@ -1,19 +1,24 @@
+
 ---
 layout: page
-title: "Risk & Assurance"
+title: Risk Assurance
 permalink: /governance/risk-assurance/
 ---
 
-Risk & Assurance consolidates how you measure, communicate, and govern risk over time: risk registers, control effectiveness, exceptions, and assurance narratives grounded in evidence.
+Risk assurance answers a simple but critical question:
 
-## Foundational articles
+> Are AI risks continuously controlled, or only periodically reviewed?
 
-- _Coming soon._
+This hub describes how TealTiger enables **continuous risk assurance** for agentic AI systems.
 
-## Deep dives
+## What This Hub Covers
 
-- _Coming soon._
+- Defining explicit risk boundaries
+- Enforcing risk constraints at runtime
+- Generating evidence for assurance and audit
 
-## Related
+## TealTiger Approach
 
-- Governance home: [/governance/](/governance/)
+Rather than relying on point-in-time assessments, TealTiger evaluates every agent action against approved risk contracts.
+
+This makes risk assurance **continuous, deterministic, and provable**.
