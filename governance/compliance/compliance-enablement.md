@@ -72,10 +72,6 @@ Most compliance programs for AI systems rely on documentation and periodic revie
 
 TealTiger's governance model aligns with major frameworks — as a control and evidence layer, not as a certification tool.
 
-<div class="tt-flow">
-  <div class="tt-flow__step tt-flow__step--accent">TealTiger Controls</div>
-  <span class="tt-flow__arrow">→</span>
-</div>
 <div class="tt-grid" style="margin-top: 12px;">
   <div class="tt-card tt-card--accent">
     <div class="tt-card__icon">📊</div>

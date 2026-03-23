@@ -251,16 +251,17 @@ a:hover { color: var(--link-hover); text-decoration: underline; }
   gap: 0;
   flex-wrap: wrap;
   margin: 24px 0;
+  row-gap: 10px;
 }
 .tt-flow__step {
   background: var(--panel);
   border: 1px solid var(--border);
   border-radius: 10px;
-  padding: 12px 16px;
+  padding: 10px 16px;
   font-size: 14px;
   font-weight: 700;
   text-align: center;
-  min-width: 120px;
+  line-height: 1.4;
 }
 .tt-flow__step--accent {
   border-color: var(--link);
@@ -272,15 +273,16 @@ a:hover { color: var(--link-hover); text-decoration: underline; }
 }
 .tt-flow__arrow {
   color: var(--muted);
-  font-size: 20px;
-  padding: 0 6px;
+  font-size: 18px;
+  padding: 0 8px;
   flex-shrink: 0;
+  opacity: 0.6;
 }
 
 /* Grid: cards in a responsive grid */
 .tt-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(210px, 1fr));
   gap: 14px;
   margin: 24px 0;
 }
@@ -288,34 +290,38 @@ a:hover { color: var(--link-hover); text-decoration: underline; }
   background: var(--panel);
   border: 1px solid var(--border);
   border-radius: 12px;
-  padding: 16px;
+  padding: 18px;
+  transition: border-color 0.15s ease;
+}
+.tt-card:hover {
+  border-color: color-mix(in srgb, var(--link) 50%, var(--border));
 }
 .tt-card__icon {
-  font-size: 24px;
+  font-size: 22px;
   margin-bottom: 8px;
 }
 .tt-card__title {
   font-weight: 800;
   font-size: 15px;
-  margin-bottom: 4px;
+  margin-bottom: 6px;
 }
 .tt-card__desc {
   color: var(--muted);
   font-size: 13px;
-  line-height: 1.5;
+  line-height: 1.55;
 }
 .tt-card--accent {
-  border-color: var(--link);
+  border-color: color-mix(in srgb, var(--link) 40%, var(--border));
 }
 .tt-card--warn {
-  border-color: #a855f7;
+  border-color: color-mix(in srgb, #a855f7 40%, var(--border));
 }
 
 /* Versus / comparison layout */
 .tt-vs {
   display: grid;
   grid-template-columns: 1fr auto 1fr;
-  gap: 14px;
+  gap: 16px;
   align-items: stretch;
   margin: 24px 0;
 }
@@ -323,27 +329,29 @@ a:hover { color: var(--link-hover); text-decoration: underline; }
   background: var(--panel);
   border: 1px solid var(--border);
   border-radius: 12px;
-  padding: 16px;
+  padding: 18px;
 }
 .tt-vs__side--bad {
-  border-color: #a855f7;
+  border-color: color-mix(in srgb, #a855f7 40%, var(--border));
 }
 .tt-vs__side--good {
-  border-color: var(--link);
+  border-color: color-mix(in srgb, var(--link) 40%, var(--border));
 }
 .tt-vs__divider {
   display: flex;
   align-items: center;
-  font-size: 24px;
+  justify-content: center;
+  font-size: 16px;
   color: var(--muted);
   font-weight: 900;
+  opacity: 0.5;
 }
 .tt-vs__label {
   font-weight: 800;
-  font-size: 13px;
+  font-size: 12px;
   text-transform: uppercase;
-  letter-spacing: 0.05em;
-  margin-bottom: 10px;
+  letter-spacing: 0.06em;
+  margin-bottom: 12px;
 }
 .tt-vs__label--bad { color: #a855f7; }
 .tt-vs__label--good { color: var(--link); }
@@ -353,15 +361,48 @@ a:hover { color: var(--link-hover); text-decoration: underline; }
   margin: 0;
 }
 .tt-vs__items li {
-  padding: 4px 0;
+  padding: 5px 0;
   font-size: 14px;
   color: var(--muted);
   line-height: 1.5;
+  border-bottom: 1px solid var(--border);
+}
+.tt-vs__items li:last-child {
+  border-bottom: none;
 }
 
 @media (max-width: 640px) {
-  .tt-flow { flex-direction: column; }
-  .tt-flow__arrow { transform: rotate(90deg); }
+  .tt-flow { flex-direction: column; align-items: stretch; }
+  .tt-flow__step { text-align: left; }
+  .tt-flow__arrow { text-align: center; transform: rotate(90deg); padding: 4px 0; }
   .tt-vs { grid-template-columns: 1fr; }
-  .tt-vs__divider { justify-content: center; padding: 4px 0; }
+  .tt-vs__divider { padding: 4px 0; }
+  .tt-grid { grid-template-columns: 1fr; }
+}
+
+/* ── Tables ── */
+.page-content table,
+.post-content table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 20px 0;
+  font-size: 15px;
+}
+.page-content th,
+.post-content th {
+  text-align: left;
+  font-weight: 800;
+  padding: 10px 14px;
+  border-bottom: 2px solid var(--border);
+  color: var(--text);
+}
+.page-content td,
+.post-content td {
+  padding: 10px 14px;
+  border-bottom: 1px solid var(--border);
+  color: var(--muted);
+}
+.page-content tr:last-child td,
+.post-content tr:last-child td {
+  border-bottom: none;
 }

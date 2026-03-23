@@ -109,11 +109,23 @@ Sustainability as a governance outcome: operational, financial, and organization
 
 ## How to Use This Section
 
-| Role | Recommended Path |
-|------|-----------------|
-| **Builders** | Foundations → Runtime → Security → Data |
-| **Operators** | Runtime → Evidence → Risk Assurance |
-| **Auditors / GRC** | Frameworks → Compliance → Evidence |
+<div class="tt-grid" style="grid-template-columns: repeat(3, 1fr);">
+  <div class="tt-card tt-card--accent">
+    <div class="tt-card__icon">🔧</div>
+    <div class="tt-card__title">Builders</div>
+    <div class="tt-card__desc">Foundations → Runtime → Security → Data</div>
+  </div>
+  <div class="tt-card tt-card--accent">
+    <div class="tt-card__icon">⚙️</div>
+    <div class="tt-card__title">Operators</div>
+    <div class="tt-card__desc">Runtime → Evidence → Risk Assurance</div>
+  </div>
+  <div class="tt-card tt-card--accent">
+    <div class="tt-card__icon">📋</div>
+    <div class="tt-card__title">Auditors / GRC</div>
+    <div class="tt-card__desc">Frameworks → Compliance → Evidence</div>
+  </div>
+</div>
 
 ---
 
