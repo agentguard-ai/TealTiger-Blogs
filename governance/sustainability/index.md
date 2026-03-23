@@ -1,19 +1,20 @@
+
 ---
 layout: page
-title: "Sustainability & Environmental Impact"
+title: Sustainability
 permalink: /governance/sustainability/
 ---
 
-Sustainability & Environmental Impact focuses on governance-driven efficiency: preventing unnecessary execution, enforcing purpose-bound workloads, and reducing waste as a by-product of disciplined runtime control.
+Sustainability in AI governance goes beyond environmental concerns. It includes the ability to operate AI systems safely, predictably, and responsibly over time.
 
-## Foundational articles
+This hub explains sustainability as a **governance outcome**.
 
-- _Coming soon._
+## Dimensions of Sustainability
 
-## Deep dives
+- Operational sustainability (controlled autonomy)
+- Financial sustainability (cost-aware governance)
+- Organizational sustainability (reduced governance fatigue)
 
-- _Coming soon._
+## TealTiger Perspective
 
-## Related
-
-- Governance home: [/governance/](/governance/)
+By enforcing deterministic governance, TealTiger helps organizations scale AI systems without compounding risk, cost, or operational instability.
