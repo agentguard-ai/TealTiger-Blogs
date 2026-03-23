@@ -21,6 +21,6 @@ This hub explains how TealTiger **operationalizes governance frameworks** throug
 
 ## Core Articles
 
-- **/governance/frameworks/frameworks-governance/**  
+- [Frameworks: Operationalizing Governance]( /governance/frameworks/frameworks-governance/ ) 
   How TealTiger turns abstract governance frameworks into executable, enforceable controls.
-``
+
