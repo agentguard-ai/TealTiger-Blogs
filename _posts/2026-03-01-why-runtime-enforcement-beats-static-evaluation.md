@@ -16,27 +16,28 @@ tags: [runtime, evaluation, governance, agents, security]
 
 ## One-screen diagram: static eval vs runtime enforcement
 
-```text
-Offline evaluation (before deployment)
-  inputs: test prompts + golden corpus + red-team cases + benchmark suites
-  outputs: scores, regressions, risk signals
-
-  answers: "Could this go wrong?"  (probability reduction)
-
-────────────────────────────────────────────────────────────────────────────
-
-Runtime enforcement (during execution)
-  decision boundaries:
-    [B1] before tool call     [B2] before output egress     [B3] before retries/escalation
-
-  outcomes (deterministic):
-    allow | deny | redact | require-approval | degrade (cheaper model / fewer tools / smaller context)
-
-  answers: "Can this happen right now?"  (impact reduction)
-
-Audit:
-  reason-coded event emitted after each boundary decision
-```
+<div class="tt-vs">
+  <div class="tt-vs__side tt-vs__side--bad">
+    <div class="tt-vs__label tt-vs__label--bad">Offline Evaluation (before deployment)</div>
+    <ul class="tt-vs__items">
+      <li><strong>Inputs:</strong> test prompts, golden corpus, red-team cases, benchmarks</li>
+      <li><strong>Outputs:</strong> scores, regressions, risk signals</li>
+      <li><strong>Answers:</strong> "Could this go wrong?" → probability reduction</li>
+    </ul>
+  </div>
+  <div class="tt-vs__divider">vs</div>
+  <div class="tt-vs__side tt-vs__side--good">
+    <div class="tt-vs__label tt-vs__label--good">Runtime Enforcement (during execution)</div>
+    <ul class="tt-vs__items">
+      <li><strong>Boundaries:</strong> before tool call · before output egress · before retries</li>
+      <li><strong>Outcomes:</strong> allow · deny · redact · require-approval · degrade</li>
+      <li><strong>Answers:</strong> "Can this happen right now?" → impact reduction</li>
+    </ul>
+  </div>
+</div>
+<div class="tt-flow" style="margin-top: 8px;">
+  <div class="tt-flow__step tt-flow__step--accent">Audit: reason-coded event emitted after each boundary decision</div>
+</div>
 
 ---
 
@@ -223,10 +224,23 @@ This gives you the best of both worlds:
 
 ## A simple mental model
 
-```text
-Offline evals answer: "Could this go wrong?" (reduce probability)
-Runtime enforcement answers: "Can this happen right now?" (reduce impact)
-```
+<div class="tt-vs">
+  <div class="tt-vs__side tt-vs__side--bad">
+    <div class="tt-vs__label tt-vs__label--bad">Offline Evals</div>
+    <ul class="tt-vs__items">
+      <li>"Could this go wrong?"</li>
+      <li>→ reduce probability</li>
+    </ul>
+  </div>
+  <div class="tt-vs__divider">vs</div>
+  <div class="tt-vs__side tt-vs__side--good">
+    <div class="tt-vs__label tt-vs__label--good">Runtime Enforcement</div>
+    <ul class="tt-vs__items">
+      <li>"Can this happen right now?"</li>
+      <li>→ reduce impact</li>
+    </ul>
+  </div>
+</div>
 
 You need both.
 But only one can stop an incident mid-flight.

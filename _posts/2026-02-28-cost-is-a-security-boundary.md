@@ -264,18 +264,31 @@ This turns budget enforcement into something operators can trust.
 
 ## A simple one-screen diagram: cost as a boundary
 
-```text
-Agent request
-  → plan
-  → choose tool/model
-  → [BUDGET GATE]  (step count, retries, tool calls, model tier, tokens)
-     ├─ allow  → execute
-     ├─ degrade → cheaper model / fewer tools / smaller context
-     ├─ approve → require explicit approval
-     └─ stop   → return safe partial result + reason code
-
-Audit: emit decision event with cost context + reason codes
-```
+<div class="tt-flow">
+  <div class="tt-flow__step">Agent Request → Plan → Choose Tool / Model</div>
+  <div class="tt-flow__step tt-flow__step--accent">BUDGET GATE — step count · retries · tool calls · model tier · tokens</div>
+</div>
+<div class="tt-grid tt-grid--4">
+  <div class="tt-card tt-card--green">
+    <div class="tt-card__title">✅ Allow</div>
+    <div class="tt-card__body">Execute the action</div>
+  </div>
+  <div class="tt-card tt-card--yellow">
+    <div class="tt-card__title">⚡ Degrade</div>
+    <div class="tt-card__body">Cheaper model · fewer tools · smaller context</div>
+  </div>
+  <div class="tt-card tt-card--blue">
+    <div class="tt-card__title">🔒 Approve</div>
+    <div class="tt-card__body">Require explicit approval before proceeding</div>
+  </div>
+  <div class="tt-card tt-card--red">
+    <div class="tt-card__title">🛑 Stop</div>
+    <div class="tt-card__body">Return safe partial result + reason code</div>
+  </div>
+</div>
+<div class="tt-flow" style="margin-top: 8px;">
+  <div class="tt-flow__step tt-flow__step--accent">Audit: emit decision event with cost context + reason codes</div>
+</div>
 
 ---
 

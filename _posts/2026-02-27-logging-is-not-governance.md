@@ -16,50 +16,42 @@ tags: [logging, governance, audit, runtime, agents, security]
 
 ## One‑screen diagram: Logging vs Governance
 
-```text
-┌────────────────────────────── Agentic AI Runtime ──────────────────────────────┐
-│                                                                                │
-│  Prompt / Context                                                              │
-│        │                                                                       │
-│        ▼                                                                       │
-│  Plan / Reason                                                                 │
-│        │                                                                       │
-│        ▼                                                                       │
-│  Choose Tool ────────────────┐                                                 │
-│        │                     │                                                 │
-│        ▼                     │                                                 │
-│  Call Tool                   │                                                 │
-│        │                     │                                                 │
-│        ▼                     │                                                 │
-│  Generate Output                                                              │
-│        │                                                                       │
-│        ▼                                                                       │
-│  Egress (return / send)                                                        │
-│                                                                                │
-├──────────────────────── Decision Boundaries (Governance) ──────────────────────┤
-│                                                                                │
-│  [B1] Before Tool Call        [B2] Before Output Egress       [B3] Before Loop │
-│   ┌─────────────────┐         ┌─────────────────┐            ┌──────────────┐ │
-│   │ Policy Eval      │         │ Policy Eval      │            │ Policy Eval  │ │
-│   │ tool + args +    │         │ data + dest +    │            │ cost + steps │ │
-│   │ context + risk   │         │ sensitivity      │            │ + tier       │ │
-│   └───────┬─────────┘         └───────┬─────────┘            └───────┬──────┘ │
-│           │                             │                                │     │
-│  Outcomes │                             │                                │     │
-│  allow / deny / approve / limit   allow / redact / block           allow / cap / stop
-│                                                                                │
-├────────────────────────────── Logging / Audit (After) ─────────────────────────┤
-│                                                                                │
-│  Audit Event (emitted after each boundary decision):                            │
-│  { policy_id, rule_id, decision, reason_codes, risk_score,                      │
-│    tool, args_hash, data_class, cost_ctx, trace_id }                            │
-│                                                                                │
-└────────────────────────────────────────────────────────────────────────────────┘
+<div class="tt-flow">
+  <div class="tt-flow__step">Prompt / Context</div>
+  <div class="tt-flow__step">Plan / Reason</div>
+  <div class="tt-flow__step">Choose Tool → Call Tool → Generate Output → Egress</div>
+</div>
 
-Key distinction:
-- Governance = **decides and enforces** at boundaries
-- Logging    = **records** decisions after they happen
-```
+<div class="tt-grid tt-grid--3">
+  <div class="tt-card tt-card--blue">
+    <div class="tt-card__title">B1 · Before Tool Call</div>
+    <div class="tt-card__body">Policy evaluates tool + args + context + risk<br><strong>Outcomes:</strong> allow · deny · approve · limit</div>
+  </div>
+  <div class="tt-card tt-card--blue">
+    <div class="tt-card__title">B2 · Before Output Egress</div>
+    <div class="tt-card__body">Policy evaluates data + destination + sensitivity<br><strong>Outcomes:</strong> allow · redact · block</div>
+  </div>
+  <div class="tt-card tt-card--blue">
+    <div class="tt-card__title">B3 · Before Loop / Retry</div>
+    <div class="tt-card__body">Policy evaluates cost + steps + tier<br><strong>Outcomes:</strong> allow · cap · stop</div>
+  </div>
+</div>
+
+<div class="tt-flow" style="margin-top: 8px;">
+  <div class="tt-flow__step tt-flow__step--accent">Audit Event: policy_id · rule_id · decision · reason_codes · risk_score · tool · cost_ctx · trace_id</div>
+</div>
+
+<div class="tt-vs" style="margin-top: 12px;">
+  <div class="tt-vs__side tt-vs__side--good">
+    <div class="tt-vs__label tt-vs__label--good">Governance</div>
+    <ul class="tt-vs__items"><li><strong>Decides and enforces</strong> at boundaries</li></ul>
+  </div>
+  <div class="tt-vs__divider">vs</div>
+  <div class="tt-vs__side tt-vs__side--bad">
+    <div class="tt-vs__label tt-vs__label--bad">Logging</div>
+    <ul class="tt-vs__items"><li><strong>Records</strong> decisions after they happen</li></ul>
+  </div>
+</div>
 
 ---
 
