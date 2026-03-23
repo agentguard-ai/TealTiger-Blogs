@@ -1,19 +1,30 @@
 ---
 layout: page
-title: "Cost & Economic Governance"
-permalink: /governance/cost/
+title: Cost Governance
 ---
 
-Cost & Economic Governance treats spend as an **execution outcome**: bounded tool usage, budget-aware policies, loop control, and predictable termination conditions.
+Cost Governance explains how TealTiger helps organizations **control, predict, and govern AI system costs** in agentic environments.
 
-## Foundational articles
+In agentic systems, cost is not just a finance concern — it is a **governance risk**. Autonomous agents can trigger uncontrolled execution, model overuse, and cascading spend if cost boundaries are not explicitly enforced.
 
-- [**Economic Governance of Agentic Execution](/governance/cost/economic-governance-agentic-execution/)**
+## What This Hub Covers
 
-## Deep dives
+- Governing cost as a first‑class control
+- Preventing runaway agent execution
+- Enforcing budget and usage boundaries deterministically
+- Linking cost decisions to governance contracts
 
-- _Coming soon._
+## Why Cost Governance Matters
 
-## Related
+Without cost governance:
+- Spend becomes unpredictable
+- Model usage drifts silently
+- Financial risk compounds with autonomy
+- Post‑hoc cost analysis replaces prevention
 
-- Governance home: [/governance/](/governance/)
+TealTiger treats cost as an **enforceable constraint**, not a reporting metric.
+
+## Core Articles
+
+- /governance/cost/cost-governance/
+  - How TealTiger enforces deterministic cost controls to keep agentic AI systems financially predictable and safe.
