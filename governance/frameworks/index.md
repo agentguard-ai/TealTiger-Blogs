@@ -18,3 +18,9 @@ This hub explains how TealTiger **operationalizes governance frameworks** throug
 - NIST AI Risk Management Framework (AI RMF)
 - ISO/IEC 42001
 - EU AI Act (technical control evidence)
+
+## Core Articles
+
+- **/governance/frameworks/frameworks-governance/**  
+  How TealTiger turns abstract governance frameworks into executable, enforceable controls.
+``
