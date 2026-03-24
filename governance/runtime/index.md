@@ -3,31 +3,41 @@ layout: page
 title: Runtime Governance
 ---
 
-Runtime Governance explains how TealTiger governs **agent behavior while systems are actively executing**.
+Runtime Governance defines how TealTiger enforces governance **at execution time** for agentic AI systems.
 
-In agentic AI systems, the highest risk is not design‑time intent — it is **runtime behavior**. Once deployed, agents can make decisions, invoke tools, access data, and interact with systems in ways that exceed their original scope if not explicitly controlled.
+While governance foundations establish principles and contracts, runtime governance ensures those rules are **actively enforced** when agents invoke models, call tools, access data, or produce side effects.
 
-TealTiger treats runtime as the **primary enforcement layer** for governance.
+This hub focuses on deterministic enforcement, fail‑closed behavior, and audit‑grade evidence generation during live execution.
 
 ## What This Hub Covers
 
-- Enforcing governance policies during agent execution
-- Governing prompt execution and tool invocation
-- Preventing scope expansion and unauthorized actions
-- Detecting and stopping policy violations in real time
-- Producing deterministic runtime enforcement decisions
+- Execution‑time enforcement of governance contracts
+- Deterministic allow / deny / approval decisions
+- Fail‑closed behavior under uncertainty
+- Tool, data, and side‑effect control
+- Runtime evidence generation for audit and compliance
 
 ## Why Runtime Governance Matters
 
-Without runtime governance:
-- Policies exist only on paper
-- Agents can exceed intended authority
-- Violations are detected after impact
-- Observability replaces enforcement
+Without runtime enforcement:
 
-TealTiger enforces governance **at the moment decisions are made**, ensuring that every agent action is evaluated against approved contracts and policies.
+- Policies remain advisory
+- Guardrails can be bypassed
+- Risk accumulates silently
+- Evidence is incomplete or post‑hoc
+
+TealTiger treats runtime governance as the **last line of defense**—where governance intent becomes enforceable system behavior.
 
 ## Core Articles
 
 - /governance/runtime/runtime-governance/
-  - How TealTiger enforces deterministic governance controls during live agent execution.
+  - The primary runtime governance model for enforcing contracts, boundaries, and evidence at execution time.
+
+## Additional Articles
+
+- /governance/runtime/runtime-governance-enforcement/
+- /governance/runtime/fail-closed-governance/
+- /governance/runtime/observability-is-not-governance/
+
+These articles deepen runtime governance by clarifying **what must be enforced**, **how uncertainty is handled safely**, and **why observability alone cannot satisfy governance or audit requirements**.
+``
