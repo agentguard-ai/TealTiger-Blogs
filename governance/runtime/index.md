@@ -30,14 +30,14 @@ TealTiger treats runtime governance as the **last line of defense**—where gove
 
 ## Core Articles
 
-- /governance/runtime/runtime-governance/
+- [Runtime Governance](/governance/runtime/runtime-governance/)
   - The primary runtime governance model for enforcing contracts, boundaries, and evidence at execution time.
 
 ## Additional Articles
 
-- /governance/runtime/runtime-governance-enforcement/
-- /governance/runtime/fail-closed-governance/
-- /governance/runtime/observability-is-not-governance/
+- [Runtime Governance: What Must Be Enforced](/governance/runtime/runtime-governance-enforcement/)
+- [Fail‑Closed AI Systems: Governance Under Uncertainty](/governance/runtime/fail-closed-governance/)
+- [Why Observability Is Not Governance](/governance/runtime/observability-is-not-governance/)
 
 These articles deepen runtime governance by clarifying **what must be enforced**, **how uncertainty is handled safely**, and **why observability alone cannot satisfy governance or audit requirements**.
-``
+or audit requirements**.
