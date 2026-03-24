@@ -1,33 +1,41 @@
 ---
 layout: page
-title: Evidence & Audit
+title: Evidence
 ---
 
-Evidence & Audit explains how TealTiger produces **verifiable, immutable governance evidence** from every enforcement decision in agentic AI systems.
+Evidence defines how TealTiger proves that AI governance controls were **actually enforced**, not just documented.
 
-In regulated and enterprise environments, governance is only as strong as the evidence it produces. Policies without proof are assertions, not controls.
-
-TealTiger treats evidence generation as a **first‑class system capability**, not a reporting afterthought.
+In agentic AI systems, governance credibility depends on runtime proof: what decisions were evaluated, what actions were allowed or blocked, and which controls were applied at execution time. This hub focuses on **evidence as a first‑class system output**, not an after‑the‑fact artifact.
 
 ## What This Hub Covers
 
-- Producing deterministic evidence from governance enforcement
-- Capturing decision‑level audit trails
-- Linking policies, contracts, and runtime actions
-- Supporting internal reviews, audits, and regulatory inquiries
-- Enabling traceability across build, deploy, and runtime stages
+- What qualifies as audit‑grade governance evidence
+- Deterministic, execution‑time decision records
+- Tamper‑resistant evidence pipelines
+- Evidence‑driven compliance and audit readiness
+- Separation of governance evidence from operational telemetry
 
 ## Why Evidence Matters
 
 Without strong evidence:
-- Governance claims cannot be verified
-- Audits become manual and error‑prone
-- Risk decisions lose credibility
-- Compliance assessments rely on screenshots and narratives
 
-TealTiger generates evidence **by design**, directly from enforcement paths.
+- Governance claims cannot be verified
+- Audits rely on explanations instead of proof
+- Blocked actions leave no trace
+- Compliance becomes manual and retrospective
+- Trust in agentic systems erodes
+
+TealTiger treats evidence as the **source of truth** for governance, risk, and compliance.
 
 ## Core Articles
 
-- [Evidence & Audit](/governance/evidence/evidence-governance/)
-  - How TealTiger generates immutable, audit‑ready evidence from deterministic governance enforcement.
+- [Evidence Model for Agentic AI Governance](/governance/evidence/evidence/)
+  - The primary evidence model for capturing, protecting, and querying governance decisions in agentic AI systems.
+
+## Additional Articles
+
+- [What Counts as Evidence for AI Governance](/governance/evidence/what-counts-as-evidence/)
+- [Building Tamper‑Resistant Evidence Pipelines](/governance/evidence/tamper-resistant-evidence-pipelines/)
+- [Evidence‑Driven Compliance for AI Systems](/governance/evidence/evidence-driven-compliance/)
+
+These articles expand the evidence model by showing how **runtime decision records**, **immutability**, and **continuous proof** replace narrative explanations and manual audit preparation.
