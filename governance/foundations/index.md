@@ -32,3 +32,11 @@ TealTiger treats governance as a **system capability**, not a documentation exer
 
 - [Governance Foundations for Agentic AI](/governance/foundations/governance-foundations/)
   - The contract‑first, deterministic principles that underpin all TealTiger governance domains.
+
+## Additional Articles
+
+- [From Policies to Contracts: Why AI Governance Must Be Deterministic](/governance/foundations/policies-to-contracts/)
+- [Designing Governance Invariants for Agentic Systems](/governance/foundations/governance-invariants/)
+- [Shift‑Left Governance: Embedding Controls Before Runtime](/governance/foundations/shift-left-governance/)
+
+These articles expand on the foundations by showing how governance principles are translated into **enforceable controls**, **non‑negotiable invariants**, and **pre‑runtime prevention mechanisms**.
