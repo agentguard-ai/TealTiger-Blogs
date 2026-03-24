@@ -3,28 +3,39 @@ layout: page
 title: Cost Governance
 ---
 
-Cost Governance explains how TealTiger helps organizations **control, predict, and govern AI system costs** in agentic environments.
+Cost Governance defines how TealTiger ensures agentic AI systems operate within **explicit, enforceable financial boundaries**.
 
-In agentic systems, cost is not just a finance concern — it is a **governance risk**. Autonomous agents can trigger uncontrolled execution, model overuse, and cascading spend if cost boundaries are not explicitly enforced.
+In agentic systems, cost is not a passive billing outcome. Autonomous retries, branching plans, tool fan‑out, and model escalation can cause spend to grow non‑linearly at runtime. This hub focuses on **deterministic cost enforcement**, not post‑hoc spend analysis.
 
 ## What This Hub Covers
 
-- Governing cost as a first‑class control
-- Preventing runaway agent execution
-- Enforcing budget and usage boundaries deterministically
-- Linking cost decisions to governance contracts
+- Cost as a first‑class governance control
+- Runtime budget enforcement and ceilings
+- Prevention of runaway execution and cost explosions
+- Model‑to‑budget binding and retry limits
+- Audit‑ready cost evidence for finance and risk teams
 
 ## Why Cost Governance Matters
 
-Without cost governance:
-- Spend becomes unpredictable
-- Model usage drifts silently
-- Financial risk compounds with autonomy
-- Post‑hoc cost analysis replaces prevention
+Without enforceable cost controls:
 
-TealTiger treats cost as an **enforceable constraint**, not a reporting metric.
+- Spend escalates faster than humans can react
+- Alerts arrive after damage is done
+- Cost overruns appear accidental or ungoverned
+- Finance and audit teams lack decision evidence
+- Trust in agentic systems erodes quickly
+
+TealTiger treats cost as an **execution‑time control surface**, not a reporting artifact.
 
 ## Core Articles
 
-- [Cost Governance](/governance/cost/cost-governance/)
-  - How TealTiger enforces deterministic cost controls to keep agentic AI systems financially predictable and safe.
+- [Cost Governance for Agentic AI](/governance/cost/cost-governance/)
+  - The primary cost governance model for enforcing budgets, limits, and evidence at runtime.
+
+## Additional Articles
+
+- [Cost Is a Governance Control, Not a Billing Metric](/governance/cost/cost-as-governance-control/)
+- [Preventing Cost Explosions in Agentic Systems](/governance/cost/preventing-cost-explosions/)
+- [Audit‑Ready Cost Evidence for AI Systems](/governance/cost/audit-ready-cost-evidence/)
+
+These articles expand cost governance by showing how **runtime enforcement**, **fail‑closed execution**, and **evidence‑first design** prevent unbounded spend in agentic AI systems.
