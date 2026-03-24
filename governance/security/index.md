@@ -3,34 +3,40 @@ layout: page
 title: Security Governance
 ---
 
-Security Governance explains how TealTiger enforces **security controls for agentic AI systems** through deterministic, contract‑first governance.
+Security Governance defines how TealTiger prevents agentic AI systems from becoming new attack surfaces.
 
-In agentic environments, security risk does not come only from infrastructure exposure — it comes from **autonomous decision‑making**, **tool invocation**, and **implicit trust between agents and systems**.
-
-TealTiger treats security as an **enforcement problem**, not a monitoring or advisory concern.
+As AI systems gain autonomy through tool use, data access, and side effects, traditional application security controls are no longer sufficient. This hub focuses on **governance‑driven security**—where identity, privilege, and execution boundaries are enforced deterministically.
 
 ## What This Hub Covers
 
-- Governing agent identity and execution context
-- Enforcing least‑privilege tool access
-- Preventing unauthorized actions and privilege escalation
-- Eliminating implicit trust between agents and systems
-- Producing audit‑ready security enforcement evidence
+- Identity‑bound execution for AI agents
+- Least‑privilege enforcement for tools and integrations
+- Governance‑first handling of prompt injection
+- Prevention of lateral movement and privilege escalation
+- Audit‑grade security evidence at runtime
 
 ## Why Security Governance Matters
 
-Without explicit security governance:
-- Agents can overreach their authority
-- Tools may be invoked outside approved scope
-- Security relies on assumptions instead of controls
-- Violations are detected after impact
+Without security‑aware governance:
 
-TealTiger enforces **deterministic deny‑by‑default security controls** at runtime, ensuring every action is explicitly authorized.
+- Agents execute anonymously
+- Tools inherit excessive permissions
+- Prompt injection turns into real‑world impact
+- Security incidents are detected after damage occurs
+- Audit and forensic attribution breaks down
+
+TealTiger treats security as a **governance property**, not a bolt‑on control.
 
 ## Core Articles
 
-- [Security Governance](/governance/security/security-governance/)
-  - How TealTiger enforces identity‑bound execution, least‑privilege access, and deterministic security controls for agentic AI systems.
+- /governance/security/security-governance/
+  - The primary security governance model for identity, privilege, and execution control in agentic AI systems.
 
-- [Zero Trust for Governance](/governance/security/zero-trust-governance-hubs-series/)
-  - How Zero Trust principles apply to governance and security enforcement in agentic AI architectures.
+## Additional Articles
+
+- /governance/security/identity-bound-agents/
+- /governance/security/least-privilege-llm-tooling/
+- /governance/security/prompt-injection-governance-failure/
+
+These articles deepen the security model by showing how **identity binding**, **least‑privilege tooling**, and **governance‑first defenses** prevent agentic systems from executing unsafe or unauthorized actions.
+``
