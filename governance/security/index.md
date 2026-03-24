@@ -29,14 +29,11 @@ TealTiger treats security as a **governance property**, not a bolt‑on control.
 
 ## Core Articles
 
-- /governance/security/security-governance/
+- [Security Governance](/governance/security/security-governance/)
   - The primary security governance model for identity, privilege, and execution control in agentic AI systems.
 
 ## Additional Articles
 
-- /governance/security/identity-bound-agents/
-- /governance/security/least-privilege-llm-tooling/
-- /governance/security/prompt-injection-governance-failure/
-
-These articles deepen the security model by showing how **identity binding**, **least‑privilege tooling**, and **governance‑first defenses** prevent agentic systems from executing unsafe or unauthorized actions.
-``
+- [Identity‑Bound AI Agents](/governance/security/identity-bound-agents/)
+- [Least‑Privilege for LLM Tooling](/governance/security/least-privilege-llm-tooling/)
+- [Prompt Injection Is a Governance Failure](/governance/security/prompt-injection-governance-failure/)
