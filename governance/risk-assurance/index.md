@@ -3,31 +3,40 @@ layout: page
 title: Risk Assurance
 ---
 
-Risk Assurance explains how TealTiger enables **continuous, enforceable risk control** for agentic AI systems.
+Risk Assurance defines how TealTiger ensures agentic AI systems remain within **approved risk boundaries throughout their lifecycle**.
 
-In agentic environments, risk is not static. Agent autonomy, tool usage, data access, and model behavior can evolve at runtime, making point‑in‑time risk assessments insufficient.
-
-TealTiger treats risk assurance as a **continuous governance capability**, not a periodic review activity.
+Unlike traditional systems, agentic AI can change behavior at runtime—expanding scope, increasing autonomy, and accumulating exposure without code changes. This hub focuses on **continuous, execution‑time risk governance**, not static risk assessments.
 
 ## What This Hub Covers
 
-- Defining explicit risk boundaries for agentic systems
-- Binding risk classifications to governance contracts
-- Enforcing risk constraints at runtime
-- Detecting and preventing risk drift
-- Producing verifiable evidence for assurance and audit
+- Continuous risk assessment during execution
+- Detection and containment of risk drift in long‑lived agents
+- Runtime linkage between risk signals and enforcement
+- Risk‑driven restriction, approval, or blocking of actions
+- Audit‑grade evidence for risk decisions
 
 ## Why Risk Assurance Matters
 
-Without continuous risk assurance:
-- Approved risk assumptions become outdated
-- Agents may exceed their intended authority
-- Violations are detected only after impact
-- Audit and compliance reviews rely on narratives instead of proof
+Without runtime risk assurance:
 
-TealTiger ensures that **every agent action is evaluated against approved risk boundaries**, with deterministic outcomes and traceable decisions.
+- Risk accumulates silently over time
+- Controls drift from original assumptions
+- Incidents are detected only after impact
+- Risk reviews become retrospective explanations
+- Audit confidence erodes
+
+TealTiger treats risk as a **dynamic system property**, continuously evaluated and enforced during execution.
 
 ## Core Articles
 
-- [Risk Assurance](/governance/risk-assurance/risk-assurance/)
-  - How TealTiger enables continuous risk assurance through deterministic enforcement and governance contracts.
+- [Risk Assurance for Agentic AI](/governance/risk-assurance/risk-assurance/)
+  - The primary risk assurance model for detecting, evaluating, and enforcing risk boundaries in agentic AI systems.
+
+## Additional Articles
+
+- [Continuous Risk Assessment for Agentic AI Systems](/governance/risk-assurance/continuous-risk-assessment/)
+- [Risk Drift in Long‑Lived AI Agents](/governance/risk-assurance/risk-drift-long-lived-agents/)
+- [Linking Risk Signals to Governance Enforcement](/governance/risk-assurance/linking-risk-signals-to-enforcement/)
+
+These articles expand the risk assurance model by showing how **continuous assessment**, **drift detection**, and **deterministic enforcement** prevent silent risk escalation in agentic systems.
+  
