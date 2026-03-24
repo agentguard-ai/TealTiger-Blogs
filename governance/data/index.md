@@ -3,31 +3,39 @@ layout: page
 title: Data Governance
 ---
 
-Data Governance explains how TealTiger governs **data access, usage, and boundaries** in agentic AI systems.
+Data Governance defines how TealTiger ensures agentic AI systems access, use, retain, and transmit data **only for explicitly approved purposes**.
 
-In agentic environments, data is one of the highest‑risk inputs. Uncontrolled access, ambiguous purpose, or silent data drift can lead to security breaches, privacy violations, and regulatory exposure.
-
-TealTiger treats data governance as a **pre‑execution enforcement problem**, not a post‑hoc review exercise.
+Unlike traditional systems, agentic AI reasons over data dynamically at runtime—retrieving context, persisting memory, invoking tools, and producing outputs that may cross trust boundaries. This hub focuses on **deterministic, runtime‑enforced data governance**, not post‑hoc review.
 
 ## What This Hub Covers
 
-- Governing approved data sources
-- Enforcing data purpose binding
-- Preventing cross‑domain data leakage
-- Applying deterministic redaction before model invocation
-- Producing audit‑ready data access evidence
+- Purpose‑bound data access for agentic workflows
+- Prevention of cross‑context and cross‑task data leakage
+- Inference‑time data enforcement
+- Memory isolation and retention boundaries
+- Audit‑grade evidence for data usage decisions
 
 ## Why Data Governance Matters
 
-Without strong data governance:
-- Sensitive data can leak silently
-- Agents may exceed intended data scope
-- Purpose limitation breaks down
-- Compliance evidence becomes unreliable
+Without governance at runtime:
 
-TealTiger enforces data controls **before data reaches the model**, ensuring governance is proactive and deterministic.
+- Data escapes its original purpose
+- Sensitive context leaks across tasks or users
+- Memory becomes an ungoverned data store
+- Compliance controls apply only on paper
+- Audit evidence is incomplete or inferred
+
+TealTiger treats data governance as an **execution‑time control**, not a static data management policy.
 
 ## Core Articles
 
-- [Data Governance](/governance/data/data-governance/)
-  - How TealTiger enforces deterministic data access, purpose binding, and redaction for agentic AI systems.
+- [Data Governance for Agentic AI](/governance/data/data-governance/)
+  - The primary data governance model for enforcing purpose limitation, context boundaries, and evidence during execution.
+
+## Additional Articles
+
+- [Purpose‑Bound Data Access for Agentic AI](/governance/data/purpose-bound-data-access/)
+- [Preventing Cross‑Context Data Leakage in Agentic Systems](/governance/data/preventing-cross-context-data-leakage/)
+- [Data Governance at Inference Time](/governance/data/data-governance-at-inference-time/)
+
+These articles expand the data governance model by showing how **purpose binding**, **context isolation**, and **inference‑time enforcement** prevent accidental data misuse and leakage in agentic systems.
