@@ -5,6 +5,8 @@ title: Risk Assurance
 
 Risk Assurance defines how TealTiger ensures agentic AI systems remain within **approved risk boundaries throughout their lifecycle**.
 
+The Risk Governance Hub defines **normative controls** for continuous risk identification, assessment, and translation into enforceable governance actions
+
 Unlike traditional systems, agentic AI can change behavior at runtime—expanding scope, increasing autonomy, and accumulating exposure without code changes. This hub focuses on **continuous, execution‑time risk governance**, not static risk assessments.
 
 ## What This Hub Covers
