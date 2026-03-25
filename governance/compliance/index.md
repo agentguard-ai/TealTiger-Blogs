@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Compliance Enablement
+title: "Compliance Enablement"
 ---
 
 Compliance Enablement defines how TealTiger makes AI governance **auditable, provable, and operational**, without relying on retrospective reporting or manual audit preparation.
@@ -29,11 +29,10 @@ TealTiger treats compliance as a **by‑product of deterministic governance and 
 
 ## Core Articles
 
-- [Compliance Enablement Overview](/governance/compliance-enablement/compliance-enablement/)
+- [Compliance Enablement vs Compliance Reporting](/governance/compliance-enablement/compliance-enablement-vs-reporting/)
   - The primary model for making AI governance audit‑ready through enforcement and evidence.
 
 ## Additional Articles
-
 
 - [Preparing for the EU AI Act with Deterministic Controls](/governance/compliance-enablement/preparing-for-eu-ai-act/)
 - [Audit Readiness for Agentic AI Systems](/governance/compliance-enablement/audit-readiness-agentic-ai/)
