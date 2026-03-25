@@ -3,6 +3,8 @@ layout: page
 title: Governance Foundations
 ---
 
+The Foundations Governance Hub defines the **normative principles and baseline controls** that underpin all AI governance domains.
+
 Governance Foundations define how TealTiger approaches governance for agentic AI systems.
 
 Before discussing runtime controls, security enforcement, data boundaries, or compliance enablement, this section establishes the **core principles** that all TealTiger governance domains rely on.
