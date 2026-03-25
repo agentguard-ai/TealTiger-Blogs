@@ -18,6 +18,8 @@ TealTiger Governance is structured as a layered system:
 
 These layers are intentionally distinct and should be read together.
 
+Governance Hubs are authoritative; Insights are explanatory; Evidence is factual.
+
 <div class="tt-grid">
 
   <a href="/governance/foundations/" class="tt-card tt-card--accent">
