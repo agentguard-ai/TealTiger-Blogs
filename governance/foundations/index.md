@@ -41,4 +41,11 @@ TealTiger treats governance as a **system capability**, not a documentation exer
 - [Designing Governance Invariants for Agentic Systems](/governance/foundations/governance-invariants/)
 - [Shift‑Left Governance: Embedding Controls Before Runtime](/governance/foundations/shift-left-governance/)
 
+  ## Related Insights
+
+These Insights explain how foundational governance principles manifest across multiple control domains:
+
+- [Why Evidence Is the Missing Layer in AI Governance](/governance/insights/why-evidence-is-missing-layer/)
+- [Why Guardrails Alone Are Not AI Governance](/governance/insights/why-guardrails-alone-are-not-governance/)
+
 These articles expand on the foundations by showing how governance principles are translated into **enforceable controls**, **non‑negotiable invariants**, and **pre‑runtime prevention mechanisms**.
