@@ -41,3 +41,10 @@ TealTiger treats evidence as the **source of truth** for governance, risk, and c
 - [Evidence‑Driven Compliance for AI Systems](/governance/evidence/evidence-driven-compliance/)
 
 These articles expand the evidence model by showing how **runtime decision records**, **immutability**, and **continuous proof** replace narrative explanations and manual audit preparation.
+
+## Related Insights
+
+These Insights clarify how evidence is interpreted, operationalized, and reviewed across governance functions:
+
+- [Why Evidence Is the Missing Layer in AI Governance](/governance/insights/why-evidence-is-missing-layer/)
+- [Operationalizing Insights for GRC and Engineering](/governance/insights/operationalizing-insights-for-grc-and-engineering/)
