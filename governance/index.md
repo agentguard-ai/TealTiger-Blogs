@@ -77,41 +77,44 @@ This section is organized as **Governance Hubs**. Each hub contains a hub overvi
   </a>
 
 </div>
+
+> **Recommended read order:** Foundations → Runtime → Security → Evidence
+
 ---
 
 ## Governance Hubs
 
-### 1) [Foundations](/governance/foundations/)
+### 1) /governance/foundations/
 The contract-first principles that make governance repeatable, testable, and auditable.
 
-### 2) [Frameworks & Standards](/governance/frameworks/)
+### 2) /governance/frameworks/
 How TealTiger operationalizes governance frameworks through deterministic controls.
 
-### 3) [Runtime Governance](/governance/runtime/)
+### 3) /governance/runtime/
 Governance at execution time: prompt execution, tool invocation, and scope control.
 
-### 4) [Security](/governance/security/)
+### 4) /governance/security/
 Identity-bound execution, least-privilege access, and deny-by-default enforcement.
 
-### 5) [Data Governance](/governance/data/)
+### 5) /governance/data/
 Purpose binding, source control, and deterministic data boundaries.
 
-### 6) [Model Governance](/governance/model/)
+### 6) /governance/model/
 Explicit control over approved models, tasks, and risk boundaries.
 
-### 7) [Cost & Economic Governance](/governance/cost/)
+### 7) /governance/cost/
 Preventing runaway execution and enforcing cost as a governance constraint.
 
-### 8) [Risk Assurance](/governance/risk-assurance/)
+### 8) /governance/risk-assurance/
 Continuous evaluation of agent actions against explicit risk boundaries.
 
-### 9) [Evidence & Audit](/governance/evidence/)
+### 9) /governance/evidence/
 Immutable, verifiable evidence generated directly from governance enforcement.
 
-### 10) [Compliance Enablement](/governance/compliance/)
+### 10) /governance/compliance-enablement/
 Compliance-enabling controls and evidence without over-claiming compliance completion.
 
-### 11) [Sustainability](/governance/sustainability/)
+### 11) /governance/sustainability/
 Sustainability as a governance outcome: operational, financial, and organizational.
 
 ---
@@ -119,21 +122,25 @@ Sustainability as a governance outcome: operational, financial, and organization
 ## How to Use This Section
 
 <div class="tt-grid" style="grid-template-columns: repeat(3, 1fr);">
+
   <div class="tt-card tt-card--accent">
     <div class="tt-card__icon">🔧</div>
     <div class="tt-card__title">Builders</div>
     <div class="tt-card__desc">Foundations → Runtime → Security → Data</div>
   </div>
+
   <div class="tt-card tt-card--accent">
     <div class="tt-card__icon">⚙️</div>
     <div class="tt-card__title">Operators</div>
     <div class="tt-card__desc">Runtime → Evidence → Risk Assurance</div>
   </div>
+
   <div class="tt-card tt-card--accent">
     <div class="tt-card__icon">📋</div>
     <div class="tt-card__title">Auditors / GRC</div>
     <div class="tt-card__desc">Frameworks → Compliance → Evidence</div>
   </div>
+
 </div>
 
 ---
