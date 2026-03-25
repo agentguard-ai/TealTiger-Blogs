@@ -41,4 +41,10 @@ TealTiger treats risk as a **dynamic system property**, continuously evaluated a
 - [Linking Risk Signals to Governance Enforcement](/governance/risk-assurance/linking-risk-signals-to-enforcement/)
 
 These articles expand the risk assurance model by showing how **continuous assessment**, **drift detection**, and **deterministic enforcement** prevent silent risk escalation in agentic systems.
-  
+
+  ## Related Insights
+
+These Insights explain how risk indicators are translated into enforceable governance actions:
+
+- [From Risk to Runtime: How Governance Enforcement Actually Works](/governance/insights/from-risk-to-runtime/)
+- [AI Risk Signals from Runtime Telemetry](/governance/insights/
