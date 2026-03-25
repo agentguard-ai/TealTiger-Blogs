@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Sustainability
+title: "Sustainability"
 ---
 
 Sustainability defines how agentic AI systems remain **operable, governable, and trustworthy over time**.
@@ -29,13 +29,13 @@ TealTiger treats sustainability as a **system property**, enabled through determ
 
 ## Core Articles
 
-- /governance/sustainability/sustainability/
+- [Sustainability Overview](/governance/sustainability/sustainability/)
   - The primary model for ensuring long‑term operability, control, and trust in agentic AI systems.
 
 ## Additional Articles
 
-- /governance/sustainability/sustainable-ai-systems/
-- /governance/sustainability/preventing-governance-fatigue/
-- /governance/sustainability/ungoverned-ai-unsustainable/
+- [Sustainable AI Systems: Governance Beyond Accuracy](/governance/sustainability/sustainable-ai-systems/)
+- [Preventing Governance Fatigue in AI Teams](/governance/sustainability/preventing-governance-fatigue/)
+- [Why Ungoverned AI Is Organizationally Unsustainable](/governance/sustainability/ungoverned-ai-unsustainable/)
 
 These articles expand the sustainability model by showing how **deterministic enforcement**, **automation**, and **evidence‑first design** prevent long‑term operational decay as agentic AI systems scale.
