@@ -5,6 +5,8 @@ title: "Frameworks"
 
 Frameworks define the **external expectations** for AI governance — what regulators, auditors, and standards bodies require systems to demonstrate.
 
+The Frameworks Governance Hub defines **normative mappings and control interpretations** aligned to external AI governance standards and regulatory frameworks.
+
 For agentic AI, frameworks cannot be satisfied through documentation alone. They must be translated into **deterministic enforcement points** and **audit‑grade evidence** that operate at runtime. This hub explains how governance frameworks become operational system capabilities.
 
 ## What This Hub Covers
