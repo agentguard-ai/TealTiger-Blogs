@@ -1,12 +1,9 @@
 ---
-layout: Fail](/governance/frameworks/frameworks-without-runtime-enforcement-fail/)layout: page
-- [Mapping AI Governance Frameworks to Evidence and Enforcement](/governance/frameworks/mapping-frameworks-to-evidence-and-enforcement/)
-
-These articles show how governance frameworks move from **expectations** to **runtime‑enforced behavior** and **verifiable proof** in agentic AI systems.
-title: Frameworks
+layout: page
+title: "Frameworks"
 ---
 
-Frameworks define the **external expectations** for AI governance—what regulators, auditors, and standards bodies require systems to demonstrate.
+Frameworks define the **external expectations** for AI governance — what regulators, auditors, and standards bodies require systems to demonstrate.
 
 For agentic AI, frameworks cannot be satisfied through documentation alone. They must be translated into **deterministic enforcement points** and **audit‑grade evidence** that operate at runtime. This hub explains how governance frameworks become operational system capabilities.
 
@@ -32,9 +29,13 @@ TealTiger treats frameworks as **inputs to system design**, not reporting artifa
 
 ## Core Articles
 
-- [Frameworks: Deterministic Governance Translation Model](/governance/frameworks/frameworks/)
+- /governance/frameworks/frameworks/
   - The primary model for translating governance frameworks into deterministic enforcement and evidence.
 
 ## Additional Articles
 
-- [Operationalizing NIST AI RMF with Deterministic Controls](/governance/frameworks/operationalizing-nist-ai-rmf/)
+- /governance/frameworks/operationalizing-nist-ai-rmf/
+- /governance/frameworks/frameworks-without-runtime-enforcement-fail/
+- /governance/frameworks/mapping-frameworks-to-evidence-and-enforcement/
+
+These articles show how governance frameworks move from **expectations** to **runtime‑enforced behavior** and **verifiable proof** in agentic AI systems.
