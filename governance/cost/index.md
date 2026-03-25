@@ -5,6 +5,8 @@ title: Cost Governance
 
 Cost Governance defines how TealTiger ensures agentic AI systems operate within **explicit, enforceable financial boundaries**.
 
+The Cost Governance Hub defines **normative controls** for budget enforcement, usage predictability, rate limiting, and cost accountability in AI systems.
+
 In agentic systems, cost is not a passive billing outcome. Autonomous retries, branching plans, tool fan‑out, and model escalation can cause spend to grow non‑linearly at runtime. This hub focuses on **deterministic cost enforcement**, not post‑hoc spend analysis.
 
 ## What This Hub Covers
