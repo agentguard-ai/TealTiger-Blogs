@@ -5,6 +5,8 @@ title: Security Governance
 
 Security Governance defines how TealTiger prevents agentic AI systems from becoming new attack surfaces.
 
+The Security Governance Hub defines **normative security controls** for identity binding, authorization, isolation, and safe tool usage in AI systems.
+
 As AI systems gain autonomy through tool use, data access, and side effects, traditional application security controls are no longer sufficient. This hub focuses on **governance‑driven security**—where identity, privilege, and execution boundaries are enforced deterministically.
 
 ## What This Hub Covers
