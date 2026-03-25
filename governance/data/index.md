@@ -41,3 +41,10 @@ TealTiger treats data governance as an **execution‑time control**, not a stati
 - [Data Governance at Inference Time](/governance/data/data-governance-at-inference-time/)
 
 These articles expand the data governance model by showing how **purpose binding**, **context isolation**, and **inference‑time enforcement** prevent accidental data misuse and leakage in agentic systems.
+
+## Related Insights
+
+These Insights show how data governance effectiveness is assessed through evidence-backed outcomes:
+
+- [Why Evidence Is the Missing Layer in AI Governance](/governance/insights/why-evidence-is-missing-layer/)
+- [Evidence‑First KPIs for AI Governance](/governance/insights/evidence-first-kpis-for-ai-governance/)
