@@ -39,3 +39,10 @@ TealTiger treats sustainability as a **system property**, enabled through determ
 - [Why Ungoverned AI Is Organizationally Unsustainable](/governance/sustainability/ungoverned-ai-unsustainable/)
 
 These articles expand the sustainability model by showing how **deterministic enforcement**, **automation**, and **evidence‑first design** prevent long‑term operational decay as agentic AI systems scale.
+
+## Related Insights
+
+These Insights connect sustainable AI governance to operational controls and measurable outcomes:
+
+- [Evidence‑First KPIs for AI Governance](/governance/insights/evidence-first-kpis-for-ai-governance/)
+- [Why Guardrails Alone Are Not AI Governance](/governance/insights/why-guardrails-alone-are-not-governance/)
