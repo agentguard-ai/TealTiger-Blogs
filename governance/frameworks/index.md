@@ -40,4 +40,11 @@ TealTiger treats frameworks as **inputs to system design**, not reporting artifa
 - [Why Frameworks Without Runtime Enforcement Fail](/governance/frameworks/frameworks-without-runtime-enforcement-fail/)
 - [Mapping Frameworks to Evidence and Enforcement](/governance/frameworks/mapping-frameworks-to-evidence-and-enforcement/)
 
+  ## Related Insights
+
+These Insights clarify how external governance frameworks translate into enforceable system behavior:
+
+- [From Risk to Runtime: How Governance Enforcement Actually Works](/governance/insights/from-risk-to-runtime/)
+- [Operationalizing Insights for GRC and Engineering](/governance/insights/operationalizing-insights-for-grc-and-engineering/)
+
 These articles show how governance frameworks move from **expectations** to **runtime‑enforced behavior** and **verifiable proof** in agentic AI systems.
