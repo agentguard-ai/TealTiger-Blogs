@@ -5,6 +5,8 @@ title: Evidence
 
 Evidence defines how TealTiger proves that AI governance controls were **actually enforced**, not just documented.
 
+The Evidence Governance Hub defines **normative requirements for proof**, capturing verifiable artifacts that demonstrate control execution and support audit review.
+
 In agentic AI systems, governance credibility depends on runtime proof: what decisions were evaluated, what actions were allowed or blocked, and which controls were applied at execution time. This hub focuses on **evidence as a first‑class system output**, not an after‑the‑fact artifact.
 
 ## What This Hub Covers
