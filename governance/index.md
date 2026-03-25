@@ -14,70 +14,69 @@ This section is organized as **Governance Hubs**. Each hub contains a hub overvi
     <div class="tt-card__icon">🏗️</div>
     <div class="tt-card__title">Foundations</div>
     <div class="tt-card__desc">Contract-first principles → Runtime, Security</div>
-  </a>
+  </div>
 
   /governance/frameworks/
     <div class="tt-card__icon">📚</div>
     <div class="tt-card__title">Frameworks</div>
     <div class="tt-card__desc">Standards operationalized through deterministic controls</div>
-  </a>
+  </div>
 
   /governance/runtime/
     <div class="tt-card__icon">⚙️</div>
     <div class="tt-card__title">Runtime</div>
     <div class="tt-card__desc">Enforcement at execution time → Evidence</div>
-  </a>
+  </div>
 
   /governance/security/
     <div class="tt-card__icon">🛡️</div>
     <div class="tt-card__title">Security</div>
     <div class="tt-card__desc">Identity-bound, least-privilege controls → Evidence</div>
-  </a>
+  </div>
 
   /governance/data/
     <div class="tt-card__icon">🗄️</div>
     <div class="tt-card__title">Data</div>
     <div class="tt-card__desc">Purpose binding, boundaries → Security</div>
-  </a>
+  </div>
 
   /governance/model/
     <div class="tt-card__icon">🤖</div>
     <div class="tt-card__title">Model</div>
     <div class="tt-card__desc">Approved models, task bindings, risk boundaries</div>
-  </a>
+  </div>
 
   /governance/cost/
     <div class="tt-card__icon">💸</div>
     <div class="tt-card__title">Cost</div>
     <div class="tt-card__desc">Budget enforcement → Runtime</div>
-  </a>
+  </div>
 
   /governance/risk-assurance/
     <div class="tt-card__icon">📈</div>
     <div class="tt-card__title">Risk</div>
     <div class="tt-card__desc">Continuous risk assurance → Compliance</div>
-  </a>
+  </div>
 
   /governance/evidence/
     <div class="tt-card__icon">🧾</div>
     <div class="tt-card__title">Evidence</div>
     <div class="tt-card__desc">Immutable proof from enforcement → Compliance</div>
-  </a>
+  </div>
 
   /governance/compliance-enablement/
     <div class="tt-card__icon">✅</div>
     <div class="tt-card__title">Compliance</div>
     <div class="tt-card__desc">Compliance-enabling controls and evidence</div>
-  </a>
+  </div>
 
   /governance/sustainability/
     <div class="tt-card__icon">🌱</div>
     <div class="tt-card__title">Sustainability</div>
     <div class="tt-card__desc">Operational, financial, and organizational sustainability</div>
-  </a>
+  </div>
 
 </div>
-
 > **Recommended read order:** Foundations → Runtime → Security → Evidence
 
 ---
