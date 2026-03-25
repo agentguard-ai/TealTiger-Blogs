@@ -5,6 +5,8 @@ title: Data Governance
 
 Data Governance defines how TealTiger ensures agentic AI systems access, use, retain, and transmit data **only for explicitly approved purposes**.
 
+The Data Governance Hub defines **normative controls** for data access, minimization, boundary enforcement, and lifecycle governance in AI workflows.
+
 Unlike traditional systems, agentic AI reasons over data dynamically at runtime—retrieving context, persisting memory, invoking tools, and producing outputs that may cross trust boundaries. This hub focuses on **deterministic, runtime‑enforced data governance**, not post‑hoc review.
 
 ## What This Hub Covers
