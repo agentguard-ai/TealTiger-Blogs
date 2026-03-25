@@ -5,6 +5,8 @@ title: Model Governance
 
 Model Governance explains how TealTiger governs **which AI models are allowed**, **for what purposes**, and **under what risk boundaries** in agentic AI systems.
 
+The Model Governance Hub defines **normative controls** for model approval, task binding, risk boundary enforcement, and lifecycle accountability.
+
 In agentic environments, uncontrolled model usage introduces serious risks — including inconsistent behavior, compliance exposure, cost volatility, and untraceable decision paths.
 
 TealTiger treats model selection and usage as a **governance decision**, not a runtime convenience.
