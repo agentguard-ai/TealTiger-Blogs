@@ -10,6 +10,13 @@ Governance Insights connect the individual governance hubs into a **coherent, en
 
 While the Governance Hubs define *what* must be governed, the Insights explain *how those domains interact*, *why failures occur*, and *what differentiates enforceable governance from surface‑level controls*.
 
+> **Interpretive Notice**
+>
+> Governance Insights are explanatory and cross‑cutting.  
+> They do **not** define new controls or compliance requirements.
+>
+> Authoritative governance requirements are defined in the Governance Hubs.
+
 These posts are intentionally cross‑cutting. They do not introduce new governance concepts; they synthesize and stress‑test the existing ones.
 
 ## What You’ll Find Here
