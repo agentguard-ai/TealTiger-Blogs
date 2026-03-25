@@ -9,61 +9,73 @@ TealTiger Governance is built for **deterministic enforcement** in agentic AI sy
 This section is organized as **Governance Hubs**. Each hub contains a hub overview and core articles.
 
 <div class="tt-grid">
-  <div class="tt-card tt-card--accent">
+
+  /governance/foundations/
     <div class="tt-card__icon">🏗️</div>
     <div class="tt-card__title">Foundations</div>
     <div class="tt-card__desc">Contract-first principles → Runtime, Security</div>
-  </div>
-  <div class="tt-card">
+  </a>
+
+  /governance/frameworks/
     <div class="tt-card__icon">📚</div>
     <div class="tt-card__title">Frameworks</div>
     <div class="tt-card__desc">Standards operationalized through deterministic controls</div>
-  </div>
-  <div class="tt-card">
+  </a>
+
+  /governance/runtime/
     <div class="tt-card__icon">⚙️</div>
     <div class="tt-card__title">Runtime</div>
     <div class="tt-card__desc">Enforcement at execution time → Evidence</div>
-  </div>
-  <div class="tt-card">
+  </a>
+
+  /governance/security/
     <div class="tt-card__icon">🛡️</div>
     <div class="tt-card__title">Security</div>
     <div class="tt-card__desc">Identity-bound, least-privilege controls → Evidence</div>
-  </div>
-  <div class="tt-card">
+  </a>
+
+  /governance/data/
     <div class="tt-card__icon">🗄️</div>
     <div class="tt-card__title">Data</div>
     <div class="tt-card__desc">Purpose binding, boundaries → Security</div>
-  </div>
-  <div class="tt-card">
+  </a>
+
+  /governance/model/
     <div class="tt-card__icon">🤖</div>
     <div class="tt-card__title">Model</div>
     <div class="tt-card__desc">Approved models, task bindings, risk boundaries</div>
-  </div>
-  <div class="tt-card">
+  </a>
+
+  /governance/cost/
     <div class="tt-card__icon">💸</div>
     <div class="tt-card__title">Cost</div>
     <div class="tt-card__desc">Budget enforcement → Runtime</div>
-  </div>
-  <div class="tt-card">
+  </a>
+
+  /governance/risk-assurance/
     <div class="tt-card__icon">📈</div>
     <div class="tt-card__title">Risk</div>
     <div class="tt-card__desc">Continuous risk assurance → Compliance</div>
-  </div>
-  <div class="tt-card">
+  </a>
+
+  /governance/evidence/
     <div class="tt-card__icon">🧾</div>
     <div class="tt-card__title">Evidence</div>
     <div class="tt-card__desc">Immutable proof from enforcement → Compliance</div>
-  </div>
-  <div class="tt-card">
+  </a>
+
+  /governance/compliance-enablement/
     <div class="tt-card__icon">✅</div>
     <div class="tt-card__title">Compliance</div>
     <div class="tt-card__desc">Compliance-enabling controls and evidence</div>
-  </div>
-  <div class="tt-card">
+  </a>
+
+  /governance/sustainability/
     <div class="tt-card__icon">🌱</div>
     <div class="tt-card__title">Sustainability</div>
     <div class="tt-card__desc">Operational, financial, and organizational sustainability</div>
-  </div>
+  </a>
+
 </div>
 
 > **Recommended read order:** Foundations → Runtime → Security → Evidence
