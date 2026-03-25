@@ -38,3 +38,10 @@ TealTiger treats compliance as a **by‑product of deterministic governance and 
 - [Audit Readiness for Agentic AI Systems](/governance/compliance-enablement/audit-readiness-agentic-ai/)
 
 These articles expand the compliance enablement model by showing how **runtime controls**, **deterministic decisions**, and **continuous evidence** replace manual reporting and post‑hoc audit preparation.
+
+## Related Insights
+
+These Insights explain how governance evidence supports compliance and assurance activities:
+
+- /governance/insights/evidence-first-kpis-for-ai-governance/
+- [Operationalizing Insights for GRC and Engineering](/governance/insights/operationalizing-insights-for-grc-and-engineering/)
