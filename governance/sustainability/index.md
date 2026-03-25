@@ -1,20 +1,41 @@
-
 ---
 layout: page
 title: Sustainability
-permalink: /governance/sustainability/
 ---
 
-Sustainability in AI governance goes beyond environmental concerns. It includes the ability to operate AI systems safely, predictably, and responsibly over time.
+Sustainability defines how agentic AI systems remain **operable, governable, and trustworthy over time**.
 
-This hub explains sustainability as a **governance outcome**.
+For TealTiger, sustainability is not about environmental impact. It is about ensuring that governance, cost, risk, and operational discipline scale as AI systems gain autonomy and usage increases. This hub focuses on **long‑term viability**, not short‑term performance.
 
-## Dimensions of Sustainability
+## What This Hub Covers
 
-- Operational sustainability (controlled autonomy)
-- Financial sustainability (cost-aware governance)
-- Organizational sustainability (reduced governance fatigue)
+- Governance beyond model accuracy and benchmarks
+- Preventing governance fatigue in AI teams
+- Long‑term operational and organizational sustainability
+- Deterministic controls that scale with autonomy
+- Evidence‑driven learning without instability
 
-## TealTiger Perspective
+## Why Sustainability Matters
 
-By enforcing deterministic governance, TealTiger helps organizations scale AI systems without compounding risk, cost, or operational instability.
+Without sustainable governance:
+
+- Operational complexity compounds
+- Teams burn out managing exceptions
+- Costs and risk escalate silently
+- Audit confidence degrades over time
+- AI systems become fragile and untrusted
+
+TealTiger treats sustainability as a **system property**, enabled through deterministic governance and evidence.
+
+## Core Articles
+
+- /governance/sustainability/sustainability/
+  - The primary model for ensuring long‑term operability, control, and trust in agentic AI systems.
+
+## Additional Articles
+
+- /governance/sustainability/sustainable-ai-systems/
+- /governance/sustainability/preventing-governance-fatigue/
+- /governance/sustainability/ungoverned-ai-unsustainable/
+
+These articles expand the sustainability model by showing how **deterministic enforcement**, **automation**, and **evidence‑first design** prevent long‑term operational decay as agentic AI systems scale.
