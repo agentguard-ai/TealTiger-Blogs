@@ -10,67 +10,67 @@ This section is organized as **Governance Hubs**. Each hub contains a hub overvi
 
 <div class="tt-grid">
 
-  /governance/foundations/
+  <a href="/governance/foundations/" class="tt-card tt-card--accent">
     <div class="tt-card__icon">🏗️</div>
     <div class="tt-card__title">Foundations</div>
     <div class="tt-card__desc">Contract-first principles → Runtime, Security</div>
   </a>
 
-  /governance/frameworks/
+  <a href="/governance/frameworks/" class="tt-card">
     <div class="tt-card__icon">📚</div>
     <div class="tt-card__title">Frameworks</div>
     <div class="tt-card__desc">Standards operationalized through deterministic controls</div>
   </a>
 
-  /governance/runtime/
+  <a href="/governance/runtime/" class="tt-card">
     <div class="tt-card__icon">⚙️</div>
     <div class="tt-card__title">Runtime</div>
     <div class="tt-card__desc">Enforcement at execution time → Evidence</div>
   </a>
 
-  /governance/security/
+  <a href="/governance/security/" class="tt-card">
     <div class="tt-card__icon">🛡️</div>
     <div class="tt-card__title">Security</div>
     <div class="tt-card__desc">Identity-bound, least-privilege controls → Evidence</div>
   </a>
 
-  /governance/data/
+  <a href="/governance/data/" class="tt-card">
     <div class="tt-card__icon">🗄️</div>
     <div class="tt-card__title">Data</div>
     <div class="tt-card__desc">Purpose binding, boundaries → Security</div>
   </a>
 
-  /governance/model/
+  <a href="/governance/model/" class="tt-card">
     <div class="tt-card__icon">🤖</div>
     <div class="tt-card__title">Model</div>
     <div class="tt-card__desc">Approved models, task bindings, risk boundaries</div>
   </a>
 
-  /governance/cost/
+  <a href="/governance/cost/" class="tt-card">
     <div class="tt-card__icon">💸</div>
     <div class="tt-card__title">Cost</div>
     <div class="tt-card__desc">Budget enforcement → Runtime</div>
   </a>
 
-  /governance/risk-assurance/
+  <a href="/governance/risk-assurance/" class="tt-card">
     <div class="tt-card__icon">📈</div>
     <div class="tt-card__title">Risk</div>
     <div class="tt-card__desc">Continuous risk assurance → Compliance</div>
   </a>
 
-  /governance/evidence/
+  <a href="/governance/evidence/" class="tt-card">
     <div class="tt-card__icon">🧾</div>
     <div class="tt-card__title">Evidence</div>
     <div class="tt-card__desc">Immutable proof from enforcement → Compliance</div>
   </a>
 
-  /governance/compliance-enablement/
+  <a href="/governance/compliance-enablement/" class="tt-card">
     <div class="tt-card__icon">✅</div>
     <div class="tt-card__title">Compliance</div>
     <div class="tt-card__desc">Compliance-enabling controls and evidence</div>
   </a>
 
-  /governance/sustainability/
+  <a href="/governance/sustainability/" class="tt-card">
     <div class="tt-card__icon">🌱</div>
     <div class="tt-card__title">Sustainability</div>
     <div class="tt-card__desc">Operational, financial, and organizational sustainability</div>
@@ -82,70 +82,7 @@ This section is organized as **Governance Hubs**. Each hub contains a hub overvi
 
 ---
 
-## Governance Hubs
-
-### 1) /governance/foundations/
-The contract-first principles that make governance repeatable, testable, and auditable.
-
-### 2) /governance/frameworks/
-How TealTiger operationalizes governance frameworks through deterministic controls.
-
-### 3) /governance/runtime/
-Governance at execution time: prompt execution, tool invocation, and scope control.
-
-### 4) /governance/security/
-Identity-bound execution, least-privilege access, and deny-by-default enforcement.
-
-### 5) /governance/data/
-Purpose binding, source control, and deterministic data boundaries.
-
-### 6) /governance/model/
-Explicit control over approved models, tasks, and risk boundaries.
-
-### 7) /governance/cost/
-Preventing runaway execution and enforcing cost as a governance constraint.
-
-### 8) /governance/risk-assurance/
-Continuous evaluation of agent actions against explicit risk boundaries.
-
-### 9) /governance/evidence/
-Immutable, verifiable evidence generated directly from governance enforcement.
-
-### 10) /governance/compliance-enablement/
-Compliance-enabling controls and evidence without over-claiming compliance completion.
-
-### 11) /governance/sustainability/
-Sustainability as a governance outcome: operational, financial, and organizational.
-
----
-
-## How to Use This Section
-
-<div class="tt-grid" style="grid-template-columns: repeat(3, 1fr);">
-
-  <div class="tt-card tt-card--accent">
-    <div class="tt-card__icon">🔧</div>
-    <div class="tt-card__title">Builders</div>
-    <div class="tt-card__desc">Foundations → Runtime → Security → Data</div>
-  </div>
-
-  <div class="tt-card tt-card--accent">
-    <div class="tt-card__icon">⚙️</div>
-    <div class="tt-card__title">Operators</div>
-    <div class="tt-card__desc">Runtime → Evidence → Risk Assurance</div>
-  </div>
-
-  <div class="tt-card tt-card--accent">
-    <div class="tt-card__icon">📋</div>
-    <div class="tt-card__title">Auditors / GRC</div>
-    <div class="tt-card__desc">Frameworks → Compliance → Evidence</div>
-  </div>
-
-</div>
-
----
-
 ## Notes
 
-- TealTiger is **compliance-enabling**, not a complete compliance program.
+- TealTiger is **compliance‑enabling**, not a complete compliance program.
 - Governance hubs are stable; core articles evolve with versioned capabilities.
