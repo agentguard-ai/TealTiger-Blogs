@@ -1,6 +1,9 @@
 ---
-layout: page
-title: "Governance Insights"
+layout: governance
+title: "Insights"
+description: "Cross-hub governance analysis: failure modes, runtime enforcement, and evidence."
+nav_order: 95
+sidebar_label: "Insights"
 ---
 
 Governance Insights connect the individual governance hubs into a **coherent, enforceable system model**.
