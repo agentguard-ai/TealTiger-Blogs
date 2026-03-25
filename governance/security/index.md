@@ -33,6 +33,14 @@ TealTiger treats security as a **governance property**, not a bolt‑on control.
 
 - [Security Governance](/governance/security/security-governance/)
   - The primary security governance model for identity, privilege, and execution control in agentic AI systems.
+ 
+    ## Related Insights
+
+These Insights explore how security controls produce meaningful governance assurance beyond technical guardrails:
+
+- [Why Guardrails Alone Are Not AI Governance](/governance/insights/why-guardrails-alone-are-not-governance/)
+- [Operationalizing Insights for GRC and Engineering](/governance/insights/operationalizing-insights-for-grc-and-engineering/)
+
 
 ## Additional Articles
 
