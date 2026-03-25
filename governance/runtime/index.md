@@ -5,6 +5,8 @@ title: Runtime Governance
 
 Runtime Governance defines how TealTiger enforces governance **at execution time** for agentic AI systems.
 
+The Runtime Governance Hub defines **normative execution‑time controls** for policy enforcement, decision evaluation, and evidence generation
+
 While governance foundations establish principles and contracts, runtime governance ensures those rules are **actively enforced** when agents invoke models, call tools, access data, or produce side effects.
 
 This hub focuses on deterministic enforcement, fail‑closed behavior, and audit‑grade evidence generation during live execution.
