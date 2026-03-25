@@ -70,3 +70,10 @@ TealTiger treats model choice as a **governed execution decision**, not an imple
 - [Shadow Models and Hidden Risk in Agentic Systems](/governance/model/shadow-models-hidden-risk/)
 
 These articles expand the model governance framework by showing how **approved registries**, **capability binding**, and **runtime enforcement** prevent unintentional escalation and hidden model risk.
+
+## Related Insights
+
+These Insights explain how model governance decisions translate into runtime accountability:
+
+- [From Risk to Runtime: How Governance Enforcement Actually Works](/governance/insights/from-risk-to-runtime/)
+- [Why Guardrails Alone Are Not AI Governance](/governance/insights/why-guardrails-alone-are-not-governance/)
