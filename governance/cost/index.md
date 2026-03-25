@@ -41,3 +41,10 @@ TealTiger treats cost as an **execution‑time control surface**, not a reportin
 - [Audit‑Ready Cost Evidence for AI Systems](/governance/cost/audit-ready-cost-evidence/)
 
 These articles expand cost governance by showing how **runtime enforcement**, **fail‑closed execution**, and **evidence‑first design** prevent unbounded spend in agentic AI systems.
+
+## Related Insights
+
+These Insights connect cost governance controls to evidence-backed operational outcomes:
+
+- [Evidence‑First KPIs for AI Governance](/governance/insights/evidence-first-kpis-for-ai-governance/)
+- [Operationalizing Insights for GRC and Engineering](/governance/insights/operationalizing-insights-for-grc-and-engineering/)
