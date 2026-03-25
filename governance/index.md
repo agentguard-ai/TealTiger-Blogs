@@ -8,6 +8,16 @@ TealTiger Governance is built for **deterministic enforcement** in agentic AI sy
 
 This section is organized as **Governance Hubs**. Each hub contains a hub overview and core articles.
 
+## How to Read the Governance Section
+
+TealTiger Governance is structured as a layered system:
+
+- **Governance Hubs** define what controls must exist for AI systems.
+- **Insights** explain how those controls interact in practice, including common failure modes and design trade‑offs.
+- **Evidence** captures verifiable proof that enforcement occurred and supports audit or compliance review.
+
+These layers are intentionally distinct and should be read together.
+
 <div class="tt-grid">
 
   <a href="/governance/foundations/" class="tt-card tt-card--accent">
