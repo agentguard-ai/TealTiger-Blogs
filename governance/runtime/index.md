@@ -41,5 +41,12 @@ TealTiger treats runtime governance as the **last line of defense**—where gove
 - [Fail‑Closed AI Systems: Governance Under Uncertainty](/governance/runtime/fail-closed-governance/)
 - [Why Observability Is Not Governance](/governance/runtime/observability-is-not-governance/)
 
+  ## Related Insights
+
+These Insights explain how runtime governance controls interact with risk signals and enforcement outcomes:
+
+- [From Risk to Runtime: How Governance Enforcement Actually Works](/governance/insights/from-risk-to-runtime/)
+- [AI Risk Signals from Runtime Telemetry](/governance/insights/ai-risk-signals-from-runtime-telemetry/)
+
 These articles deepen runtime governance by clarifying **what must be enforced**, **how uncertainty is handled safely**, and **why observability alone cannot satisfy governance or audit requirements**.
 or audit requirements**.
