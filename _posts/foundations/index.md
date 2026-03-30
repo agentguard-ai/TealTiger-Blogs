@@ -17,17 +17,21 @@ This page is a **single combined hub** for the *Toward Provable AI Governance* s
 
 ---
 
-## Recommended publish order
+## Suggested reading sequence
 
-1. Toward Provable AI Governance: Why Agent Security Needs Math, Not Just Guardrails
-2. Stop Guessing Policy Thresholds: A Game-Theoretic View of AI Guardrails
-3. Entropy as a Security Signal: Detecting Exfiltration and Prompt Injection Without Training Data
-4. From Tool Calls to Trajectories: Using Markov Models to Catch Agent Loops and Escalations
-5. Why AI Systems Fail Suddenly: Tipping Points, Cascades, and Preemptive Circuit Breakers
-6. Policies You Can Prove: Temporal Logic for Auditable, Trace-Based AI Safety
-7. Beyond DLP Regex: Lattice-Based Information Flow Control for AI Agents
-8. Trust That Updates: Bayesian Security Posture for Agents (Without Black-Box Scores)
-9. Rate Limits That Don’t Guess: Queuing Theory for Stable, Cost-Aware Agent Systems
+The posts in this series build conceptually on each other. If you’re reading end‑to‑end, the sequence below provides a logical progression from motivation → foundations → operational implications.
+
+1. Toward Provable AI Governance: Why Agent Security Needs Math, Not Just Guardrails  
+2. Stop Guessing Policy Thresholds: A Game-Theoretic View of AI Guardrails  
+3. Entropy as a Security Signal: Detecting Exfiltration and Prompt Injection Without Training Data  
+4. From Tool Calls to Trajectories: Using Markov Models to Catch Agent Loops and Escalations  
+5. Why AI Systems Fail Suddenly: Tipping Points, Cascades, and Preemptive Circuit Breakers  
+6. Policies You Can Prove: Temporal Logic for Auditable, Trace-Based AI Safety  
+7. Beyond DLP Regex: Lattice-Based Information Flow Control for AI Agents  
+8. Trust That Updates: Bayesian Security Posture for Agents (Without Black-Box Scores)  
+9. Rate Limits That Don’t Guess: Queuing Theory for Stable, Cost-Aware Agent Systems  
+
+> Each post can be read independently, but earlier entries introduce concepts referenced in later ones.
 
 ---
 
