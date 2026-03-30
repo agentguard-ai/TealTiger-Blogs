@@ -12,6 +12,26 @@ title: TealTiger Blog
 </section>
 
 <div class="grid">
+
+  <!-- ✅ NEW: Featured Series card -->
+  <section class="card">
+    <h2>Featured series</h2>
+
+    <p class="muted" style="line-height: 1.6;">
+      <strong>Toward Provable AI Governance</strong> — design notes on mathematical and scientific foundations
+      for audit-grade agent security.
+    </p>
+
+    <p class="muted" style="line-height: 1.6;">
+      <em>Status note:</em> These posts discuss design direction and reasoning principles.
+      Not all mechanisms described are implemented in current TealTiger releases.
+    </p>
+
+    <p style="margin-top: 12px;">
+      <a class="button" href="{{ '/foundations/' | relative_url }}">Open the series →</a>
+    </p>
+  </section>
+
   <section class="card">
     <h2>Latest posts</h2>
 
@@ -63,5 +83,6 @@ title: TealTiger Blog
       <a href="{{ site.docs_base }}">docs.tealtiger.ai</a>.
     </p>
   </aside>
+
 </div>
 ``
