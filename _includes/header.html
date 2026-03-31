@@ -7,9 +7,9 @@
     </a>
 
     <nav class="nav">
-      {% for item in site.nav %}
-        <a class="nav-link" href="{{ item.url | relative_url }}">{{ item.title }}</a>
-      {% endfor %}
+      <a class="nav-link" href="{{ '/foundations/' | relative_url }}">Start Here</a>
+      <a class="nav-link" href="{{ '/tags/' | relative_url }}">Topics</a>
+      <a class="nav-link" href="{{ '/feed.xml' | relative_url }}">RSS</a>
     </nav>
   </div>
 </header>
