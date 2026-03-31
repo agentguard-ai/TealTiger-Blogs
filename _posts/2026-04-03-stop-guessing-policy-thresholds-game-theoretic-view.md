@@ -1,14 +1,18 @@
 ---
+layout: post
 title: "Stop Guessing Policy Thresholds: A Game-Theoretic View of AI Guardrails"
 description: Static thresholds in AI guardrails fail under adaptive pressure. A game-theoretic lens explains why—and what principled enforcement could look like.
 tags: [foundations, governance, runtime, security-theory, agents]
+category: governance
 
-series: "Toward Provable AI Governance"
-series_order: 1
+series: foundations
+series_order: 2
 status: design-notes
 ---
 
-> **Status note:** This post explores scientific foundations that can improve auditability and correctness in AI security systems. Some mechanisms described are **design direction** and may not be implemented in current TealTiger releases.
+> **Status note:**  
+> This post explores scientific foundations that can improve auditability and correctness in AI security systems.  
+> Some mechanisms described are **design direction** and may not be implemented in current TealTiger releases.
 
 ---
 
@@ -100,12 +104,6 @@ Most AI safety tooling still behaves as if:
 
 That assumption does not hold in agentic systems.
 
-In agentic environments:
-
-- **enforcement decisions influence future behavior**
-- thresholds become signals
-- rigidity becomes a vulnerability
-
 ---
 
 ## What a principled approach could enable
@@ -118,8 +116,8 @@ A game‑theoretic perspective doesn’t require complex math at runtime. Its va
 
 Most importantly, it separates:
 
-- **policy intent** (what we value and protect)
-- from **policy calibration** (where thresholds sit today)
+- **policy intent**
+- from **policy calibration**
 
 That separation is critical for auditability.
 
@@ -129,41 +127,31 @@ That separation is critical for auditability.
 
 To be explicit:
 
-- This does **not** imply a policy engine must solve Nash equilibria at runtime.
-- This does **not** imply formal guarantees against all adversaries.
+- This does **not** imply solving Nash equilibria at runtime.
+- This does **not** imply guarantees against all adversaries.
 - This does **not** replace deterministic enforcement mechanisms.
 
 Game theory here is a **design lens**, not a silver bullet.
 
-Deterministic controls still matter:
-
-- data flow constraints
-- hard budget ceilings
-- explicit approvals
-- runtime evidence generation
-
-But without a principled way to reason about thresholds, even deterministic systems drift into guesswork.
-
 ---
 
-## Why this belongs in foundations (not feature claims)
+## Why this belongs in foundations
 
-This series documents **how we think about correctness** before shipping mechanisms.
+This series documents how correctness, stability, and auditability are reasoned about **before mechanisms are shipped**.
 
 Understanding *why* thresholds fail under adaptation is a prerequisite to designing controls that do not quietly rot under pressure.
 
 ---
 
-## What’s next in the series
+## What’s next
 
 If policy thresholds are not stable, the next question becomes:
 
-> *How do we detect that behavior itself has shifted—even without known attack signatures?*
+> *How do we detect behavioral shift itself—without known attack signatures?*
 
-That leads naturally to **information‑theoretic signals**, where entropy and distribution shift act as model‑agnostic indicators.
-
-That’s the focus of the next post.
+That leads naturally to **information‑theoretic signals**, where entropy and distribution shift act as early indicators.
 
 ---
 
-*This post is part of the* **Toward Provable AI Governance** *series.*
+*This post is part of the* **Foundations / Toward Provable AI Governance** *series.*
+``
