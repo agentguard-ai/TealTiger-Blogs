@@ -1,31 +1,77 @@
 ---
 ---
 
-/* TealTiger site overrides (GitHub Pages / jekyll-theme-primer safe) */
+/* =========================================================
+   TealTiger — Enterprise Dark Mode (Primer-safe)
+   ========================================================= */
 
+/* 1. Core color tokens ONLY (do not touch spacing here) */
 :root {
   --tt-bg: #0b1220;
+  --tt-bg-soft: #0f172a;
   --tt-fg: #e5e7eb;
-  --tt-muted: #9ca3af;
+  --tt-fg-muted: #9ca3af;
   --tt-accent: #2dd4bf;
-  --tt-card: #0f172a;
   --tt-border: #334155;
-} /* ✅ closes :root */
+}
 
-/* Optional: subtle enterprise dark feel without breaking primer */
+/* 2. Page background & base text */
 body {
-  background: var(--tt-bg);
+  background-color: var(--tt-bg);
   color: var(--tt-fg);
 }
 
-a {
-  color: var(--tt-accent);
-}
-
+/* 3. Preserve Primer typography (critical) */
 .markdown-body {
   color: var(--tt-fg);
+  line-height: 1.6;
 }
 
+/* 4. Headings — restrained, enterprise */
+.markdown-body h1,
+.markdown-body h2,
+.markdown-body h3,
+.markdown-body h4 {
+  color: #f9fafb;
+  border-bottom: none;
+}
+
+/* 5. Muted metadata (dates, status notes) */
+.markdown-body em,
+.markdown-body .text-gray,
+.markdown-body time {
+  color: var(--tt-fg-muted);
+}
+
+/* 6. Links — calm, not neon */
+.markdown-body a {
+  color: #7dd3fc;
+  text-decoration: none;
+}
+
+.markdown-body a:hover {
+  color: var(--tt-accent);
+  text-decoration: underline;
+}
+
+/* 7. Horizontal rules & separators */
 .markdown-body hr {
   border-color: var(--tt-border);
 }
+
+/* 8. Code blocks — readable, not loud */
+.markdown-body pre,
+.markdown-body code {
+  background-color: var(--tt-bg-soft);
+  color: #e5e7eb;
+  border-radius: 6px;
+}
+
+/* 9. Lists retain Primer spacing */
+.markdown-body ul,
+.markdown-body ol {
+  margin-left: 1.25em;
+}
+
+/* ✅ END: minimal override, no layout breakage */
+``
