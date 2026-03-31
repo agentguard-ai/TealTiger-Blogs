@@ -1,99 +1,70 @@
 ---
 layout: default
 title: TealTiger Blog
+description: Engineering notes on deterministic AI governance, agent security, and runtime enforcement.
 ---
 
-<section class="hero">
-  <h1>Where Zero Trust meets agentic AI runtime</h1>
-  <p>
-    TealTiger is a developer-first runtime governance SDK for agentic AI. This blog shares practical patterns,
-    reference architectures, and hard lessons—from zero trust to blast-radius control.
-  </p>
-</section>
+# Where Zero Trust Meets Agentic AI Runtime
 
-<div class="grid">
+Practical engineering notes on **deterministic AI governance**, **runtime enforcement**, and **audit‑grade agent security** — written for teams building and operating production AI systems.
 
-  <!-- Featured Series -->
-  <section class="card">
-    <h2>Featured series</h2>
+This blog documents the foundational thinking behind TealTiger’s runtime governance model, with a focus on provable controls rather than heuristics or prompt‑only guardrails.
 
-    <p class="muted" style="line-height: 1.6;">
-      <strong>Toward Provable AI Governance</strong> — design notes on mathematical and scientific foundations
-      for audit-grade agent security.
-    </p>
+---
 
-    <p class="muted" style="line-height: 1.6;">
-      <em>Status note:</em> These posts discuss design direction and reasoning principles.
-      Not all mechanisms described are implemented in current TealTiger releases.
-    </p>
+## Featured Series
 
-    <p style="margin-top: 12px;">
-      <a class="button" href="{{ '/foundations/' | relative_url }}">Open the series →</a>
-    </p>
-  </section>
+### Toward Provable AI Governance
 
-  <!-- Latest posts (enterprise-clean cards; prefer description over excerpt) -->
-  <section class="card">
-    <h2>Latest posts</h2>
+A foundational series exploring why agent security requires **mathematical and systems‑level rigor**, not just policy prompts or reactive guardrails.
 
-    <ul class="post-list">
-      {% for post in site.posts limit: 8 %}
-        <li class="post-item">
-          <a class="post-title-link" href="{{ post.url | relative_url }}">{{ post.title }}</a>
+These posts examine the reasoning principles, security models, and architectural patterns needed for enterprise‑grade, auditable AI systems.
 
-          <div class="post-meta" style="margin-top: 6px;">
-            <time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: '%b %d, %Y' }}</time>
+> _Status note:_ This series discusses design direction and reasoning frameworks. Not all mechanisms described are implemented in current TealTiger releases.
 
-            {% if post.tags %}
-              <span class="dot">·</span>
-              <span>
-                {% for tag in post.tags limit: 3 %}
-                  <span class="badge">#{{ tag }}</span>
-                {% endfor %}
-              </span>
-            {% endif %}
-          </div>
+**→ Start the series**
 
-          {% if post.description %}
-            <p class="post-excerpt">{{ post.description | strip_html | truncate: 220 }}</p>
-          {% elsif post.excerpt %}
-            <p class="post-excerpt">{{ post.excerpt | strip_html | replace: "
-", " " | truncate: 180 }}</p>
-          {% endif %}
-        </li>
-      {% endfor %}
-    </ul>
+---
 
-    <p class="muted" style="margin-top: 12px; line-height: 1.6;">
-      Tip: Add a one-line <code>description</code> in each post’s front matter to keep the homepage list clean and enterprise-grade.
-    </p>
-  </section>
+## Latest Posts
 
-  <!-- Sidebar -->
-  <aside class="card">
-    <h2>Start here</h2>
-    <p class="muted" style="line-height: 1.6;">
-      Looking for the contract truth? Head to the docs.
-    </p>
-    <p>
-      <a class="button" href="{{ site.docs_base }}">Open TealTiger Docs</a>
-    </p>
+### Toward Provable AI Governance: Why Agent Security Needs Math, Not Just Guardrails
+<span class="post-meta">Mar 31, 2026 · Foundations · Governance · Agents</span>
 
-    <hr class="divider" />
+As AI systems become agentic and multi‑step, heuristic guardrails no longer scale. This post explains why future AI governance must be grounded in provable, measurable foundations.
 
-    <h2>Subscribe</h2>
-    <p class="muted" style="line-height: 1.6;">Get new posts via RSS.</p>
-    <p>
-      <a class="nav-link" href="{{ '/feed.xml' | relative_url }}">RSS feed →</a>
-    </p>
+---
 
-    <hr class="divider" />
+### Stop Guessing Policy Thresholds: A Game‑Theoretic View of AI Guardrails
+<span class="post-meta">Apr 3, 2026 · Foundations · Security · Economics</span>
 
-    <h2>Cross-links</h2>
-    <p class="muted" style="line-height: 1.6;">
-      Each post includes a “Related docs” section linking to the exact page in
-      <a href="{{ site.docs_base }}">docs.tealtiger.ai</a>.
-    </p>
-  </aside>
+Static thresholds and hand‑tuned policies create blind spots. We explore how game‑theoretic thinking exposes failure modes in conventional AI guardrails.
 
-</div>
+---
+
+### Entropy as a Security Signal: Detecting Exfiltration and Prompt Injection Without Training Data
+<span class="post-meta">Apr 10, 2026 · Runtime · Security · Signals</span>
+
+Entropy and distribution shift can act as lightweight indicators of abnormal agent behavior — without requiring labeled data or retraining.
+
+---
+
+### From Tool Calls to Trajectories: Using Markov Models to Catch Agent Loops and Escalations
+<span class="post-meta">Apr 17, 2026 · Agents · Runtime · Modeling</span>
+
+Single tool calls rarely explain failures. This post introduces trajectory‑level reasoning for detecting agent loops, escalation patterns, and runaway behaviors.
+
+---
+
+## About This Blog
+
+TealTiger is a **runtime governance SDK for agentic AI systems**.  
+This blog focuses on the engineering and scientific foundations required to make AI systems trustworthy under real operational conditions.
+
+Topics include:
+- Deterministic policy enforcement
+- Runtime security signals
+- Agent behavior modeling
+- Auditability and evidence generation
+- Enterprise AI governance design patterns
+``
