@@ -1,57 +1,76 @@
 /* =========================================================
-   TealTiger Post Cards (Homepage)
+   TealTiger Homepage – Enterprise Post List
+   (matches index.md markup)
    ========================================================= */
 
-.tt-postlist {
-  display: grid;
-  grid-template-columns: 1fr;
-  gap: 14px;
-  margin-top: 12px;
+/* Remove bullets & spacing noise */
+.post-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
 }
 
-.tt-postcard {
-  border: 1px solid var(--tt-border);
+/* Card rows */
+.post-item {
+  border: 1px solid var(--tt-border, #243244);
   border-radius: 12px;
-  background: rgba(255,255,255,0.02);
-  padding: 14px 14px;
+  background: rgba(255, 255, 255, 0.02);
+  padding: 14px 16px;
+  margin-bottom: 14px;
 }
 
-.tt-postcard__title {
+/* Post title */
+.post-title-link {
   display: inline-block;
-  font-weight: 650;
+  font-weight: 600;
   font-size: 16px;
   color: #f8fafc;
   text-decoration: none;
+  line-height: 1.35;
 }
 
-.tt-postcard__title:hover {
-  color: var(--tt-accent);
+.post-title-link:hover {
+  color: var(--tt-accent, #2dd4bf);
   text-decoration: underline;
 }
 
-.tt-postcard__meta {
+/* Meta row (date + tags) */
+.post-meta {
   margin-top: 6px;
   font-size: 12.5px;
-  color: var(--tt-fg-muted);
+  color: var(--tt-fg-muted, #9aa4b2);
   display: flex;
-  gap: 10px;
+  gap: 8px;
   flex-wrap: wrap;
   align-items: center;
 }
 
-.tt-tag {
-  display: inline-block;
-  padding: 2px 8px;
-  border: 1px solid var(--tt-border);
-  border-radius: 999px;
-  background: rgba(255,255,255,0.03);
-  color: var(--tt-fg-muted);
+.post-meta time {
+  color: var(--tt-fg-muted, #9aa4b2);
 }
 
-.tt-postcard__desc {
+/* Dot separator */
+.post-meta .dot {
+  opacity: 0.6;
+}
+
+/* Tag badges */
+.badge {
+  display: inline-block;
+  padding: 2px 8px;
+  border: 1px solid var(--tt-border, #243244);
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.03);
+  font-size: 12px;
+  color: var(--tt-fg-muted, #9aa4b2);
+}
+
+/* Description / excerpt */
+.post-excerpt {
   margin-top: 8px;
   margin-bottom: 0;
-  color: var(--tt-fg-muted);
-  line-height: 1.55;
   font-size: 14px;
+  line-height: 1.55;
+  color: var(--tt-fg-muted, #9aa4b2);
+  max-width: 85ch;
 }
