@@ -22,4 +22,3 @@ At runtime, policy decisions must be **deterministic, inspectable, and auditable
 - Deterministic governance primitives
 
 Content in this category evolves as new runtime mechanisms are introduced.
-``
