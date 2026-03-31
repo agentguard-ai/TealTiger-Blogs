@@ -1,118 +1,57 @@
----
----
-
 /* =========================================================
-   TealTiger — Enterprise Dark Mode (Primer-safe)
-   Works with GitHub Pages + jekyll-theme-primer
+   TealTiger Post Cards (Homepage)
    ========================================================= */
 
-:root {
-  --tt-bg: #0b1220;
-  --tt-bg-soft: #0f172a;
-  --tt-fg: #e5e7eb;
-  --tt-fg-muted: #9aa4b2;   /* slightly cooler muted */
-  --tt-border: #243244;    /* subtle divider */
-  --tt-link: #7dd3fc;      /* calmer than neon blue */
-  --tt-accent: #2dd4bf;    /* TealTiger accent */
-  --tt-card: rgba(255,255,255,0.03);
+.tt-postlist {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 14px;
+  margin-top: 12px;
 }
 
-/* Background + base text */
-body {
-  background: var(--tt-bg);
-  color: var(--tt-fg);
+.tt-postcard {
+  border: 1px solid var(--tt-border);
+  border-radius: 12px;
+  background: rgba(255,255,255,0.02);
+  padding: 14px 14px;
 }
 
-/* Constrain reading width (enterprise feel) */
-.container-lg {
-  max-width: 920px;
-}
-
-/* Primer markdown area */
-.markdown-body {
-  color: var(--tt-fg);
-  line-height: 1.65;
+.tt-postcard__title {
+  display: inline-block;
+  font-weight: 650;
   font-size: 16px;
-}
-
-/* Headings: quiet but confident */
-.markdown-body h1 {
   color: #f8fafc;
-  letter-spacing: -0.01em;
-  margin-bottom: 0.4rem;
-  border-bottom: 0;
-}
-
-.markdown-body h2,
-.markdown-body h3,
-.markdown-body h4 {
-  color: #f8fafc;
-  border-bottom: 0;
-  margin-top: 1.6rem;
-}
-
-/* Muted meta text */
-.markdown-body em,
-.markdown-body time,
-.markdown-body .post-meta,
-.markdown-body blockquote {
-  color: var(--tt-fg-muted);
-}
-
-/* Links: calm, enterprise */
-.markdown-body a {
-  color: var(--tt-link);
   text-decoration: none;
 }
 
-.markdown-body a:hover {
+.tt-postcard__title:hover {
   color: var(--tt-accent);
   text-decoration: underline;
 }
 
-/* Dividers */
-.markdown-body hr {
-  border-color: var(--tt-border);
+.tt-postcard__meta {
+  margin-top: 6px;
+  font-size: 12.5px;
+  color: var(--tt-fg-muted);
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  align-items: center;
 }
 
-/* Code blocks */
-.markdown-body pre,
-.markdown-body code {
-  background: var(--tt-bg-soft);
-  color: var(--tt-fg);
-  border-radius: 8px;
-}
-
-/* Lists: slightly more readable spacing */
-.markdown-body ul li,
-.markdown-body ol li {
-  margin: 0.15rem 0;
-}
-
-/* ---------------------------------------------------------
-   NAV links (Docs / Governance / GitHub / PyPI / …)
-   Turn raw links into a pill-style enterprise nav
-   --------------------------------------------------------- */
-.markdown-body > p:first-of-type a {
+.tt-tag {
   display: inline-block;
-  padding: 4px 10px;
-  margin: 0 6px 8px 0;
+  padding: 2px 8px;
   border: 1px solid var(--tt-border);
   border-radius: 999px;
-  background: var(--tt-card);
+  background: rgba(255,255,255,0.03);
   color: var(--tt-fg-muted);
-  font-size: 13px;
-  text-decoration: none;
 }
 
-.markdown-body > p:first-of-type a:hover {
-  border-color: rgba(45, 212, 191, 0.55);
-  color: var(--tt-accent);
-  background: rgba(45, 212, 191, 0.06);
-}
-
-/* Make the first paragraph (nav row) slightly separated */
-.markdown-body > p:first-of-type {
-  margin-top: 0.25rem;
-  margin-bottom: 1.25rem;
+.tt-postcard__desc {
+  margin-top: 8px;
+  margin-bottom: 0;
+  color: var(--tt-fg-muted);
+  line-height: 1.55;
+  font-size: 14px;
 }
