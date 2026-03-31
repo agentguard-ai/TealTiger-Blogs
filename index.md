@@ -13,7 +13,7 @@ title: TealTiger Blog
 
 <div class="grid">
 
-  <!-- ✅ NEW: Featured Series card -->
+  <!-- ✅ Featured Series -->
   <section class="card">
     <h2>Featured series</h2>
 
@@ -32,15 +32,18 @@ title: TealTiger Blog
     </p>
   </section>
 
+  <!-- ✅ Latest posts (enterprise-clean cards; prefer description over excerpt) -->
   <section class="card">
     <h2>Latest posts</h2>
 
     <ul class="post-list">
       {% for post in site.posts limit: 8 %}
-        <li>
+        <li class="post-item">
           <a class="post-title-link" href="{{ post.url | relative_url }}">{{ post.title }}</a>
+
           <div class="post-meta" style="margin-top: 6px;">
             <time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: '%b %d, %Y' }}</time>
+
             {% if post.tags %}
               <span class="dot">·</span>
               <span>
@@ -50,14 +53,22 @@ title: TealTiger Blog
               </span>
             {% endif %}
           </div>
-          {% if post.excerpt %}
-            <p class="post-excerpt">{{ post.excerpt | strip_html | truncate: 200 }}</p>
+
+          {% if post.description %}
+            <p class="post-excerpt">{{ post.description | strip_html | truncate: 220 }}</p>
+          {% elsif post.excerpt %}
+            <p class="post-excerpt">{{ post.excerpt | strip_html | replace: "\n", " " | truncate: 180 }}</p>
           {% endif %}
         </li>
       {% endfor %}
     </ul>
+
+    <p class="muted" style="margin-top: 12px; line-height: 1.6;">
+      Tip: Add a one-line <code>description</code> in each post’s front matter to keep the homepage list clean and enterprise-grade.
+    </p>
   </section>
 
+  <!-- ✅ Sidebar -->
   <aside class="card">
     <h2>Start here</h2>
     <p class="muted" style="line-height: 1.6;">
@@ -85,4 +96,3 @@ title: TealTiger Blog
   </aside>
 
 </div>
-``
