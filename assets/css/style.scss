@@ -24,3 +24,33 @@
 .post-content p {
   margin: 0.9rem 0;
 }
+
+/* ===== Header (Blog-grade, not OSS-grade) ===== */
+
+.site-header {
+  border-bottom: 1px solid rgba(0,0,0,0.08);
+  margin-bottom: 2rem;
+}
+
+.header-inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  text-decoration: none;
+}
+
+.brand-mark {
+  font-weight: 600;
+}
+
+.brand-sub {
+  opacity: 0.6;
+  font-size: 0.9rem;
+  margin-left: 0.25rem;
+}
