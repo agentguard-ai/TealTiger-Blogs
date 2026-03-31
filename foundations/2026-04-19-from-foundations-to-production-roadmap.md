@@ -1,11 +1,15 @@
 ---
-title: "From Foundations to Production: A Practical Roadmap for Provable AI Governance"
-description: A wrap-up post that turns the series into an actionable roadmap: deterministic-first controls, evidence artifacts, and a phased path from signals to provable properties.
-tags: [foundations, governance, runtime, roadmap, evidence, agents]
-
-series: "Toward Provable AI Governance"
-series_order: 9
-status: design-notes
+layout: post
+title: "From Foundations to Production: Roadmap"
+description: "From foundations to production: a pragmatic roadmap for rolling out deterministic governance."
+date: 2026-04-19
+permalink: /foundations/from-foundations-to-production-roadmap/
+category: foundations
+tags:
+  - foundations
+  - roadmap
+  - production
+  - deterministic-governance
 ---
 
 > **Status note:** This post synthesizes the series into an implementation-oriented roadmap. It describes design direction and reasoning principles. **Not all mechanisms discussed are implemented in current TealTiger releases.**
