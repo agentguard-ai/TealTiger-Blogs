@@ -1,16 +1,10 @@
-<footer class="site-footer">
-  <div class="container footer-inner">
-    <p class="muted">© {{ site.time | date: '%Y' }} TealTiger. Built on GitHub Pages.</p>
-    <div class="footer-right">
-      <a class="footer-link" href="{{ site.docs_base }}">Docs</a>
-      <span class="dot">·</span>
-      <a class="footer-link" href="https://github.com/agentguard-ai/tealtiger">GitHub</a>
-      <span class="dot">·</span>
-      <a class="footer-link" href="https://pypi.org/project/tealtiger/">PyPI</a>
-      <span class="dot">·</span>
-      <a class="footer-link" href="https://www.npmjs.com/package/tealtiger">npm</a>
-      <span class="dot">·</span>
-      <a class="footer-link" href="{{ '/feed.xml' | relative_url }}">RSS</a>
-    </div>
-  </div>
-</footer>
+<div class="footer-resources">
+  <span class="footer-label">Resources</span>
+  {{ '/docs/' | relative_url }}Docs</a>
+  {{ '/governance/' | relative_url }}Governance</a>
+  https://github.com/tealtiger-aiGitHub</a>
+  https://pypi.org/project/tealtiger/PyPI</a>
+  https://www.npmjs.com/npm</a>
+  {{ '/tags/' | relative_url }}Tags</a>
+  {{ '/feed.xml' | relative_url }}RSS</a>
+</div>
