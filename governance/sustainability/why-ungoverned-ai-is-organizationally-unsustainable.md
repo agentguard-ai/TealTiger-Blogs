@@ -1,57 +1,11 @@
 ---
 layout: post
 title: "Why Ungoverned AI Is Organizationally Unsustainable"
-description: "AI institutional memory lossdescription: "AI systems without deterministic governance become operationally fragile, financially unbounded, and organizationally unsustainable over time."
-
-Ungoverned systems rely on:
-- tribal knowledge
-- individual expertise
-- undocumented assumptions
-
-As teams change, this knowledge disappears.
-
-Evidence preserves organizational memory, allowing systems to remain governable across personnel changes.
-
----
-
-## 8) Sustainability requires governance by default
-
-Sustainable AI systems:
-- enforce controls automatically
-- minimize manual intervention
-- surface only meaningful exceptions
-- generate evidence continuously
-- evolve without losing accountability
-
-Governance is not overhead—it is infrastructure.
-
----
-
-## 9) Key takeaways
-
-- Ungoverned AI systems fail gradually, not immediately.
-- Early success hides long‑term operational fragility.
-- Agentic AI amplifies unsustainability without controls.
-- Deterministic governance is cheaper than late remediation.
-- Sustainable AI requires governance by default, not by exception.
-
----
-
-## Sustainability hub recap
-
-With this post, the Sustainability hub establishes a complete long‑term governance perspective:
-
-1. **Governance beyond accuracy**
-2. **Preventing governance fatigue**
-3. **Why ungoverned AI is unsustainable**
-
-Together, these principles ensure agentic AI systems remain operable, trustworthy, and viable over time.
-``
+description: "AI systems without deterministic governance become operationally fragile, financially unbounded, and organizationally unsustainable over time."
 date: 2026-03-24
 permalink: /governance/sustainability/ungoverned-ai-unsustainable/
 category: governance
 hub: sustainability
-
 tags:
   - sustainability
   - ai-governance
@@ -69,6 +23,19 @@ They fail gradually.
 Early success masks growing fragility until costs escalate, audits break down, incidents repeat, and teams lose confidence in the system. By the time governance is added, the system is already difficult to control.
 
 For agentic AI systems, **lack of governance is not a temporary gap—it is an unsustainable operating model**.
+
+---
+
+## Ungoverned systems rely on fragile memory
+
+Ungoverned systems rely on:
+- tribal knowledge
+- individual expertise
+- undocumented assumptions
+
+As teams change, this knowledge disappears.
+
+Evidence preserves organizational memory, allowing systems to remain governable across personnel changes.
 
 ---
 
@@ -163,3 +130,36 @@ Without it, confidence degrades with every unexplained incident.
 
 ---
 
+## 7) Sustainability requires governance by default
+
+Sustainable AI systems:
+- enforce controls automatically
+- minimize manual intervention
+- surface only meaningful exceptions
+- generate evidence continuously
+- evolve without losing accountability
+
+Governance is not overhead—it is infrastructure.
+
+---
+
+## 8) Key takeaways
+
+- Ungoverned AI systems fail gradually, not immediately.
+- Early success hides long‑term operational fragility.
+- Agentic AI amplifies unsustainability without controls.
+- Deterministic governance is cheaper than late remediation.
+- Sustainable AI requires governance by default, not by exception.
+
+---
+
+## Sustainability hub recap
+
+With this post, the Sustainability hub establishes a complete long‑term governance perspective:
+
+1. **Governance beyond accuracy**
+2. **Preventing governance fatigue**
+3. **Why ungoverned AI is unsustainable**
+
+Together, these principles ensure agentic AI systems remain operable, trustworthy, and viable over time.
+``
