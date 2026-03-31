@@ -47,3 +47,4 @@ These Insights explore how security controls produce meaningful governance assur
 - [Identity‑Bound AI Agents](/governance/security/identity-bound-agents/)
 - [Least‑Privilege for LLM Tooling](/governance/security/least-privilege-llm-tooling/)
 - [Prompt Injection Is a Governance Failure](/governance/security/prompt-injection-governance-failure/)
+- [Agent-Memory Governance, the TealTiger way](/governance/security/agent-memory-governance-tealtiger/)
