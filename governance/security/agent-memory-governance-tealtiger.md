@@ -1,5 +1,5 @@
 ---
-title: "Agent Memory ≠ Trust: Governing Agentic AI Memory with Deterministic Enforcement"
+title: "Agent Memory Is Not Trust: Governing Agentic AI Memory with Deterministic Enforcement"
 description: "Why agentic AI systems need deterministic memory governance—not just larger context windows."
 date: 2026-03-31
 author: TealTiger
@@ -14,7 +14,7 @@ tags:
   - AI Security
 ---
 
-# Agent Memory ≠ Trust: Governing Agentic AI Memory with Deterministic Enforcement
+# Agent Memory Is Not Trust: Governing Agentic AI Memory with Deterministic Enforcement
 
 *Why autonomous AI systems need memory governance—not just bigger context windows.*
 
