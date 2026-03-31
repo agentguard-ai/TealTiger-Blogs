@@ -13,7 +13,7 @@ title: TealTiger Blog
 
 <div class="grid">
 
-  <!-- ✅ Featured Series -->
+  <!-- Featured Series -->
   <section class="card">
     <h2>Featured series</h2>
 
@@ -32,7 +32,7 @@ title: TealTiger Blog
     </p>
   </section>
 
-  <!-- ✅ Latest posts (enterprise-clean cards; prefer description over excerpt) -->
+  <!-- Latest posts (enterprise-clean cards; prefer description over excerpt) -->
   <section class="card">
     <h2>Latest posts</h2>
 
@@ -57,7 +57,8 @@ title: TealTiger Blog
           {% if post.description %}
             <p class="post-excerpt">{{ post.description | strip_html | truncate: 220 }}</p>
           {% elsif post.excerpt %}
-            <p class="post-excerpt">{{ post.excerpt | strip_html | replace: "\n", " " | truncate: 180 }}</p>
+            <p class="post-excerpt">{{ post.excerpt | strip_html | replace: "
+", " " | truncate: 180 }}</p>
           {% endif %}
         </li>
       {% endfor %}
@@ -68,7 +69,7 @@ title: TealTiger Blog
     </p>
   </section>
 
-  <!-- ✅ Sidebar -->
+  <!-- Sidebar -->
   <aside class="card">
     <h2>Start here</h2>
     <p class="muted" style="line-height: 1.6;">
