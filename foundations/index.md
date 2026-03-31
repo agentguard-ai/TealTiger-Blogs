@@ -76,4 +76,4 @@ This series explores foundational ideas—information theory, formal verificatio
 <p><em>No posts have been published in this series yet.</em></p>
 {% endif %}
 
-<p><strong>Debug:</strong> Total posts on site: {{ site.posts | size }}</p>
+
