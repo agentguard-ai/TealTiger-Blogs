@@ -1,0 +1,25 @@
+<article class="tt-postcard">
+  <a class="tt-postcard__title" href="{{ include.post.url | relative_url }}">
+    {{ include.post.title }}
+  </a>
+
+  <div class="tt-postcard__meta">
+    <time datetime="{{ include.post.date | date_to_xmlschema }}">
+      {{ include.post.date | date: "%b %-d, %Y" }}
+    </time>
+
+    {% if include.post.tags %}
+      <span class="tt-postcard__tags">
+        {% for tag in include.post.tags limit:3 %}
+          <span class="tt-tag">#{{ tag }}</span>
+        {% endfor %}
+      </span>
+    {% endif %}
+  </div>
+
+  {% if include.post.description %}
+    <p class="tt-postcard__desc">{{ include.post.description }}</p>
+  {% else %}
+    <p class="tt-postcard__desc">{{ include.post.excerpt | strip_html | truncate: 180 }}</p>
+  {% endif %}
+</article>
