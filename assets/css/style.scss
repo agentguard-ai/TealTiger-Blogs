@@ -3,9 +3,9 @@
 
 /* =========================================================
    TealTiger — Enterprise Dark Mode (Primer-safe)
+   GitHub Pages / jekyll-theme-primer compatible
    ========================================================= */
 
-/* 1. Core color tokens ONLY (do not touch spacing here) */
 :root {
   --tt-bg: #0b1220;
   --tt-bg-soft: #0f172a;
@@ -15,35 +15,34 @@
   --tt-border: #334155;
 }
 
-/* 2. Page background & base text */
+/* Base page colors */
 body {
   background-color: var(--tt-bg);
   color: var(--tt-fg);
 }
 
-/* 3. Preserve Primer typography (critical) */
+/* Preserve Primer typography & spacing */
 .markdown-body {
   color: var(--tt-fg);
   line-height: 1.6;
 }
 
-/* 4. Headings — restrained, enterprise */
+/* Headings — restrained enterprise */
 .markdown-body h1,
 .markdown-body h2,
 .markdown-body h3,
 .markdown-body h4 {
   color: #f9fafb;
-  border-bottom: none;
+  border-bottom: 0;
 }
 
-/* 5. Muted metadata (dates, status notes) */
+/* Muted text */
 .markdown-body em,
-.markdown-body .text-gray,
 .markdown-body time {
   color: var(--tt-fg-muted);
 }
 
-/* 6. Links — calm, not neon */
+/* Links — calm (not neon) */
 .markdown-body a {
   color: #7dd3fc;
   text-decoration: none;
@@ -54,24 +53,22 @@ body {
   text-decoration: underline;
 }
 
-/* 7. Horizontal rules & separators */
+/* Horizontal rules */
 .markdown-body hr {
   border-color: var(--tt-border);
 }
 
-/* 8. Code blocks — readable, not loud */
+/* Code blocks */
 .markdown-body pre,
 .markdown-body code {
   background-color: var(--tt-bg-soft);
-  color: #e5e7eb;
+  color: var(--tt-fg);
   border-radius: 6px;
 }
 
-/* 9. Lists retain Primer spacing */
+/* Lists */
 .markdown-body ul,
 .markdown-body ol {
   margin-left: 1.25em;
 }
-
-/* ✅ END: minimal override, no layout breakage */
 ``
