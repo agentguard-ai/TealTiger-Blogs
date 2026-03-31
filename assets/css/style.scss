@@ -1,28 +1,31 @@
 ---
 ---
 
-/* =========================
-   TealTiger Blog — Enterprise Polish (Subtle)
-   ========================= */
+/* TealTiger site overrides (GitHub Pages / jekyll-theme-primer safe) */
 
 :root {
-  --bg: #0b1220;
-  --panel: #0f1a2f;
-  --text: #e7eefc;
-  --muted: rgba(231, 238, 252, 0.72);
-  --link: #14b8a6;
-  --link-hover: #5eead4;
-  --border: rgba(231, 238, 252, 0.14);
-  --shadow: 0 10px 30px rgba(0,0,0,.35);
-  --radius: 14px;
+  --tt-bg: #0b1220;
+  --tt-fg: #e5e7eb;
+  --tt-muted: #9ca3af;
+  --tt-accent: #2dd4bf;
+  --tt-card: #0f172a;
+  --tt-border: #334155;
+} /* ✅ closes :root */
 
-  /* Added: subtle enterprise tokens */
-  --shadow-soft: 0 1px 0 rgba(0,0,0,.22);
-  --shadow-hover: 0 14px 40px rgba(0,0,0,.38);
-  --focus: color-mix(in srgb, var(--link) 55%, white);
-  --ring: 0 0 0 3px color-mix(in srgb, var(--link) 30%, transparent);
-  --content-max: 72ch;
+/* Optional: subtle enterprise dark feel without breaking primer */
+body {
+  background: var(--tt-bg);
+  color: var(--tt-fg);
 }
 
-@media (prefers-color-scheme: light) {
-  :root {
+a {
+  color: var(--tt-accent);
+}
+
+.markdown-body {
+  color: var(--tt-fg);
+}
+
+.markdown-body hr {
+  border-color: var(--tt-border);
+}
