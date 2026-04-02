@@ -15,6 +15,7 @@ docs_base: https://docs.tealtiger.ai
 
 markdown: kramdown
 permalink: /:title/
+future: true
 
 plugins:
   - jekyll-feed
