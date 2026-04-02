@@ -3,29 +3,11 @@
   {% include head.html %}
   <body>
     {% include header.html %}
-
     <main class="site-main">
       <div class="container">
         {{ content }}
       </div>
     </main>
-
     {% include footer.html %}
-
-    <!-- Mermaid diagram rendering -->
-    <script type="module">
-      import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.esm.min.mjs';
-      mermaid.initialize({ startOnLoad: false, theme: 'dark' });
-
-      document.querySelectorAll('pre code.language-mermaid').forEach(function (block) {
-        var pre = block.parentElement;
-        var div = document.createElement('div');
-        div.className = 'mermaid';
-        div.textContent = block.textContent;
-        pre.parentElement.replaceChild(div, pre);
-      });
-
-      mermaid.run();
-    </script>
   </body>
 </html>

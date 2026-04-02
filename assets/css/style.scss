@@ -57,3 +57,122 @@
   color: #6b7280; /* muted gray */
   margin-left: 0.25rem;
 }
+
+/* ── Hero ──────────────────────────────────────────────── */
+.hero {
+  padding: 48px 0 32px;
+  border-bottom: 1px solid var(--border);
+  margin-bottom: 32px;
+}
+.hero-title {
+  font-size: 2rem;
+  font-weight: 800;
+  letter-spacing: -0.03em;
+  margin: 0 0 12px;
+}
+.hero-desc {
+  color: var(--muted);
+  font-size: 1.05rem;
+  line-height: 1.6;
+  max-width: 640px;
+  margin: 0;
+}
+
+/* ── Post List ─────────────────────────────────────────── */
+.post-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+}
+.post-card {
+  border-bottom: 1px solid var(--border);
+}
+.post-card-link {
+  display: block;
+  padding: 24px 0;
+  text-decoration: none;
+  color: inherit;
+  transition: opacity 0.15s;
+}
+.post-card-link:hover {
+  opacity: 0.85;
+  text-decoration: none;
+  color: inherit;
+}
+.post-card-meta {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 8px;
+  font-size: 0.8rem;
+  color: var(--muted);
+}
+.post-card-tags {
+  display: flex;
+  gap: 6px;
+}
+.post-tag {
+  background: color-mix(in srgb, var(--link) 12%, transparent);
+  color: var(--link);
+  padding: 2px 8px;
+  border-radius: 4px;
+  font-size: 0.7rem;
+  font-weight: 600;
+}
+.post-card-title {
+  font-size: 1.25rem;
+  font-weight: 700;
+  margin: 0 0 6px;
+  letter-spacing: -0.01em;
+  color: var(--text);
+}
+.post-card-desc {
+  color: var(--muted);
+  font-size: 0.9rem;
+  line-height: 1.5;
+  margin: 0;
+}
+
+/* ── Footer ────────────────────────────────────────────── */
+.site-footer {
+  border-top: 1px solid var(--border);
+  padding: 32px 0;
+  margin-top: 48px;
+}
+.footer-inner {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  align-items: center;
+  text-align: center;
+}
+.footer-logo {
+  font-weight: 800;
+  font-size: 1rem;
+  color: var(--text);
+}
+.footer-tagline {
+  display: block;
+  font-size: 0.8rem;
+  color: var(--muted);
+  margin-top: 2px;
+}
+.footer-links {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.footer-links a {
+  font-size: 0.8rem;
+  color: var(--muted);
+  font-weight: 600;
+}
+.footer-links a:hover {
+  color: var(--link);
+}
+.footer-copy {
+  font-size: 0.7rem;
+  color: var(--muted);
+  opacity: 0.6;
+}
