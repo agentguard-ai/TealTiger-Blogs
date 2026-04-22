@@ -6,8 +6,8 @@ categories: [governance, ai, security]
 description: "TealTiger’s scope today: execution-time governance and evidence, not lifecycle governance replacement."
 ---
 
-> This post explains where **TealTiger (v1.1.1)** fits in the enterprise AI governance stack today, what role it serves, and what it does **not yet attempt to handle**.  
->  
+> This post explains where **TealTiger (v1.1.1)** fits in the enterprise AI governance stack today, what role it serves, and what it does **not yet attempt to handle**.
+>
 > This is **not** a claim that TealTiger replaces lifecycle governance or GRC platforms.
 
 ---
@@ -27,12 +27,11 @@ description: "TealTiger’s scope today: execution-time governance and evidence,
 - [Governance Layers (Simplified 3‑Layer View)](#governance-layers-simplified-3layer-view)
 - [Why Execution‑Time Enforcement Matters](#why-executiontime-enforcement-matters)
 - [TealTiger’s Role: Execution‑Time Governance That Is Enforceable](#tealtigers-role-executiontime-governance-that-is-enforceable)
-- [Runtime Control Loop (How Enforcement Works)](#runtime-control-loop-how-enforcement-works)
+- [Runtime Control Loop](#runtime-control-loop)
 - [Enforcement Flow (Step‑by‑Step)](#enforcement-flow-stepbystep)
 - [What TealTiger Does Not Handle (Yet)](#what-tealtiger-does-not-handle-yet)
 - [Governance Becomes an Engineering Constraint](#governance-becomes-an-engineering-constraint)
 - [Closing: Governance That Cannot Execute Will Not Scale](#closing-governance-that-cannot-execute-will-not-scale)
-- [Appendix: Enable Mermaid on GitHub Pages (Jekyll)](#appendix-enable-mermaid-on-github-pages-jekyll)
 
 ---
 
@@ -62,39 +61,9 @@ Many organizations invested heavily in the first layer because it mirrors tradit
 
 ## Governance Layers (Simplified 3‑Layer View)
 
-This simplified model separates **intent** from **runtime enforcement** and shows where **TealTiger** sits.
+![Governance Layers (3-layer view)](assets/diagram-governance-layers-3.png)
 
-```mermaid
-flowchart TB
-  %% 3 layers
-  L1[Lifecycle Governance\n(Intent & Accountability)]
-  L2[Execution / Infrastructure Governance\n(Runtime Controls)]
-  L3[TealTiger\n(Execution‑time Enforcement + Evidence)]
-
-  %% flow
-  L1 --> L2 --> L3
-
-  %% color coding
-  classDef lifecycle fill:#E8F3FF,stroke:#2B6CB0,stroke-width:2px,color:#0B2545;
-  classDef execution fill:#FFF6E5,stroke:#B7791F,stroke-width:2px,color:#3B2F0B;
-  classDef tealtiger fill:#EAFBF2,stroke:#2F855A,stroke-width:2px,color:#0B2F1E;
-
-  class L1 lifecycle;
-  class L2 execution;
-  class L3 tealtiger;
-```
-
-### What each layer covers (short)
-
-- **Lifecycle Governance (Intent & Accountability)**
-  - Risk classification, approvals, evaluation, documentation, periodic review
-
-- **Execution / Infrastructure Governance (Runtime Controls)**
-  - Model access control, budgets/rate limits, tool/API boundaries, runtime telemetry
-
-- **TealTiger (Execution‑time Enforcement + Evidence)**
-  - Deterministic allow/deny/pause/review decisions at runtime
-  - Machine‑readable evidence emitted as part of enforcement
+> Optional vector version: `assets/diagram-governance-layers-3.svg`
 
 ---
 
@@ -125,83 +94,19 @@ This makes governance **enforceable**, not merely documented.
 
 ---
 
-## Runtime Control Loop (How Enforcement Works)
+## Runtime Control Loop
 
-```mermaid
-flowchart LR
-  A[AI Agent / Application]
-  B[TealTiger Policy<br/>Enforcement Point]
-  C[Tool / API]
-  D[Blocked or Held]
-  E[Evidence Record<br/>(append‑only)]
-  F[Security &amp; Governance Systems<br/>SIEM • Audit • Compliance]
+![Runtime control loop](assets/diagram-runtime-control-loop.png)
 
-  A --> B
-  B -->|Allow| C
-  B -->|Deny / Pause / Review| D
-  B --> E
-  E --> F
-
-  %% subtle color accents
-  classDef app fill:#F7FAFC,stroke:#4A5568,stroke-width:1px,color:#1A202C;
-  classDef enforce fill:#EAFBF2,stroke:#2F855A,stroke-width:2px,color:#0B2F1E;
-  classDef evidence fill:#FFF5F5,stroke:#C53030,stroke-width:2px,color:#3B0D0D;
-  classDef downstream fill:#FAF5FF,stroke:#6B46C1,stroke-width:2px,color:#231942;
-
-  class A,C,D app;
-  class B enforce;
-  class E evidence;
-  class F downstream;
-```
-
-**Key point:** controls execute **before side‑effects occur**, and evidence is produced **as part of enforcement**—not reconstructed later.
+> Optional vector version: `assets/diagram-runtime-control-loop.svg`
 
 ---
 
 ## Enforcement Flow (Step‑by‑Step)
 
-This diagram expands the runtime control loop into an explicit **enforcement flow**: policy evaluation happens *before* the model/tool call, and evidence is emitted at each critical decision point.
+![Enforcement flow](assets/diagram-enforcement-flow.png)
 
-```mermaid
-flowchart TB
-  RQ[1) Request arrives\n(agent action / model call / tool call)]
-  CTX[2) Build execution context\n(correlation_id, tenant, env, purpose)]
-  POL[3) Load pinned policy pack\n(version + digest)]
-  EVAL[4) Evaluate policy deterministically\n(conditions → decision)]
-  DEC{5) Decision action?}
-  ALW[ALLOW\nProceed to call]
-  HLD[PAUSE / REQUIRE REVIEW\nHold until approved]
-  DEN[DENY\nBlock before side-effect]
-  CALL[6) Execute external call\n(model/tool/API)]
-  EVT[7) Emit governance evidence\n(append-only events + reason codes)]
-  EXP[8) Export to security & compliance\n(SIEM / audit / GRC pipelines)]
-
-  RQ --> CTX --> POL --> EVAL --> DEC
-  DEC -->|Allow| ALW --> CALL --> EVT --> EXP
-  DEC -->|Pause/Review| HLD --> EVT --> EXP
-  DEC -->|Deny| DEN --> EVT --> EXP
-
-  %% color coding
-  classDef step fill:#F7FAFC,stroke:#4A5568,stroke-width:1px,color:#1A202C;
-  classDef policy fill:#E8F3FF,stroke:#2B6CB0,stroke-width:2px,color:#0B2545;
-  classDef decision fill:#FFF6E5,stroke:#B7791F,stroke-width:2px,color:#3B2F0B;
-  classDef enforce fill:#EAFBF2,stroke:#2F855A,stroke-width:2px,color:#0B2F1E;
-  classDef evidence fill:#FFF5F5,stroke:#C53030,stroke-width:2px,color:#3B0D0D;
-  classDef downstream fill:#FAF5FF,stroke:#6B46C1,stroke-width:2px,color:#231942;
-
-  class RQ,CTX step;
-  class POL,EVAL policy;
-  class DEC decision;
-  class ALW,HLD,DEN enforce;
-  class EVT evidence;
-  class EXP downstream;
-```
-
-### What to look for
-
-- **Pinning + determinism**: decisions are reproducible because the policy pack is versioned and pinned.
-- **Pre‑execution intervention**: deny/hold happens before the external call.
-- **Evidence-by-default**: evidence is produced regardless of allow/deny/pause.
+> Optional vector version: `assets/diagram-enforcement-flow.svg`
 
 ---
 
@@ -251,6 +156,3 @@ As AI systems become more autonomous, governance that cannot execute will always
 
 https://www.tealtiger.ai  
 https://blogs.tealtiger.ai
-
----
-
