@@ -1,3 +1,11 @@
+---
+layout: post
+title: "Mythos Threat → Control Matrix"
+date: 2026-04-17
+description: "Converts Mythos-class threat patterns into governance failures and controls aligned to governance dimensions."
+tags: [governance, security, threat-model, mythos, CISO]
+---
+
 # Mythos Threat → Control Matrix (Aligned to Governance Dimensions)
 
 *Date: 2026-04-17*  
@@ -14,7 +22,7 @@ This post converts those threat patterns into **governance failures** and **cont
 
 ## Visual 1 — Threat acceleration vs defender cycle
 
-```mermaid
+<pre class="mermaid">
 flowchart LR
   A[Vulnerability Discovery] -->|hours| B[Exploit Generation]
   B -->|hours| C[Weaponization]
@@ -29,13 +37,13 @@ flowchart LR
   A -. overwhelms .-> E
   D -. incident pressure .-> F
   style DEF fill:#f7f7f7,stroke:#bbb
-```
+</pre>
 
 ---
 
 ## Visual 2 — Governance dimensions as control surfaces
 
-```mermaid
+<pre class="mermaid">
 flowchart TB
   T[Mythos-era Threat Patterns] --> GF[Governance Failures]
   GF --> C[Controls]
@@ -55,7 +63,7 @@ flowchart TB
 
   DIMS --> EVID[Audit-grade Evidence]
   style DIMS fill:#eef8f6,stroke:#2aa198
-```
+</pre>
 
 ---
 
@@ -102,13 +110,13 @@ Each row maps:
 
 | Threat pattern | Governance failure | Primary control | Governance dimension(s) | Evidence to emit |
 |---|---|---|---|---|
-| Too many signals; humans can’t keep up | Visibility fragmented; no decision-centric evidence; escalations unclear | **Observability/visibility** aligned to decisions + routing | `observability_visibility`, `signal`, `evidence` | Normalized reason codes, routed alerts, linked decision traces |
+| Too many signals; humans can't keep up | Visibility fragmented; no decision-centric evidence; escalations unclear | **Observability/visibility** aligned to decisions + routing | `observability_visibility`, `signal`, `evidence` | Normalized reason codes, routed alerts, linked decision traces |
 
 ### 6) Supply-chain chaos during emergency remediation
 
 | Threat pattern | Governance failure | Primary control | Governance dimension(s) | Evidence to emit |
 |---|---|---|---|---|
-| Attackers exploit emergency changes and pipelines | Unsigned artifacts; mutable “latest”; unclear provenance | **Signed bundles** + immutable versions + audited channel pointers | `provenance_supply_chain`, `change_release_governance`, `registry` | Signature verification, digest match, channel move events, key rotation events |
+| Attackers exploit emergency changes and pipelines | Unsigned artifacts; mutable "latest"; unclear provenance | **Signed bundles** + immutable versions + audited channel pointers | `provenance_supply_chain`, `change_release_governance`, `registry` | Signature verification, digest match, channel move events, key rotation events |
 
 ### 7) Insider misuse / uncontrolled access to powerful tools
 
@@ -116,28 +124,25 @@ Each row maps:
 |---|---|---|---|---|
 | Powerful tools used by unauthorized actors | No separation of duties; shared creds; no two-person rule | **Accountability & SoD** + strong RBAC + break-glass TTL | `accountability_separation_of_duties`, `identity_access`, `authority` | Approver/publisher identity, denied overrides, break-glass log |
 
-### 8) Unreconstructable incidents (“we can’t prove what happened”)
+### 8) Unreconstructable incidents ("we can't prove what happened")
 
 | Threat pattern | Governance failure | Primary control | Governance dimension(s) | Evidence to emit |
 |---|---|---|---|---|
-| After-the-fact uncertainty slows response | Logs exist but aren’t tied to policy/version/identity | **Evidence envelope** linking policy version + identity + reason codes | `evidence`, `registry`, `transparency_explainability` | bundle_id/version, decision, reason_code, identity |
+| After-the-fact uncertainty slows response | Logs exist but aren't tied to policy/version/identity | **Evidence envelope** linking policy version + identity + reason codes | `evidence`, `registry`, `transparency_explainability` | bundle_id/version, decision, reason_code, identity |
 
 ---
 
 ## Visual 3 — Evidence linkage (what auditors actually need)
 
-```mermaid
+<pre class="mermaid">
 flowchart LR
   D[Decision Event] --> E[Evidence Envelope]
-  P[Policy Bundle
-(id+version)] --> E
+  P[Policy Bundle\nid+version] --> E
   I[Workload Identity] --> E
-  R[Reason Code
-(rule_id)] --> E
+  R[Reason Code\nrule_id] --> E
   E --> L[Append-only Evidence Store]
-  L --> Q[Audit Query
-"what was enforced on date X?"]
-```
+  L --> Q[Audit Query\nwhat was enforced on date X?]
+</pre>
 
 ---
 

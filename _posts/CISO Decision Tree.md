@@ -1,7 +1,15 @@
+---
+layout: post
+title: "Mythos‑Era CISO Decision Tree: What to Prioritize in the Next 30/60/90 Days"
+date: 2026-04-17
+description: "A sequenced plan for CISOs: blast radius reduction, rollback speed, inventory + triage, evidence + automation."
+tags: [governance, CISO, security, mythos, decision-tree]
+---
+
 # Mythos‑Era CISO Decision Tree: What to Prioritize in the Next 30/60/90 Days
 
-*Date: 2026-04-17*  
-*Audience: CISOs, Deputy CISOs, Security Leaders, Risk Owners*  
+*Date: 2026-04-17*
+*Audience: CISOs, Deputy CISOs, Security Leaders, Risk Owners*
 
 ---
 
@@ -16,75 +24,53 @@ This post provides a decision tree and a 30/60/90 day execution plan.
 
 ## Visual 1 — CISO decision tree (30/60/90)
 
-```mermaid
+<pre class="mermaid">
 flowchart TD
-  A[Start: Mythos-era readiness] --> B{{Can you reduce blast radius
-within hours?}}
+  A[Start: Mythos-era readiness] --> B{{Can you reduce blast radius\nwithin hours?}}
 
-  B -- No --> B1[30 Days: Establish kill switches,
-segmentation priorities,
-least-privilege emergency plan]
-  B -- Yes --> C{{Can you rollback
-policy/config safely
-within minutes?}}
+  B -- No --> B1[30 Days: Establish kill switches,\nsegmentation priorities,\nleast-privilege emergency plan]
+  B -- Yes --> C{{Can you rollback\npolicy/config safely\nwithin minutes?}}
 
-  C -- No --> C1[30 Days: Rollback-first release discipline,
-channel/pinning model,
-pre-approved emergency changes]
-  C -- Yes --> D{{Do you have an
-authoritative asset +
-dependency inventory?}}
+  C -- No --> C1[30 Days: Rollback-first release discipline,\nchannel/pinning model,\npre-approved emergency changes]
+  C -- Yes --> D{{Do you have an\nauthoritative asset +\ndependency inventory?}}
 
-  D -- No --> D1[60 Days: Inventory systems,
-critical dependencies,
-owners, EOL posture]
-  D -- Yes --> E{{Do you have
-triage SLAs tied to
-exploitability + exposure?}}
+  D -- No --> D1[60 Days: Inventory systems,\ncritical dependencies,\nowners, EOL posture]
+  D -- Yes --> E{{Do you have\ntriage SLAs tied to\nexploitability + exposure?}}
 
-  E -- No --> E1[60 Days: Risk-tier policy,
-remediation SLAs,
-time-bound exceptions]
-  E -- Yes --> F{{Can you reconstruct
-what was enforced
-and when?}}
+  E -- No --> E1[60 Days: Risk-tier policy,\nremediation SLAs,\ntime-bound exceptions]
+  E -- Yes --> F{{Can you reconstruct\nwhat was enforced\nand when?}}
 
-  F -- No --> F1[90 Days: Evidence envelopes,
-link decisions to
-policy version + identity]
-  F -- Yes --> G[90 Days: Automate vulnerability
-validation, pre-prod security
-hardening, and continuous
-control verification]
-```
+  F -- No --> F1[90 Days: Evidence envelopes,\nlink decisions to\npolicy version + identity]
+  F -- Yes --> G[90 Days: Automate vulnerability\nvalidation, pre-prod security\nhardening, and continuous\ncontrol verification]
+</pre>
 
 ---
 
 ## Visual 2 — 30/60/90 plan as an execution pipeline
 
-```mermaid
+<pre class="mermaid">
 flowchart LR
-  subgraph D30[Day 0–30]
+  subgraph D30[Day 0-30]
     A1[Kill switch authority]
-A2[Least privilege]
-A3[Rollback-first discipline]
+    A2[Least privilege]
+    A3[Rollback-first discipline]
   end
-  subgraph D60[Day 31–60]
+  subgraph D60[Day 31-60]
     B1[Asset + dependency inventory]
-B2[Triage policy + SLAs]
-B3[Time-bound exceptions]
+    B2[Triage policy + SLAs]
+    B3[Time-bound exceptions]
   end
-  subgraph D90[Day 61–90]
+  subgraph D90[Day 61-90]
     C1[Evidence envelopes]
-C2[Decision-centric visibility]
-C3[Governed automation]
+    C2[Decision-centric visibility]
+    C3[Governed automation]
   end
 
   D30 --> D60 --> D90
   style D30 fill:#fff7e6,stroke:#cc8a00
   style D60 fill:#eef6ff,stroke:#1f77b4
   style D90 fill:#eef8f6,stroke:#2aa198
-```
+</pre>
 
 ---
 
@@ -137,7 +123,7 @@ C3[Governed automation]
 
 ## Visual 3 — Operating model (who does what)
 
-```mermaid
+<pre class="mermaid">
 flowchart TB
   CISO[CISO / Risk Owner] -->|sets priorities| GOV[Governance Team]
   GOV -->|policies + approvals| REL[Release/Change Governance]
@@ -149,7 +135,7 @@ flowchart TB
   style CISO fill:#eef6ff,stroke:#1f77b4
   style GOV fill:#f7f7f7,stroke:#999
   style RUNTIME fill:#eef8f6,stroke:#2aa198
-```
+</pre>
 
 ---
 
