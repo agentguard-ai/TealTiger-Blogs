@@ -16,8 +16,57 @@
   <link rel="alternate" type="application/rss+xml" title="{{ site.title }}" href="{{ '/feed.xml' | relative_url }}" />
 
   <!-- Mermaid diagrams -->
+  <style>
+    /* Override dark pre styling for mermaid diagrams */
+    .post-content pre.mermaid,
+    .page-content pre.mermaid {
+      background: #ffffff !important;
+      color: #1a1a2e !important;
+      border: 1px solid #e5e7eb;
+      padding: 24px 16px;
+      text-align: center;
+    }
+    /* Better table styling for matrix posts */
+    .post-content table,
+    .page-content table {
+      border: 1px solid #e5e7eb;
+      border-radius: 8px;
+      overflow: hidden;
+    }
+    .post-content th,
+    .page-content th {
+      background: #f9fafb;
+      border-bottom: 2px solid #e5e7eb;
+      font-size: 0.82rem;
+      text-transform: uppercase;
+      letter-spacing: 0.03em;
+      color: #1a1a2e;
+    }
+    .post-content td,
+    .page-content td {
+      color: #374151;
+      vertical-align: top;
+      border-bottom: 1px solid #f3f4f6;
+    }
+    .post-content tr:last-child td,
+    .page-content tr:last-child td {
+      border-bottom: none;
+    }
+    .post-content tr:hover td,
+    .page-content tr:hover td {
+      background: #f9fafb;
+    }
+    .post-content td code,
+    .page-content td code {
+      background: #f0fdfa;
+      color: #0d9488;
+      padding: 1px 6px;
+      border-radius: 3px;
+      font-size: 0.8em;
+    }
+  </style>
   <script type="module">
     import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.esm.min.mjs';
-    mermaid.initialize({ startOnLoad: true, theme: 'default' });
+    mermaid.initialize({ startOnLoad: true, theme: 'neutral' });
   </script>
 </head>
